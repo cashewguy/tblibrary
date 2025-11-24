@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://tblibrary.com/about/</link>
+      <pubDate>Sun, 23 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/about/</guid>
+      <description>&lt;h2 id=&#34;about-the-library&#34;&gt;About the Library&lt;/h2&gt;
+&lt;p&gt;It started when some people I work with asked why I never read any fun books. I went home that night, looked at all my books, my inventory spreadsheets, and fed some stuff to ChatGPT to come up with a general fun[yes/no]. That wasn&amp;rsquo;t good enough, so I did that to my entire library.&lt;/p&gt;
+&lt;p&gt;By that point, I was curious and I wanted more data. I wasn&amp;rsquo;t pleased with the yes/no/maybe fun measure. I thought about it, and came up with a questionnaire and a scoring mechanism, which you can read on the &amp;lsquo;Fun?&amp;rsquo; tab. Then I saw ChartJS and wanted some cool charts. I also thought it&amp;rsquo;d be nice to have all of my reviews centralized on my own platform.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Doctor Sleep</title>
       <link>https://tblibrary.com/books/doctor-sleep---stephen-king/</link>
