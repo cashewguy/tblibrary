@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Does Thomas Read Fun Books? on TB Library</title>
+    <link>https://tblibrary.com/fun/</link>
+    <description>Recent content in Does Thomas Read Fun Books? on TB Library</description>
+    <generator>Hugo -- 0.148.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jul 2025 16:14:12 -0400</lastBuildDate>
+    <atom:link href="https://tblibrary.com/fun/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Constitutes a Fun Book?</title>
+      <link>https://tblibrary.com/fun/fun-questionnaire/</link>
+      <pubDate>Sat, 12 Jul 2025 16:14:12 -0400</pubDate>
+      <guid>https://tblibrary.com/fun/fun-questionnaire/</guid>
+      <description>&lt;p&gt;To generate the &amp;ldquo;fun scores&amp;rdquo; on this site, I put together a quick questionnaire. Two questions that have a prompt, and then a general vibe for the book. These three are averaged into a funScore, and that&amp;rsquo;s what I use. Not everything in Books.csv has a funScore, so these are incomplete, but I&amp;rsquo;m working on them.&lt;/p&gt;
+&lt;h2 id=&#34;funreadinggrip&#34;&gt;&lt;strong&gt;funReadingGrip&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;To what extent did I WANT to read the book? Did I keep picking it up?&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
