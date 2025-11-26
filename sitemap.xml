@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tblibrary.com/reviewstats/</loc>
+    <lastmod>2025-11-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/fun/fun-questionnaire/</loc>
+    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/fun/fun-reviews/</loc>
+    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tblibrary.com/about/</loc>
+    <lastmod>2025-11-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/fun/fun-archive/</loc>
     <lastmod>2025-11-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/</loc>
@@ -101,9 +113,6 @@
     <loc>https://tblibrary.com/</loc>
     <lastmod>2025-07-12T16:14:12-04:00</lastmod>
   </url><url>
-    <loc>https://tblibrary.com/fun/fun-questionnaire/</loc>
-    <lastmod>2025-07-12T16:14:12-04:00</lastmod>
-  </url><url>
     <loc>https://tblibrary.com/books/all-star-superman---grant-morrison-frank-quitely/</loc>
     <lastmod>2025-07-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -140,9 +149,6 @@
     <loc>https://tblibrary.com/books/the-words-that-remain---st%C3%AAnio-gardel/</loc>
     <lastmod>2025-06-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tblibrary.com/tags/smallpressbc/</loc>
-    <lastmod>2025-05-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tblibrary.com/books/we-all-loved-cowboys---carol-bensimon/</loc>
     <lastmod>2025-05-25T00:00:00+00:00</lastmod>
   </url><url>
@@ -153,9 +159,6 @@
     <lastmod>2025-05-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/less/</loc>
-    <lastmod>2025-05-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/queerlit/</loc>
     <lastmod>2025-05-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/recommendedtome/</loc>
@@ -288,6 +291,9 @@
     <lastmod>2025-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/marybrosnahan/</loc>
+    <lastmod>2025-03-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/queerlit/</loc>
     <lastmod>2025-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/shame/</loc>

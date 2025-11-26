@@ -2,45 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Smallpressbc on TB Library</title>
-    <link>https://tblibrary.com/tags/smallpressbc/</link>
+    <link>http://localhost:1313/tags/smallpressbc/</link>
     <description>Recent content in Smallpressbc on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://tblibrary.com/tags/smallpressbc/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>We All Loved Cowboys</title>
-      <link>https://tblibrary.com/books/we-all-loved-cowboys---carol-bensimon/</link>
-      <pubDate>Sun, 25 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://tblibrary.com/books/we-all-loved-cowboys---carol-bensimon/</guid>
-      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
-&lt;p&gt;I read this for my Small Press Book Club. In a recent view, I proclaimed, “three stars is good,” and in general this is true. However, this is not a “three stars is good” three stars. This is a, “I have no idea what to rate this book as” three stars. I found it mostly inoffensive, but also not compelling or engaging at all. There are some passages that read to me like white noise, words on a page without meaning, meandering. Occasionally, there is an interesting line. But overall, I leave the book not knowing what to do about it.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sun, 20 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/smallpressbc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Children of the Ghetto - My Name is Adam</title>
-      <link>https://tblibrary.com/books/the-children-of-the-ghetto-i---elias-khoury/</link>
+      <link>http://localhost:1313/books/the-children-of-the-ghetto-i---elias-khoury/</link>
       <pubDate>Sun, 20 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://tblibrary.com/books/the-children-of-the-ghetto-i---elias-khoury/</guid>
+      <guid>http://localhost:1313/books/the-children-of-the-ghetto-i---elias-khoury/</guid>
       <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
 &lt;p&gt;I have had this book on my living room table for months. Originally, it was to by my book club’s January read, but scheduling and then supply issues pushed it out months and months. The whole time I eyed it warily for its weight and size. I’ve been in a mood of 200-300 page books, and I had no concept of what this would be about, only that it was surprisingly dense to lift. The last book I read from Archipelago Press was Sara Gallardo’s &lt;i&gt;January&lt;/i&gt; which is a tiny thing.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Us Fools</title>
-      <link>https://tblibrary.com/books/us-fools/</link>
-      <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>https://tblibrary.com/books/us-fools/</guid>
-      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
-&lt;p&gt;I read this for my small press book club. I am not sure why I stuck with it. On page 11, we have this sentence:&lt;/p&gt;
-&lt;blockquote&gt; Sylvia, our mother, reminded Henry &lt;b&gt;daily&lt;/b&gt;, such was the routine of marriage, about fixing the ladder &lt;b&gt;daily&lt;/b&gt; and went about partitioning the attic space, figuring if they were to have children, they would need a place to store them. &lt;/blockquote&gt;
-&lt;p&gt;I know it is snobby of me to take issue with the writing, and I know there are better things I could do with my time than critique a published author. But, really, where was the editor? My emphasis in the above highlights just one problem, a strange repetition that doesn&amp;rsquo;t make sense. There is also too much going on in the sentence. 39 words! That&amp;rsquo;s 15% of the Gettysburg Address! Too long. I also think it&amp;rsquo;s trite. The same-word-in-one-sentence problem didn&amp;rsquo;t recur often enough for me to notice, but overlong sentences full of overdone triteness became the standard.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Long Form</title>
-      <link>https://tblibrary.com/books/the-long-form/</link>
-      <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://tblibrary.com/books/the-long-form/</guid>
-      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
-&lt;p&gt;I read this for the small press book club. It&amp;rsquo;s good! I finished it about 15 minutes from the meeting and so it hasn&amp;rsquo;t really digested yet. It is 430 pages focusing on, basically, one day in the life of a mother and her tiny baby. This is misleading because there is a great deal of literary history and engagement with ideas of literary writing, time, space, and perception.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
