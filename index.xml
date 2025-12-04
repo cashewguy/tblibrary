@@ -6,8 +6,16 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Not to Kill Yourself</title>
+      <link>https://tblibrary.com/books/how-not-to-kill-yourself---clancy-martin/</link>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/how-not-to-kill-yourself---clancy-martin/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I first read about Clancy Martin’s memoir sitting at the breakfast bar of a local restaurant. At the time I went every Sunday and read the New York Times Book Review. Whatever Sunday that happened to be, I read Alexandra Jacobs’ &lt;a href=&#34;https://www.nytimes.com/2023/03/26/books/how-not-to-kill-yourself-clancy-martin.html&#34;&gt;review&lt;/a&gt; and added it to my to-be-read list. I haven’t thought about the book much even as I’ve read several other texts on suicide and suicidal ideation over the few years since. Having now read it, I can scratch my head at Jacobs’ review and wonder: is this, in fact, a review?&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Review Stats</title>
       <link>https://tblibrary.com/reviewstats/</link>
@@ -26,7 +34,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 50 , 13 , 9 , 7 , 4 , 3 , 1 , 1 ,];
+  const dataValues = [ 50 , 14 , 9 , 7 , 4 , 3 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -56,9 +64,9 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewGenreChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Social Science \/ Policy&#34;,&#34;Memoir&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
+  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 45 , 16 , 9 , 8 , 5 , 5 ,];
+  const dataValues = [ 45 , 16 , 9 , 9 , 5 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -386,6 +394,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2024-12-21&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
         &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,suicide&#34;
+      &gt;
+        &lt;td&gt;Clancy Martin&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/how-not-to-kill-yourself---clancy-martin/&#34;&gt;How Not to Kill Yourself&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;2025-12-03&lt;/td&gt;
+        &lt;td&gt;2.5&lt;/td&gt;
+        &lt;td&gt;-2&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1290,6 +1310,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;How Not to Kill Yourself\&#34;&#34;,
+      rating:  2.5 ,
+      fun: &#34;-2&#34;,
+    },
+    {
       title: &#34;\&#34;Small Rain\&#34;&#34;,
       rating:  5 ,
       fun: &#34;3&#34;,
@@ -1407,6 +1432,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Memoir\&#34;&#34;,
+      fun:  &#34;-2&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;3&#34;,
