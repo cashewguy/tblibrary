@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello Stranger</title>
+      <link>https://tblibrary.com/books/hello-stranger---manuel-betancourt/</link>
+      <pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/hello-stranger---manuel-betancourt/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;This review contains a lot of discussion of sex, cruising, and other “NSFW” stuff. I would encourage you to NOT read it if that makes you uncomfortable.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I suppose it’s my fault. I picked this book up hoping for something a little closer to smut than the navel-gazing that we so often receive from Betancourt in these pages. If nothing else, it has served as a splendid source for reading recommendations, there are dozens and dozens of references to books, essays, films. Several of the essays are more or less about (or use to great length as framing) films or works of art as a device by which the author can reflect on relationship and sex dynamics. Some are interesting. Some are quite boring and annoying.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>When the Body Says No</title>
       <link>https://tblibrary.com/books/when-the-body-says-no---gabor-mate/</link>
@@ -43,7 +52,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 50 , 14 , 9 , 8 , 4 , 3 , 1 , 1 ,];
+  const dataValues = [ 50 , 15 , 9 , 8 , 4 , 3 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -73,9 +82,9 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewGenreChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Social Science \/ Policy&#34;,&#34;Memoir&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
+  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 45 , 16 , 10 , 9 , 5 , 5 ,];
+  const dataValues = [ 45 , 16 , 10 , 10 , 5 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -898,6 +907,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,queer&#34;
+      &gt;
+        &lt;td&gt;Manuel Betancourt&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/hello-stranger---manuel-betancourt/&#34;&gt;Hello Stranger&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;2025-12-13&lt;/td&gt;
+        &lt;td&gt;2.5&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview&#34;
       &gt;
         &lt;td&gt;Margaret Atwood&lt;/td&gt;
@@ -1331,6 +1352,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Hello Stranger\&#34;&#34;,
+      rating:  2.5 ,
+      fun: &#34;2&#34;,
+    },
+    {
       title: &#34;\&#34;When the Body Says No\&#34;&#34;,
       rating:  3 ,
       fun: &#34;1&#34;,
@@ -1458,6 +1484,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Memoir\&#34;&#34;,
+      fun:  &#34;2&#34;,
+    },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
       fun:  &#34;1&#34;,
