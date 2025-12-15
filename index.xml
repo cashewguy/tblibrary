@@ -6,8 +6,16 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Being Blue</title>
+      <link>https://tblibrary.com/books/on-being-blue---william-h-gass/</link>
+      <pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/on-being-blue---william-h-gass/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I picked this up sight-unseen from the NYRB sale earlier this month. I went in thinking it was going to be more of the ‘blue’ as in sadness, and maybe as a nice modern accompaniment to one of the other books I bought, &lt;em&gt;The Anatomy of Melancholy&lt;/em&gt;. Not so! This little book ends up being quite a bit about fucking and fondling and writing about fucking and fondling. Fun! But actually that is oversimplifying it. Glass is interested in how we write about sex and how we write ‘dirty words’ in general, among other things.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hello Stranger</title>
       <link>https://tblibrary.com/books/hello-stranger---manuel-betancourt/</link>
@@ -50,9 +58,9 @@
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewFormChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
+  const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 50 , 15 , 9 , 8 , 4 , 3 , 1 , 1 ,];
+  const dataValues = [ 50 , 15 , 9 , 8 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -84,7 +92,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 45 , 16 , 10 , 10 , 5 , 5 ,];
+  const dataValues = [ 45 , 16 , 10 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1267,6 +1275,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,writing&#34;
+      &gt;
+        &lt;td&gt;William H. Gass&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/on-being-blue---william-h-gass/&#34;&gt;On Being Blue&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Essays&lt;/td&gt;
+        &lt;td&gt;Essay / Criticism&lt;/td&gt;
+        &lt;td&gt;2025-12-14&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;3.17&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,williamsburroughs,queer&#34;
       &gt;
         &lt;td&gt;William S Burroughs&lt;/td&gt;
@@ -1351,6 +1371,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;On Being Blue\&#34;&#34;,
+      rating:  4 ,
+      fun: &#34;3.17&#34;,
+    },
     {
       title: &#34;\&#34;Hello Stranger\&#34;&#34;,
       rating:  2.5 ,
@@ -1484,6 +1509,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Essays\&#34;&#34;,
+      fun:  &#34;3.17&#34;,
+    },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
       fun:  &#34;2&#34;,
