@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tblibrary.com/tags/bookreview/</loc>
-    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+    <loc>https://tblibrary.com/books/a-womans-story---annie-ernaux/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tblibrary.com/books/on-being-blue---william-h-gass/</loc>
-    <lastmod>2025-12-14T00:00:00+00:00</lastmod>
+    <loc>https://tblibrary.com/tags/annieernaux/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/bookreview/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/</loc>
+    <lastmod>2025-12-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/queer/</loc>
+    <lastmod>2025-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/what-belongs-to-you---garth-greenwell/</loc>
+    <lastmod>2025-12-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/on-being-blue---william-h-gass/</loc>
     <lastmod>2025-12-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/writing/</loc>
     <lastmod>2025-12-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/hello-stranger---manuel-betancourt/</loc>
-    <lastmod>2025-12-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/queer/</loc>
     <lastmod>2025-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/mentalhealth/</loc>
@@ -241,9 +250,6 @@
   </url><url>
     <loc>https://tblibrary.com/books/the-myth-of-closure/</loc>
     <lastmod>2025-04-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/annieernaux/</loc>
-    <lastmod>2025-04-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/exteriors/</loc>
     <lastmod>2025-04-04T00:00:00+00:00</lastmod>
