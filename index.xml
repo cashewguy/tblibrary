@@ -221,7 +221,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Social Science / Policy&lt;/td&gt;
         &lt;td&gt;2025-02-09&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -233,7 +233,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-06-09&lt;/td&gt;
         &lt;td&gt;4.5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;3.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -245,7 +245,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-05-23&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -269,7 +269,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Memoir&lt;/td&gt;
         &lt;td&gt;2025-06-11&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -281,7 +281,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Memoir&lt;/td&gt;
         &lt;td&gt;2025-06-11&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -305,7 +305,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Memoir&lt;/td&gt;
         &lt;td&gt;2025-06-09&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -317,7 +317,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-04-04&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -329,7 +329,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-04-03&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;false&#34;
@@ -341,7 +341,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Memoir&lt;/td&gt;
         &lt;td&gt;2025-04-02&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -353,7 +353,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-03-18&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -365,7 +365,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-06-06&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -389,7 +389,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Science Fiction&lt;/td&gt;
         &lt;td&gt;2025-03-18&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;3.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -401,7 +401,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Arts / Photography&lt;/td&gt;
         &lt;td&gt;2025-03-23&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -413,7 +413,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-05-25&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -425,7 +425,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Social Science / Policy&lt;/td&gt;
         &lt;td&gt;2025-09-12&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -437,7 +437,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Essay / Criticism&lt;/td&gt;
         &lt;td&gt;2025-05-11&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -449,7 +449,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2024-12-21&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;3.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -473,7 +473,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2024-12-21&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -485,7 +485,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2024-12-05&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-3.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -497,7 +497,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2024-12-01&lt;/td&gt;
         &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-0.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -521,7 +521,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Essay / Criticism&lt;/td&gt;
         &lt;td&gt;2025-08-30&lt;/td&gt;
         &lt;td&gt;2.5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -533,7 +533,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Memoir&lt;/td&gt;
         &lt;td&gt;2025-02-08&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -545,7 +545,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-04-24&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -557,7 +557,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-04-20&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -569,7 +569,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Science Fiction&lt;/td&gt;
         &lt;td&gt;2025-01-15&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -581,7 +581,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Science Fiction&lt;/td&gt;
         &lt;td&gt;2025-01-04&lt;/td&gt;
         &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -593,7 +593,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-02-08&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -605,7 +605,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-01-26&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -617,7 +617,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-01-09&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -629,7 +629,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-01-06&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -641,7 +641,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-01-02&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;false&#34;
@@ -653,7 +653,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;History / Biography&lt;/td&gt;
         &lt;td&gt;2024-12-23&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -689,7 +689,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-01-26&lt;/td&gt;
         &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -725,7 +725,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Suspense / Thriller / Mystery&lt;/td&gt;
         &lt;td&gt;2025-09-01&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -749,7 +749,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-09-21&lt;/td&gt;
         &lt;td&gt;0&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -761,7 +761,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Social Science / Policy&lt;/td&gt;
         &lt;td&gt;2025-03-23&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -773,7 +773,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-04-03&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -785,7 +785,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-09-29&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;3.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -797,7 +797,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Social Science / Policy&lt;/td&gt;
         &lt;td&gt;2025-03-31&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -809,7 +809,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Memoir&lt;/td&gt;
         &lt;td&gt;2025-01-12&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -821,7 +821,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-07-25&lt;/td&gt;
         &lt;td&gt;3.5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -857,7 +857,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-08-13&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -869,7 +869,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Science&lt;/td&gt;
         &lt;td&gt;2025-09-29&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -881,7 +881,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-02-27&lt;/td&gt;
         &lt;td&gt;3.5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -893,7 +893,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-10-08&lt;/td&gt;
         &lt;td&gt;4.5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -905,7 +905,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Social Science / Policy&lt;/td&gt;
         &lt;td&gt;2023-12-08&lt;/td&gt;
         &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -917,7 +917,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Science&lt;/td&gt;
         &lt;td&gt;2025-05-04&lt;/td&gt;
         &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-1.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -929,7 +929,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-01-12&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -941,7 +941,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Fantasy&lt;/td&gt;
         &lt;td&gt;2025-06-22&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;5.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -953,7 +953,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-10-02&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -977,7 +977,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Science Fiction&lt;/td&gt;
         &lt;td&gt;2025-05-09&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -989,7 +989,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-02-28&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1001,7 +1001,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Poetry&lt;/td&gt;
         &lt;td&gt;2025-01-13&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1013,7 +1013,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-07-25&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1025,7 +1025,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Social Science / Policy&lt;/td&gt;
         &lt;td&gt;2025-03-18&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1037,7 +1037,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Memoir&lt;/td&gt;
         &lt;td&gt;2024-12-27&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -1049,7 +1049,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-03-28&lt;/td&gt;
         &lt;td&gt;1&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-3.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1061,7 +1061,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Social Science / Policy&lt;/td&gt;
         &lt;td&gt;2025-04-05&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1085,7 +1085,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-03-07&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1097,7 +1097,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Essay / Criticism&lt;/td&gt;
         &lt;td&gt;2025-06-06&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1109,7 +1109,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;History / Biography&lt;/td&gt;
         &lt;td&gt;2025-04-28&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1121,7 +1121,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-10-24&lt;/td&gt;
         &lt;td&gt;2.5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-1.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -1133,7 +1133,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Poetry&lt;/td&gt;
         &lt;td&gt;2025-01-13&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -1145,7 +1145,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Poetry&lt;/td&gt;
         &lt;td&gt;2025-01-06&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -1169,7 +1169,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-02-17&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1181,7 +1181,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;History / Biography&lt;/td&gt;
         &lt;td&gt;2025-04-04&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-0.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;false&#34;
@@ -1193,7 +1193,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Social Science / Policy&lt;/td&gt;
         &lt;td&gt;2025-01-02&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;-0.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;false&#34;
@@ -1205,7 +1205,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-06-03&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1217,7 +1217,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Social Science / Policy&lt;/td&gt;
         &lt;td&gt;2025-03-24&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1229,7 +1229,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Horror&lt;/td&gt;
         &lt;td&gt;2025-11-17&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1241,7 +1241,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Horror&lt;/td&gt;
         &lt;td&gt;2025-10-28&lt;/td&gt;
         &lt;td&gt;4.5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;3.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;false&#34;
@@ -1253,7 +1253,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Horror&lt;/td&gt;
         &lt;td&gt;2025-10-17&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.83&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1265,7 +1265,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Essay / Criticism&lt;/td&gt;
         &lt;td&gt;2025-02-11&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1277,7 +1277,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-04-11&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1289,7 +1289,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-01-09&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;3.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1313,7 +1313,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-05-18&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;1.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1337,7 +1337,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;Literary Fiction&lt;/td&gt;
         &lt;td&gt;2025-02-01&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0.33&lt;/td&gt;
       &lt;/tr&gt;
     &lt;/tbody&gt;
   &lt;/table&gt;
@@ -1454,9 +1454,84 @@ const funrev_points = [
       fun: &#34;0&#34;,
     },
     {
+      title: &#34;\&#34;Salems Lot\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;1.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Doctor Sleep\&#34;&#34;,
+      rating: &#34;4.5&#34;,
+      fun: &#34;3.33&#34;,
+    },
+    {
+      title: &#34;\&#34;The Café with No Name\&#34;&#34;,
+      rating: &#34;2.5&#34;,
+      fun: &#34;-1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;The Shining\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;1.83&#34;,
+    },
+    {
+      title: &#34;\&#34;Martyr!\&#34;&#34;,
+      rating: &#34;4.5&#34;,
+      fun: &#34;1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Hamnet\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;0.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Temporary\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;3.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Why Cats Do that\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;1.33&#34;,
+    },
+    {
+      title: &#34;\&#34;No Names\&#34;&#34;,
+      rating: &#34;0&#34;,
+      fun: &#34;0.00&#34;,
+    },
+    {
+      title: &#34;\&#34;On Liberalism\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;-0.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Rent Boy\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;1.33&#34;,
+    },
+    {
+      title: &#34;\&#34;A Supposedly Fun Thing I&#39;ll Never Do Again\&#34;&#34;,
+      rating: &#34;2.5&#34;,
+      fun: &#34;2.00&#34;,
+    },
+    {
       title: &#34;\&#34;A Prayer for the Crown-Shy\&#34;&#34;,
       rating: &#34;4&#34;,
       fun: &#34;4&#34;,
+    },
+    {
+      title: &#34;\&#34;Catch-22\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;2.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Kingdom Come\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;2.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Your Love Is Not Good\&#34;&#34;,
+      rating: &#34;3.5&#34;,
+      fun: &#34;1.00&#34;,
     },
     {
       title: &#34;\&#34;In the Absence of Men\&#34;&#34;,
@@ -1474,9 +1549,24 @@ const funrev_points = [
       fun: &#34;2.33&#34;,
     },
     {
+      title: &#34;\&#34;The Bright Sword\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;5.00&#34;,
+    },
+    {
       title: &#34;\&#34;The Understory\&#34;&#34;,
       rating: &#34;0&#34;,
       fun: &#34;-2.66&#34;,
+    },
+    {
+      title: &#34;\&#34;Happening\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;I Remain in Darkness\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;2.00&#34;,
     },
     {
       title: &#34;\&#34;The Possession\&#34;&#34;,
@@ -1484,9 +1574,79 @@ const funrev_points = [
       fun: &#34;1.66&#34;,
     },
     {
+      title: &#34;\&#34;Authority\&#34;&#34;,
+      rating: &#34;4.5&#34;,
+      fun: &#34;3.67&#34;,
+    },
+    {
+      title: &#34;\&#34;The Young Man\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;-0.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Brokeback Mountain\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Porn An Oral History\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;0.33&#34;,
+    },
+    {
+      title: &#34;\&#34;The Words That Remain\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;1.00&#34;,
+    },
+    {
+      title: &#34;\&#34;We All Loved Cowboys\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;-2.00&#34;,
+    },
+    {
       title: &#34;\&#34;House Of X/Powers Of X\&#34;&#34;,
       rating: &#34;3&#34;,
       fun: &#34;3.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Less\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;2.33&#34;,
+    },
+    {
+      title: &#34;\&#34;As I Lay Dying\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;1.00&#34;,
+    },
+    {
+      title: &#34;\&#34;A Hitch in Time\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;2.00&#34;,
+    },
+    {
+      title: &#34;\&#34;The Handmaid&#39;s Tale\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;1.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Slow Down\&#34;&#34;,
+      rating: &#34;2&#34;,
+      fun: &#34;-1.00&#34;,
+    },
+    {
+      title: &#34;\&#34;The Love That Dares\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Suicide\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;0.33&#34;,
+    },
+    {
+      title: &#34;\&#34;The Children of the Ghetto - My Name is Adam\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;-0.33&#34;,
     },
     {
       title: &#34;\&#34;The Great Gatsby\&#34;&#34;,
@@ -1494,9 +1654,234 @@ const funrev_points = [
       fun: &#34;1.66&#34;,
     },
     {
+      title: &#34;\&#34;Swimming in the Dark\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;1.00&#34;,
+    },
+    {
+      title: &#34;\&#34;The Myth of Closure\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;0.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Exteriors\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;0.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Notes on Suicide\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;-0.67&#34;,
+    },
+    {
+      title: &#34;\&#34;I Will Write to Avenge My People\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;1.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Written in Invisible Ink\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;0.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Simple Passion\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;2.33&#34;,
+    },
+    {
+      title: &#34;\&#34;The Sovereignty of Good\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;0.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Us Fools\&#34;&#34;,
+      rating: &#34;1&#34;,
+      fun: &#34;-3.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Collaborative Cities\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;0.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Home on Earth - Recipes for Healthy Houses\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;0.00&#34;,
+    },
+    {
+      title: &#34;\&#34;The Human Condition\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;0.00&#34;,
+    },
+    {
+      title: &#34;\&#34;15 Myths on Homelessness\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;0.67&#34;,
+    },
+    {
+      title: &#34;\&#34;A Psalm for the Wild-Built\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;3.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Shame\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;0.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Lie With Me\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;2.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Love, Leda\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;The Long Form\&#34;&#34;,
+      rating: &#34;3.5&#34;,
+      fun: &#34;1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;At 30 I Realized I Had No Gender\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;2.67&#34;,
+    },
+    {
+      title: &#34;\&#34;On Tyranny\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;0.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Feeling at Home\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;-0.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Catching the Big Fish\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;0.67&#34;,
+    },
+    {
+      title: &#34;\&#34;To Have and Have Not\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;1.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Queer\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;0.33&#34;,
+    },
+    {
+      title: &#34;\&#34;The Book of Nightmares\&#34;&#34;,
+      rating: &#34;1&#34;,
+      fun: &#34;-2.00&#34;,
+    },
+    {
+      title: &#34;\&#34;The Sun Also Rises\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;1.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Sea of Tranquility\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;1.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Home Body\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;2.00&#34;,
+    },
+    {
+      title: &#34;\&#34;So Much for Life\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;2.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Mother Night\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;South and West\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;2.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Rejection\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;3.33&#34;,
+    },
+    {
+      title: &#34;\&#34;The Old Man \u0026 The Sea\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;In Our Time\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;2.67&#34;,
+    },
+    {
+      title: &#34;\&#34;The Sun \u0026 Her Flowers\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;0.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Star Wars Visions Ronin\&#34;&#34;,
+      rating: &#34;2&#34;,
+      fun: &#34;-1.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Ernest Hemingway On Writing\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;0.67&#34;,
+    },
+    {
+      title: &#34;\&#34;Fear and Trembling\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;-0.67&#34;,
+    },
+    {
+      title: &#34;\&#34;God, Human, Animal, Machine\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;2.00&#34;,
+    },
+    {
+      title: &#34;\&#34;A Movable Feast\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;2.33&#34;,
+    },
+    {
+      title: &#34;\&#34;A Single Man\&#34;&#34;,
+      rating: &#34;5&#34;,
+      fun: &#34;3.33&#34;,
+    },
+    {
+      title: &#34;\&#34;Suttree\&#34;&#34;,
+      rating: &#34;4&#34;,
+      fun: &#34;1.33&#34;,
+    },
+    {
+      title: &#34;\&#34;The Sunset Limited\&#34;&#34;,
+      rating: &#34;3&#34;,
+      fun: &#34;-3.00&#34;,
+    },
+    {
+      title: &#34;\&#34;Child of God\&#34;&#34;,
+      rating: &#34;2&#34;,
+      fun: &#34;-0.67&#34;,
+    },
+    {
       title: &#34;\&#34;Stoner\&#34;&#34;,
       rating:  5 ,
       fun: &#34;2.33&#34;,
+    },
+    {
+      title: &#34;\&#34;When We Walk By\&#34;&#34;,
+      rating: &#34;2&#34;,
+      fun: &#34;0.33&#34;,
     },
 ];
 &lt;/script&gt;
@@ -1595,51 +1980,51 @@ const formrev_raw = [
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;3.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-1.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.83&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;3.00&#34;,
     },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.00&#34;,
     },
     {
       form: &#34;\&#34;Theory\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-0.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.33&#34;,
     },
     {
       form: &#34;\&#34;Essays\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
@@ -1647,15 +2032,15 @@ const formrev_raw = [
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
@@ -1671,7 +2056,7 @@ const formrev_raw = [
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;5.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
@@ -1679,11 +2064,11 @@ const formrev_raw = [
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.67&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.00&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
@@ -1691,27 +2076,27 @@ const formrev_raw = [
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;3.67&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-0.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.67&#34;,
     },
     {
       form: &#34;\&#34;Theory\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-2.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
@@ -1719,35 +2104,35 @@ const formrev_raw = [
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.00&#34;,
     },
     {
       form: &#34;\&#34;Essays\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.00&#34;,
     },
     {
       form: &#34;\&#34;Theory\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-1.00&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-0.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
@@ -1755,179 +2140,179 @@ const formrev_raw = [
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.00&#34;,
     },
     {
       form: &#34;\&#34;Theory\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.00&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.33&#34;,
     },
     {
       form: &#34;\&#34;Theory\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-0.67&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.33&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.33&#34;,
     },
     {
       form: &#34;\&#34;Theory\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-3.33&#34;,
     },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.00&#34;,
     },
     {
       form: &#34;\&#34;Reference\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.00&#34;,
     },
     {
       form: &#34;\&#34;Theory\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.00&#34;,
     },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;3.67&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.67&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.67&#34;,
     },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.33&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-0.33&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.33&#34;,
     },
     {
       form: &#34;\&#34;Poetry\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-2.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.33&#34;,
     },
     {
       form: &#34;\&#34;Poetry\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.00&#34;,
     },
     {
       form: &#34;\&#34;Poetry\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.67&#34;,
     },
     {
       form: &#34;\&#34;Essays\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;3.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.67&#34;,
     },
     {
       form: &#34;\&#34;Poetry\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-1.67&#34;,
     },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.67&#34;,
     },
     {
       form: &#34;\&#34;Theory\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-0.67&#34;,
     },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.00&#34;,
     },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;2.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;3.33&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;1.33&#34;,
     },
     {
       form: &#34;\&#34;Drama\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-3.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;-0.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
@@ -1935,7 +2320,7 @@ const formrev_raw = [
     },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
-      fun:  &#34;null&#34;,
+      fun:  &#34;0.33&#34;,
     },
 ];
 
@@ -32634,7 +33019,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; lib_apply());
   &lt;p&gt;&lt;strong&gt;Genre:&lt;/strong&gt; Horror&lt;/p&gt;
   &lt;p&gt;&lt;strong&gt;Times read:&lt;/strong&gt; 1&lt;/p&gt;
   &lt;p&gt;&lt;strong&gt;Copies owned:&lt;/strong&gt; 0&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Fun score:&lt;/strong&gt; N/A&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Fun score:&lt;/strong&gt; 0.00&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     <item>
@@ -32879,7 +33264,7 @@ Appendix, Burroughs&amp;rsquo;s original introduction:&lt;/li&gt;
   &lt;p&gt;&lt;strong&gt;Genre:&lt;/strong&gt; Literary Fiction&lt;/p&gt;
   &lt;p&gt;&lt;strong&gt;Times read:&lt;/strong&gt; 1&lt;/p&gt;
   &lt;p&gt;&lt;strong&gt;Copies owned:&lt;/strong&gt; 0&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Fun score:&lt;/strong&gt; N/A&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Fun score:&lt;/strong&gt; -2.00&lt;/p&gt;
 &lt;/div&gt;</description>
     </item>
     <item>
