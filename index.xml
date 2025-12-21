@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Other Girl</title>
+      <link>https://tblibrary.com/books/the-other-girl---annie-ernaux/</link>
+      <pubDate>Sun, 21 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/the-other-girl---annie-ernaux/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Ernaux’s short book exploring the knowledge of her sister, unknown to her and deceased before she was ever contemplated, let alone born. A chance overhearing shadows her life.&lt;/p&gt;
+&lt;p&gt;I appreciated, as always, Ernaux’s cutting and raw writing. There is a little less in this one for me to grab onto, but I think we’re lucky to have the opportunity to go along with her as she processes these ideeas.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Woman&#39;s Story</title>
       <link>https://tblibrary.com/books/a-womans-story---annie-ernaux/</link>
@@ -78,7 +87,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 51 , 16 , 9 , 8 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 51 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -110,7 +119,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 46 , 16 , 11 , 10 , 6 , 5 ,];
+  const dataValues = [ 46 , 16 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -165,7 +174,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Annie Ernaux&#34;,&#34;Ernest Hemingway&#34;,&#34;Cormac McCarthy&#34;,&#34;Stephen King&#34;,];
 
-  const dataValues = [ 9 , 6 , 3 , 3 ,];
+  const dataValues = [ 10 , 6 , 3 , 3 ,];
 
   new Chart(ctx, {
     type: &#39;bar&#39;,
@@ -246,6 +255,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-05-23&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
         &lt;td&gt;2.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview&#34;
+      &gt;
+        &lt;td&gt;Annie Ernaux&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-other-girl---annie-ernaux/&#34;&gt;The Other Girl&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;2025-12-21&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1414,6 +1435,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;The Other Girl\&#34;&#34;,
+      rating:  3 ,
+      fun: &#34;1.33&#34;,
+    },
+    {
       title: &#34;\&#34;A Woman&#39;s Story\&#34;&#34;,
       rating:  5 ,
       fun: &#34;2&#34;,
@@ -1946,6 +1972,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Memoir\&#34;&#34;,
+      fun:  &#34;1.33&#34;,
+    },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
       fun:  &#34;2&#34;,
