@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Dec 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Dec 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Norwegian Wood</title>
+      <link>https://tblibrary.com/books/norwegian-wood---haruki-murakami/</link>
+      <pubDate>Mon, 29 Dec 2025 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/norwegian-wood---haruki-murakami/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;This is my second Murakami book, and there’s a better than not chance it’ll be my last. &lt;em&gt;Norwegian Wood&lt;/em&gt; seems well regarded by most people, reviews on Goodreads mention frequently that it is the book “everyone in Japan has read.” It has been recommended to me somewhat highly, though not always as a ‘good’ representation of Murakami’s broader ouevre.&lt;/p&gt;
+&lt;p&gt;Unfortunately, the things I bumped against in my first Murakami read (&lt;em&gt;Hard-Boiled Wonderland and the End of the World&lt;/em&gt;) are all here, and in huge force. There are maybe six major characters, and four of those are women. Our protagonist is good at most things, in that he has no trouble with school, no real problem finding work, seems to infatuate women, and apparently fucks so well that at least one of the female characters swears off sex afterwards. Do you think this sounds true to life? I’ll get back to the sex in a minute.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Jack the Modernist</title>
       <link>https://tblibrary.com/books/jack-the-modernist---robert-gl%C3%BCck/</link>
@@ -96,7 +105,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 52 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 53 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -128,7 +137,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 47 , 16 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 48 , 16 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -795,6 +804,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,suicide&#34;
+      &gt;
+        &lt;td&gt;Haruki Murakami&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/norwegian-wood---haruki-murakami/&#34;&gt;Norwegian Wood&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2025-12-29&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;0.66&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,HerveGuibert,suicide&#34;
       &gt;
         &lt;td&gt;Herve Guibert&lt;/td&gt;
@@ -1456,6 +1477,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Norwegian Wood\&#34;&#34;,
+      rating:  2 ,
+      fun: &#34;0.66&#34;,
+    },
+    {
       title: &#34;\&#34;Jack the Modernist\&#34;&#34;,
       rating:  3.5 ,
       fun: &#34;2&#34;,
@@ -1998,6 +2024,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;0.66&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;2&#34;,
@@ -33942,6 +33972,23 @@ Y.C.: Almost never. I start to make it up and have happen what would happen as i
       <guid>https://tblibrary.com/books/when-we-walk-by---kevin-f-adler-donald-w-burnes/</guid>
       <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
 &lt;p&gt;When I was in high school, we lived in a little * apartment in rural Illinois. It was across the street, a short walk from the factory where my mom (and several relatives) worked. We were on the South side of the tracks - a small open field separated us from them. Trains no longer run through this track and haven&amp;rsquo;t for years, as far as I know. I used to walk over to the high school, only about a mile away, but rarely with sidewalks available.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Books Reviewed in 2025</title>
+      <link>https://tblibrary.com/2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/2025/</guid>
+      <description>&lt;center&gt;
+&lt;div class=&#34;giant-text&#34;&gt;
+  90
+Books	in 2025
+&lt;/div&gt;
+&lt;/center&gt;
+I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. That&#39;s okay! I read some great books this year, exploring new authors, new presses, and finishing up big projects. For example, I realized late in the year that Garth Greenwell may be my favorite contemporary author. I also delved into Annie Ernaux&#39;s body of work, finding perhaps my most loved writer in the process. And I made a point to read more specifically &lt;a href=&#34;https://tblibrary.com/tags/queer/&#34;&gt;queer&lt;/a&gt; and gay books, which I&#39;ve found really rewarding.
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;p&gt;Bizarrely, I began 2025 intending to write an essay titled &amp;ldquo;A Year with Cormac&amp;rdquo; having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year &lt;i&gt;without&lt;/i&gt; Cormac; I didn&amp;rsquo;t read a single title from McCarthy this year, and skipped my annual reread of The Road.
+&lt;br /&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
