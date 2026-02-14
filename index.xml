@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Butcher&#39;s Crossing</title>
+      <link>https://tblibrary.com/books/butchers-crossing---john-williams/</link>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/butchers-crossing---john-williams/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;In my re-read of &lt;em&gt;Stoner&lt;/em&gt; recently, several people suggested that I try his other books, especially this one and &lt;em&gt;Augustus.&lt;/em&gt; I picked both of them up.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Butcher’s Crossing&lt;/em&gt; did not start well for me. The opening with the young man coming to the edge of the wilderness, this felt familiar but fine. We have to get the plot going, sure. In the opening chapters when our protagonist Andrews lays eyes on a working woman named Francine, we enter the world of tropes and I felt frustration and quickly. Andrews of course falls for Francine within a few moments, but the frustration comes with Schneider, the skinner, invoking a sense of jealousy and anger. Believe me, I know what jealousy and anger feel like. I don’t necessarily feel interested in reading the thousandth book to feature a young man getting jealous and angry over someone they’ve just lain eyes on. This story mounts in the closing pages of Part I and I nearly put the book down, such was my irritation and boredom.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Stoner</title>
       <link>https://tblibrary.com/books/stoner---john-williams/</link>
@@ -232,7 +241,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 56 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 57 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -264,7 +273,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 51 , 16 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 52 , 16 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -317,9 +326,9 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewAuthorChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Annie Ernaux&#34;,&#34;Ernest Hemingway&#34;,&#34;Cormac McCarthy&#34;,&#34;Stephen King&#34;,];
+  const labels = [&#34;Annie Ernaux&#34;,&#34;Ernest Hemingway&#34;,&#34;Cormac McCarthy&#34;,&#34;John Williams&#34;,&#34;Stephen King&#34;,];
 
-  const dataValues = [ 10 , 6 , 5 , 3 ,];
+  const dataValues = [ 10 , 6 , 5 , 3 , 3 ,];
 
   new Chart(ctx, {
     type: &#39;bar&#39;,
@@ -1025,6 +1034,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;3.5&lt;/td&gt;
         &lt;td&gt;1.00&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview&#34;
+      &gt;
+        &lt;td&gt;John Williams&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/butchers-crossing---john-williams/&#34;&gt;Butcher&amp;#39;s Crossing&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-02-14&lt;/td&gt;
+        &lt;td&gt;3.5&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
         data-tags=&#34;bookreview,small-press-club&#34;
@@ -1640,6 +1661,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Butcher&#39;s Crossing\&#34;&#34;,
+      rating:  3.5 ,
+      fun: &#34;1.33&#34;,
+    },
+    {
       title: &#34;\&#34;Stoner\&#34;&#34;,
       rating:  5 ,
       fun: &#34;2.33&#34;,
@@ -2202,6 +2228,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;1.33&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;2.33&#34;,
