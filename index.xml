@@ -250,7 +250,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 57 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 58 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -282,7 +282,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 52 , 16 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 52 , 17 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -941,8 +941,8 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &gt;
         &lt;td&gt;George R. R. Martin&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-hedge-knight---george-r-r-martin/&#34;&gt;The Hedge Knight&lt;/a&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Fantasy&lt;/td&gt;
         &lt;td&gt;2026-02-14&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
         &lt;td&gt;4.33&lt;/td&gt;
@@ -2259,7 +2259,7 @@ const formrev_raw = [
       fun:  &#34;1.33&#34;,
     },
     {
-      form: &#34;\&#34;Unknown\&#34;&#34;,
+      form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;4.33&#34;,
     },
     {
@@ -2664,7 +2664,7 @@ const formrev_raw = [
     },
 ];
 
-const formrev_allForms = [&#34;\&#34;Drama\&#34;&#34;,&#34;\&#34;Essays\&#34;&#34;,&#34;\&#34;Fiction\&#34;&#34;,&#34;\&#34;Memoir\&#34;&#34;,&#34;\&#34;Nonfiction\&#34;&#34;,&#34;\&#34;Poetry\&#34;&#34;,&#34;\&#34;Reference\&#34;&#34;,&#34;\&#34;Theory\&#34;&#34;,&#34;\&#34;Unknown\&#34;&#34;,
+const formrev_allForms = [&#34;\&#34;Drama\&#34;&#34;,&#34;\&#34;Essays\&#34;&#34;,&#34;\&#34;Fiction\&#34;&#34;,&#34;\&#34;Memoir\&#34;&#34;,&#34;\&#34;Nonfiction\&#34;&#34;,&#34;\&#34;Poetry\&#34;&#34;,&#34;\&#34;Reference\&#34;&#34;,&#34;\&#34;Theory\&#34;&#34;,
 ];
 
 function formrev_compute(rows) {
