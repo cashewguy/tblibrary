@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do Everything in the Dark</title>
+      <link>https://tblibrary.com/books/do-everything-in-the-dark---gary-indiana/</link>
+      <pubDate>Sun, 15 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/do-everything-in-the-dark---gary-indiana/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;February’s book club pick. I felt excited to vaguely engineer the polls such that we could finally cover a Semiotexte title, not to mention one that I was certain would be weird and gay. The certainty proved well-founded, because I more or less am not sure what happened in the book, but I enjoyed every page, such that some of these very sad paragraphs can be enjoyed.&lt;/p&gt;
+&lt;p&gt;Gary Indiana’s book is at least faintingly autobiographical, though whose to say just how much. Some parts seem so clearly translated from real people that I refuse to believe their synthetics. I did not read the introduction before reading the book so became educated that at least one character seems to be directly inspired by Susan Sontag, which I found just delicious.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Butcher&#39;s Crossing</title>
       <link>https://tblibrary.com/books/butchers-crossing---john-williams/</link>
@@ -250,7 +259,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 58 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 59 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -282,7 +291,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 52 , 17 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 53 , 17 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -922,6 +931,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-11-26&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,queer,small-press-club&#34;
+      &gt;
+        &lt;td&gt;Gary Indiana&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/do-everything-in-the-dark---gary-indiana/&#34;&gt;Do Everything in the Dark&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-02-26&lt;/td&gt;
+        &lt;td&gt;3.5&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1682,6 +1703,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Do Everything in the Dark\&#34;&#34;,
+      rating:  3.5 ,
+      fun: &#34;2&#34;,
+    },
+    {
       title: &#34;\&#34;Butcher&#39;s Crossing\&#34;&#34;,
       rating:  3.5 ,
       fun: &#34;1.33&#34;,
@@ -2254,6 +2280,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;2&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;1.33&#34;,
