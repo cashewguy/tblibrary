@@ -6,8 +6,38 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Math for the Self-Crippling</title>
+      <link>https://tblibrary.com/books/math-for-the-self-crippling---ursula-villarreal-moura/</link>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/math-for-the-self-crippling---ursula-villarreal-moura/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Preparing for my small press club this past week, I stood around and scanned titles. A person came up and picked this off the turning rack and recommended it. “It’s tiny!” I said, referring not only to the thickness but the form factor, which reminds me a bit of the Archipelago books. The person that handed me the book turned out to be the author.&lt;/p&gt;
+&lt;p&gt;It is probably fair to say I bought the book 33% out of a sense of social obligation interior to myself (the same voice in my head that tells me I can’t walk into a store and then leave without buying something), and 67% out of curiosity. The back flap notes that it is the winner of the 2020 Gold Line Press Fiction Chapbook Competition, and chapbooks are something I’ve been curious about without having ever read.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In the Garden of Beasts</title>
+      <link>https://tblibrary.com/books/in-the-garden-of-beasts---erik-larson/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/in-the-garden-of-beasts---erik-larson/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Larson’s report on the experiences and actions of the Dodd family in the years during which Hitler rose to power is a depressing thing to read today. It is frankly impossible not to draw straight lines from rhetorical style, evasions, and populist manipulations from Hitler to Trump.&lt;/p&gt;
+&lt;p&gt;See page 159:&lt;/p&gt;
+&lt;blockquote&gt;
+“The Chancellor’s assurances were so satisfying and so unexpected that I think they are on the whole too good to be true,” Messersmith wrote. “We must keep in mind, I believe, that &lt;b&gt;when Hitler says anything he for the moment convinces himself that it is true. He is basically sincere; but he is at the same time a fanatic.&lt;/b&gt;”
+&lt;/blockquote&gt;
+&lt;p&gt;Emphasis added. Is this not the behavior that we tend to witness from  current American leadership?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Heartland</title>
+      <link>https://tblibrary.com/books/heartland---ana-simo/</link>
+      <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/heartland---ana-simo/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;This will be a short note. Ana Simo’s &lt;em&gt;Heartland&lt;/em&gt; was my small press book club’s March pick, and wow! Unfortunately, I did not like it. I found it so grating to read that I couldn’t finish it, despite getting about 90 pages into its 200something pagecount. I felt the use of slurs so over the top that it smelled like an amateur novelist trying to scare the reader, to tell them, Hey, this is Serious Stuff. But it did not work for me, and only made me roll my eyes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>God Bless You, Mr. Rosewater</title>
       <link>https://tblibrary.com/books/god-bless-you-mr-rosewater---kurt-vonnegut/</link>
@@ -265,9 +295,9 @@
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewFormChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Nonfiction&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
+  const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 60 , 17 , 9 , 8 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 62 , 17 , 9 , 9 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -299,7 +329,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 53 , 18 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 54 , 20 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -411,6 +441,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-02-09&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
         &lt;td&gt;-0.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview&#34;
+      &gt;
+        &lt;td&gt;Ana Simo&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/heartland---ana-simo/&#34;&gt;Heartland&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-03-26&lt;/td&gt;
+        &lt;td&gt;0&lt;/td&gt;
+        &lt;td&gt;-3&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -807,6 +849,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-01-04&lt;/td&gt;
         &lt;td&gt;2&lt;/td&gt;
         &lt;td&gt;-1.67&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,history&#34;
+      &gt;
+        &lt;td&gt;Erik Larson&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/in-the-garden-of-beasts---erik-larson/&#34;&gt;In the Garden of Beasts&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Nonfiction&lt;/td&gt;
+        &lt;td&gt;History&lt;/td&gt;
+        &lt;td&gt;2026-03-29&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;1&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1602,6 +1656,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,known-author,chapbook&#34;
+      &gt;
+        &lt;td&gt;Ursula Villarreal-Moura&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/math-for-the-self-crippling---ursula-villarreal-moura/&#34;&gt;Math for the Self-Crippling&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Short Stories&lt;/td&gt;
+        &lt;td&gt;2026-03-30&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,small-press-club&#34;
       &gt;
         &lt;td&gt;Virginia Woolf&lt;/td&gt;
@@ -1722,6 +1788,21 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;Math for the Self-Crippling\&#34;&#34;,
+      rating:  4 ,
+      fun: &#34;3&#34;,
+    },
+    {
+      title: &#34;\&#34;In the Garden of Beasts\&#34;&#34;,
+      rating:  5 ,
+      fun: &#34;1&#34;,
+    },
+    {
+      title: &#34;\&#34;Heartland\&#34;&#34;,
+      rating:  0 ,
+      fun: &#34;-3&#34;,
+    },
     {
       title: &#34;\&#34;God Bless You, Mr. Rosewater\&#34;&#34;,
       rating:  4 ,
@@ -2305,6 +2386,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;3&#34;,
+    },
+    {
+      form: &#34;\&#34;Nonfiction\&#34;&#34;,
+      fun:  &#34;1&#34;,
+    },
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;-3&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;3.33&#34;,
