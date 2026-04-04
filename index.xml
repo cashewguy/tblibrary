@@ -6,8 +6,16 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Place Both Wonderful and Strange</title>
+      <link>https://tblibrary.com/books/a-place-both-wonderful-and-strange---scott-meslow/</link>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/a-place-both-wonderful-and-strange---scott-meslow/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I love &lt;em&gt;Twin Peaks.&lt;/em&gt; While I only discovered it a few years ago, I feel like it has become a part of me in a way difficult to describe. &lt;em&gt;Fix your hearts or die&lt;/em&gt; is a thing I think about so often, especially today. “What do you fear most in the world?” “The possibility that love is not enough.” That’s my favorite line in the series, and probably the essence of my greatest fear as well.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Math for the Self-Crippling</title>
       <link>https://tblibrary.com/books/math-for-the-self-crippling---ursula-villarreal-moura/</link>
@@ -297,7 +305,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 62 , 17 , 9 , 9 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 62 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -329,7 +337,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 54 , 20 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 54 , 21 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1522,6 +1530,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;0&lt;/td&gt;
         &lt;td&gt;-2.66&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,twinpeaks,davidlynch&#34;
+      &gt;
+        &lt;td&gt;Scott Meslow&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/a-place-both-wonderful-and-strange---scott-meslow/&#34;&gt;A Place Both Wonderful and Strange&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Nonfiction&lt;/td&gt;
+        &lt;td&gt;TV &amp;amp; Film&lt;/td&gt;
+        &lt;td&gt;2026-04-02&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
         data-tags=&#34;bookreview,ShouArai,gender,queerlit&#34;
@@ -1788,6 +1808,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;A Place Both Wonderful and Strange\&#34;&#34;,
+      rating:  4 ,
+      fun: &#34;4&#34;,
+    },
     {
       title: &#34;\&#34;Math for the Self-Crippling\&#34;&#34;,
       rating:  4 ,
@@ -2386,6 +2411,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Nonfiction\&#34;&#34;,
+      fun:  &#34;4&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;3&#34;,
