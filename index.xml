@@ -6,8 +6,16 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notes from the Underground</title>
+      <link>https://tblibrary.com/books/notes-from-the-underground---fyodor-dostoevsky/</link>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/notes-from-the-underground---fyodor-dostoevsky/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Bought this a while back because I felt compelled to investigate some of the Classics, but didn’t want to dive right into The Brothers Karamazov. I have no idea if this is reflective of Dostoevsky’s broader writing style, but I found this almost physically painful to read. Our narrator is so repellant that I couldn’t make myself read it on the metro with a dead phone. After 60 pages, I pulled up the audiobook on YouTube and sped it up to 2.65x speed to get it over with.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Cleanness</title>
       <link>https://tblibrary.com/books/cleanness---garth-greenwell/</link>
@@ -313,7 +321,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 63 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 64 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -345,7 +353,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 55 , 21 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 56 , 21 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -961,6 +969,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-04-20&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
         &lt;td&gt;1.66&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview&#34;
+      &gt;
+        &lt;td&gt;Fyodor Dostoevsky&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/notes-from-the-underground---fyodor-dostoevsky/&#34;&gt;Notes from the Underground&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-04-13&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;-3.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1829,6 +1849,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Notes from the Underground\&#34;&#34;,
+      rating:  2 ,
+      fun: &#34;-3.33&#34;,
+    },
+    {
       title: &#34;\&#34;Cleanness\&#34;&#34;,
       rating:  4 ,
       fun: &#34;3&#34;,
@@ -2436,6 +2461,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;-3.33&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;3&#34;,
