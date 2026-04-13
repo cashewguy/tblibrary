@@ -6,8 +6,16 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.148.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cleanness</title>
+      <link>https://tblibrary.com/books/cleanness---garth-greenwell/</link>
+      <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/cleanness---garth-greenwell/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Greenwell’s follow up to &lt;a href=&#34;https://tblibrary.com/books/what-belongs-to-you---garth-greenwell/&#34;&gt;&lt;em&gt;What Belongs to You&lt;/em&gt;&lt;/a&gt; feels more distinctly like a collection of short stories. I picked the book off my shelf before heading to work, unwilling to scrape my brain against Dostoyevsky on my 50-minute morning metro ride. &lt;a href=&#34;https://tblibrary.com/books/small-rain---garth-greenwell/&#34;&gt;&lt;em&gt;Small Rain&lt;/em&gt;&lt;/a&gt;, my first Greenwell and the follow up to this book, knocked me flat on my back, and I enjoyed &lt;em&gt;What Belongs&lt;/em&gt; very much. So much that I’ve been saving &lt;em&gt;Cleanness&lt;/em&gt; for just an occasion as this, a need for something I knew would capture me.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Place Both Wonderful and Strange</title>
       <link>https://tblibrary.com/books/a-place-both-wonderful-and-strange---scott-meslow/</link>
@@ -305,7 +313,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 62 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 63 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -337,7 +345,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 54 , 21 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 55 , 21 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -390,9 +398,9 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewAuthorChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Annie Ernaux&#34;,&#34;Ernest Hemingway&#34;,&#34;Cormac McCarthy&#34;,&#34;John Williams&#34;,&#34;Stephen King&#34;,];
+  const labels = [&#34;Annie Ernaux&#34;,&#34;Ernest Hemingway&#34;,&#34;Cormac McCarthy&#34;,&#34;Garth Greenwell&#34;,&#34;John Williams&#34;,&#34;Stephen King&#34;,];
 
-  const dataValues = [ 10 , 6 , 5 , 3 , 3 ,];
+  const dataValues = [ 10 , 6 , 5 , 3 , 3 , 3 ,];
 
   new Chart(ctx, {
     type: &#39;bar&#39;,
@@ -980,7 +988,19 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,queer&#34;
+        data-tags=&#34;bookreview,queer,GarthGreenwell&#34;
+      &gt;
+        &lt;td&gt;Garth Greenwell&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/cleanness---garth-greenwell/&#34;&gt;Cleanness&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-04-12&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,queer,GarthGreenwell&#34;
       &gt;
         &lt;td&gt;Garth Greenwell&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/what-belongs-to-you---garth-greenwell/&#34;&gt;What Belongs to You&lt;/a&gt;&lt;/td&gt;
@@ -992,7 +1012,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,queer&#34;
+        data-tags=&#34;bookreview,queer,GarthGreenwell&#34;
       &gt;
         &lt;td&gt;Garth Greenwell&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/small-rain---garth-greenwell/&#34;&gt;Small Rain&lt;/a&gt;&lt;/td&gt;
@@ -1809,6 +1829,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Cleanness\&#34;&#34;,
+      rating:  4 ,
+      fun: &#34;3&#34;,
+    },
+    {
       title: &#34;\&#34;A Place Both Wonderful and Strange\&#34;&#34;,
       rating:  4 ,
       fun: &#34;4&#34;,
@@ -2411,6 +2436,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;3&#34;,
+    },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
       fun:  &#34;4&#34;,
