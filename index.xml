@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Absence</title>
+      <link>https://tblibrary.com/books/absence---issa-quincy/</link>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/absence---issa-quincy/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Quincy’s &lt;em&gt;Absence&lt;/em&gt; was my book club’s pick for May, and it’s one of the books we’ve read that I’ve appreciated (enjoyed might not be the right word) the most over the past year. I was sad to miss the group’s discussion; I finished the book around 9pm in an ER with a fractured fibula.&lt;/p&gt;
+&lt;p&gt;For a short book, &lt;em&gt;Absence&lt;/em&gt; does read longer, probably because of Quincy’s very (occasionally &lt;em&gt;very&lt;/em&gt;) long and sometimes meandering sentences. Though, as someone known to word-count sentences and to go through and circle the number of commas in a passage, I never felt the need to do so while reading. Only in transcribing the notes below did it occur to me how long they sometimes are. The bigger contributor to the elongated feeling is probably the darkness; it feels that there is a suicide or death besides every few pages. The book is really about our narrator encountering different people who have lost others, who are soon to loose others, or who in their distant past have lost them and continue aching across the years.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Venomous Lumpsucker</title>
       <link>https://tblibrary.com/books/venomous-lumpsucker---ned-beauman/</link>
@@ -346,7 +355,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 67 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 68 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -378,7 +387,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 57 , 23 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 58 , 23 , 12 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1201,6 +1210,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,small-press-club&#34;
+      &gt;
+        &lt;td&gt;Issa Quincy&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/absence---issa-quincy/&#34;&gt;Absence&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-05-27&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;1.5&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,joandidion,essay&#34;
       &gt;
         &lt;td&gt;Joan Didion&lt;/td&gt;
@@ -1910,6 +1931,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Absence\&#34;&#34;,
+      rating:  4 ,
+      fun: &#34;1.5&#34;,
+    },
+    {
       title: &#34;\&#34;Venomous Lumpsucker\&#34;&#34;,
       rating:  4 ,
       fun: &#34;3.66&#34;,
@@ -2537,6 +2563,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;1.5&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;3.66&#34;,
