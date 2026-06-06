@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crazy for Vincent</title>
+      <link>https://tblibrary.com/books/crazy-for-vincent---herve-guibert/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/crazy-for-vincent---herve-guibert/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I became aware of Guibert via Philippe Besson’s &lt;em&gt;Lie With Me&lt;/em&gt;, and so picked up &lt;a href=&#34;https://tblibrary.com/books/written-in-invisible-ink/&#34;&gt;&lt;em&gt;Written in Invisible Ink&lt;/em&gt;&lt;/a&gt;, a collection of short stories which I had mixed feelings about but generally liked. &lt;em&gt;Crazy for Vincent&lt;/em&gt; has been on my saved titles list on ThriftBooks for quite a while and I finally found a copy.&lt;/p&gt;
+&lt;p&gt;It’s a short little diary, told reverse-chronologically, of  Hervé’s love for Vincent. It begins in 1989 at the end of November, with Vincent’s death. I often forgot that we are moving back through time, through the period of Hervé’s knowing of and love for (obsession with?) Vincent. In a way it is fitting that we start with Vincent’s death, because we have no sense of the book-Hervé’s continued life afterwards, it is as if he, too, died.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Absence</title>
       <link>https://tblibrary.com/books/absence---issa-quincy/</link>
@@ -355,7 +364,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 68 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 69 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -387,7 +396,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 58 , 23 , 12 , 10 , 6 , 5 ,];
+  const dataValues = [ 58 , 23 , 13 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1174,6 +1183,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,queer,HerveGuibert,suicide&#34;
+      &gt;
+        &lt;td&gt;Herve Guibert&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/crazy-for-vincent---herve-guibert/&#34;&gt;Crazy for Vincent&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;2026-06-05&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;3.66&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,HerveGuibert,suicide&#34;
       &gt;
         &lt;td&gt;Herve Guibert&lt;/td&gt;
@@ -1931,6 +1952,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Crazy for Vincent\&#34;&#34;,
+      rating:  5 ,
+      fun: &#34;3.66&#34;,
+    },
+    {
       title: &#34;\&#34;Absence\&#34;&#34;,
       rating:  4 ,
       fun: &#34;1.5&#34;,
@@ -2563,6 +2589,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;3.66&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;1.5&#34;,
