@@ -6,8 +6,16 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wildwood</title>
+      <link>https://tblibrary.com/books/wildwood---colin-meloy/</link>
+      <pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/wildwood---colin-meloy/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I bought this because the trailer for Laika’s adaptation dropped a few weeks ago. The trailer is one of the best I have ever seen, so I felt inclined to read the source before the movie. The book is somewhat a kid’s book, I would put it alongside A Series of Unfortunate Events or Spiderwick. A major difference is most of those books are pretty short, and this one is some 500 pages. I do think it is a little too long for what it is doing and I ended up skimming through some parts because they felt a little rote and a little overwritten. Still, it’s a fanciful world and I liked the characters. While I doubt I continue the series, I’m very much looking forward to the film.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Crazy for Vincent</title>
       <link>https://tblibrary.com/books/crazy-for-vincent---herve-guibert/</link>
@@ -364,7 +372,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 69 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 70 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -396,7 +404,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,];
 
-  const dataValues = [ 58 , 23 , 13 , 10 , 6 , 5 ,];
+  const dataValues = [ 58 , 24 , 13 , 10 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -772,6 +780,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-12-03&lt;/td&gt;
         &lt;td&gt;2.5&lt;/td&gt;
         &lt;td&gt;-2&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview&#34;
+      &gt;
+        &lt;td&gt;Colin Meloy&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/wildwood---colin-meloy/&#34;&gt;Wildwood&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Fantasy&lt;/td&gt;
+        &lt;td&gt;2026-06-12&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1952,6 +1972,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Wildwood\&#34;&#34;,
+      rating:  3 ,
+      fun: &#34;3&#34;,
+    },
+    {
       title: &#34;\&#34;Crazy for Vincent\&#34;&#34;,
       rating:  5 ,
       fun: &#34;3.66&#34;,
@@ -2589,6 +2614,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;3&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;3.66&#34;,
