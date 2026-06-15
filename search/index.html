@@ -211,16 +211,17 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
 
 <h1>Search</h1>
 
-<div id="search-container"></div>
 
+<div id="search" class="pagefind-ui"></div>
+
+<script src="/pagefind/pagefind-ui.js"></script>
 <script>
-window.addEventListener("DOMContentLoaded", async () => {
-    const pagefind = await import("/pagefind/pagefind-ui.js");
-    new pagefind.PagefindUI({
-        element: "#search-container",
-        basePath: "/pagefind/"
+  window.addEventListener("DOMContentLoaded", function () {
+    new PagefindUI({
+      element: "#search",
+      basePath: "/pagefind/"
     });
-});
+  });
 </script>
 
 
