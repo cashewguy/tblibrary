@@ -1,9 +1,25 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tblibrary.com/tags/bookreview/</loc>
-    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2026-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/eichmann-in-jerusalem---hannah-arendt/</loc>
+    <lastmod>2026-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/hannaharendt/</loc>
+    <lastmod>2026-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/justice/</loc>
+    <lastmod>2026-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/philosophy/</loc>
+    <lastmod>2026-06-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/</loc>
+    <lastmod>2026-06-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/fantasy/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
@@ -18,9 +34,6 @@
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/sour-cherry---natalia-theodoridou/</loc>
-    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/wildwood---colin-meloy/</loc>
@@ -233,16 +246,10 @@
     <loc>https://tblibrary.com/books/in-the-absence-of-men---philippe-besson/</loc>
     <lastmod>2025-07-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tblibrary.com/tags/culture/</loc>
-    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tblibrary.com/tags/essay/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/justice-by-means-of-democracy---danielle-allen/</loc>
-    <lastmod>2025-07-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/philosophy/</loc>
     <lastmod>2025-07-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/politics/</loc>
@@ -285,6 +292,9 @@
     <lastmod>2025-06-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/brokeback-mountain---annie-proulx/</loc>
+    <lastmod>2025-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/culture/</loc>
     <lastmod>2025-06-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/porn-an-oral-history---polly-barton/</loc>
@@ -405,9 +415,6 @@
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/frequently-cited/</loc>
-    <lastmod>2025-03-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/hannaharendt/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/home-on-earth---recipes-for-healthy-houses---bldus/</loc>

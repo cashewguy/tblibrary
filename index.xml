@@ -4,10 +4,18 @@
     <title>Now on TB Library</title>
     <link>https://tblibrary.com/</link>
     <description>Recent content in Now on TB Library</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Eichmann in Jerusalem</title>
+      <link>https://tblibrary.com/books/eichmann-in-jerusalem---hannah-arendt/</link>
+      <pubDate>Sat, 27 Jun 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/eichmann-in-jerusalem---hannah-arendt/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I’m not going to write a long review of Arendt’s report on Eichmann’s trial as I picked it up specifically to explore the elements of &lt;em&gt;justice&lt;/em&gt; that are described therein. I also feel this is a difficult book to review; I have no historical expertise on the subject and am unqualified to evaluate anything about it other than, maybe, the prose. And the prose, I like. Arendt’s writing here—despite the topic—is quite a bit more “fun” than her writing in &lt;em&gt;&lt;a href=&#34;https://tblibrary.com/books/the-human-condition/&#34;&gt;The Human Condition&lt;/a&gt;&lt;/em&gt;, in that she writes with a lot of irony and a dry humor.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Sour Cherry</title>
       <link>https://tblibrary.com/books/sour-cherry---natalia-theodoridou/</link>
@@ -380,7 +388,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 71 , 17 , 10 , 9 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 71 , 17 , 11 , 9 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -412,7 +420,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
 
-  const dataValues = [ 58 , 21 , 13 , 10 , 6 , 5 , 4 ,];
+  const dataValues = [ 58 , 21 , 13 , 10 , 7 , 5 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -875,7 +883,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,substack,essay,culture,politics,philosophy&#34;
+        data-tags=&#34;bookreview,substack,essay,justice,politics,philosophy&#34;
       &gt;
         &lt;td&gt;Danielle Allen&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/justice-by-means-of-democracy---danielle-allen/&#34;&gt;Justice by Means of Democracy&lt;/a&gt;&lt;/td&gt;
@@ -1187,7 +1195,19 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,frequently-cited,philosophy,hannaharendt&#34;
+        data-tags=&#34;bookreview,justice,hannaharendt,philosophy&#34;
+      &gt;
+        &lt;td&gt;Hannah Arendt&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/eichmann-in-jerusalem---hannah-arendt/&#34;&gt;Eichmann in Jerusalem&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Nonfiction&lt;/td&gt;
+        &lt;td&gt;Essay / Criticism&lt;/td&gt;
+        &lt;td&gt;2026-06-25&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;0&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,frequently-cited,philosophy,justice,hannaharendt&#34;
       &gt;
         &lt;td&gt;Hannah Arendt&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-human-condition/&#34;&gt;The Human Condition&lt;/a&gt;&lt;/td&gt;
@@ -1992,6 +2012,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Eichmann in Jerusalem\&#34;&#34;,
+      rating:  0 ,
+      fun: &#34;0&#34;,
+    },
+    {
       title: &#34;\&#34;Sour Cherry\&#34;&#34;,
       rating:  4 ,
       fun: &#34;2.66&#34;,
@@ -2639,6 +2664,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Nonfiction\&#34;&#34;,
+      fun:  &#34;0&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;2.66&#34;,
@@ -34111,170 +34140,170 @@ Appendix, Burroughs&amp;rsquo;s original introduction:&lt;/li&gt;
       <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
 &lt;h1 id=&#34;table-of-poems&#34;&gt;Table of Poems&lt;/h1&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;strong&gt;Title&lt;/strong&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;strong&gt;Page&lt;/strong&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;strong&gt;Flag&lt;/strong&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Poem. (cornflakes)&lt;/td&gt;
-          &lt;td&gt;31&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Daggers.&lt;/td&gt;
-          &lt;td&gt;74&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Poem. (rip)&lt;/td&gt;
-          &lt;td&gt;86&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;Let him go in mind&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;91&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;True Homosexual Love.&lt;/td&gt;
-          &lt;td&gt;105&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Dear Friend Go Away, Please.&lt;/td&gt;
-          &lt;td&gt;106&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;There You Go Baby.&lt;/td&gt;
-          &lt;td&gt;148&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;He is a Rose.&lt;/td&gt;
-          &lt;td&gt;155&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;New brave wired ones.&lt;/td&gt;
-          &lt;td&gt;24&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Queers&lt;/td&gt;
-          &lt;td&gt;35&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;How Odd.&lt;/td&gt;
-          &lt;td&gt;43&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;soon the mind will be heavy&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;62&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;I Tell You Now.&lt;/td&gt;
-          &lt;td&gt;65&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;From Hospital.&lt;/td&gt;
-          &lt;td&gt;67&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Bootless.&lt;/td&gt;
-          &lt;td&gt;70&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;Two queers live on a hill&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;80&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;oral pictures of love&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;93&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Nerves Blotted Out.&lt;/td&gt;
-          &lt;td&gt;108&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;I love my arse to be sucked&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;112&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;desert bones&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;114&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;All Sunday Long.&lt;/td&gt;
-          &lt;td&gt;122&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Radio-Me: The Big Send Up of Everything Around Us.&lt;/td&gt;
-          &lt;td&gt;130&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;The world is at war&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;139&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;To my mother, dead.&lt;/td&gt;
-          &lt;td&gt;141&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Looking for a Poem.&lt;/td&gt;
-          &lt;td&gt;20&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Between You and Humanity.&lt;/td&gt;
-          &lt;td&gt;21&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;I can’t sell my penis because&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;41&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;This Poem.&lt;/td&gt;
-          &lt;td&gt;54&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Answer don’t move.&lt;/td&gt;
-          &lt;td&gt;119&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Reatity.&lt;/td&gt;
-          &lt;td&gt;127&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;I am frozen with knowledge.&lt;/td&gt;
-          &lt;td&gt;148&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;strong&gt;Title&lt;/strong&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;strong&gt;Page&lt;/strong&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;strong&gt;Flag&lt;/strong&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Poem. (cornflakes)&lt;/td&gt;
+					&lt;td&gt;31&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Daggers.&lt;/td&gt;
+					&lt;td&gt;74&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Poem. (rip)&lt;/td&gt;
+					&lt;td&gt;86&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;Let him go in mind&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;91&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;True Homosexual Love.&lt;/td&gt;
+					&lt;td&gt;105&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Dear Friend Go Away, Please.&lt;/td&gt;
+					&lt;td&gt;106&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;There You Go Baby.&lt;/td&gt;
+					&lt;td&gt;148&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;He is a Rose.&lt;/td&gt;
+					&lt;td&gt;155&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;New brave wired ones.&lt;/td&gt;
+					&lt;td&gt;24&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Queers&lt;/td&gt;
+					&lt;td&gt;35&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;How Odd.&lt;/td&gt;
+					&lt;td&gt;43&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;soon the mind will be heavy&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;62&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;I Tell You Now.&lt;/td&gt;
+					&lt;td&gt;65&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;From Hospital.&lt;/td&gt;
+					&lt;td&gt;67&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Bootless.&lt;/td&gt;
+					&lt;td&gt;70&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;Two queers live on a hill&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;80&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;oral pictures of love&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;93&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Nerves Blotted Out.&lt;/td&gt;
+					&lt;td&gt;108&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;I love my arse to be sucked&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;112&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;desert bones&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;114&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;All Sunday Long.&lt;/td&gt;
+					&lt;td&gt;122&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Radio-Me: The Big Send Up of Everything Around Us.&lt;/td&gt;
+					&lt;td&gt;130&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;The world is at war&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;139&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;To my mother, dead.&lt;/td&gt;
+					&lt;td&gt;141&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Looking for a Poem.&lt;/td&gt;
+					&lt;td&gt;20&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Between You and Humanity.&lt;/td&gt;
+					&lt;td&gt;21&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;I can’t sell my penis because&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;41&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;This Poem.&lt;/td&gt;
+					&lt;td&gt;54&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Answer don’t move.&lt;/td&gt;
+					&lt;td&gt;119&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Reatity.&lt;/td&gt;
+					&lt;td&gt;127&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;I am frozen with knowledge.&lt;/td&gt;
+					&lt;td&gt;148&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h1 id=&#34;review-1&#34;&gt;Review&lt;/h1&gt;
 &lt;p&gt;I picked this up from the bookstore after loving Love Leda so much. I have been trying to read a little more poetry. Like my recent review for Rupi Kaur&amp;rsquo;s The Sun &amp;amp; Her Flowers, I have no idea how to review poetry. I don&amp;rsquo;t know what good poetry looks like or what bad poetry looks like. All I know is that sometimes words are strung together and they give me an emotional reaction. So that&amp;rsquo;s what I&amp;rsquo;m rating this collection on.&lt;/p&gt;</description>
