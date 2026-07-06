@@ -6,8 +6,33 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Man&#39;s Place</title>
+      <link>https://tblibrary.com/books/a-mans-place---annie-ernaux/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/a-mans-place---annie-ernaux/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;One of two Ernaux texts that a friend from work brought me back from Shakespeare &amp;amp; Co. in Paris. Like just about every Ernaux, I love it. It’s a short text, only 76 pages. Ernaux’s clinical style and cold near-analysis of memory, recounting her father and the course of his life, make for lovely reading. I’m not sure why, but something about this way of writing makes everything so tangible. I could practically smell the place. Ernaux is one of those writers that I can’t read too much of, lest my writing just turn into an imitation of hers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>How Democracies Die</title>
+      <link>https://tblibrary.com/books/how-democracies-die---steven-levitsky-daniel-ziblatt/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/how-democracies-die---steven-levitsky-daniel-ziblatt/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;It’s difficult to approach this book, written in 2018, with the experiences of all the years which followed its publication. I found myself agitated throughout the reading. Many of Levitsky and Ziblatt’s points seem &lt;em&gt;utterly&lt;/em&gt; naive and optimistic. There is a section of the book in which they lay out three potential scenarios for the future of the Trump Administration and the country. In one, their darkest, they describe a variety of “extreme” sounding ideas which they ultimately conclude to be unlikely. Each and every one has now occurred.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Lincoln at Gettysburg</title>
+      <link>https://tblibrary.com/books/lincoln-at-gettysburg---garry-wills/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/lincoln-at-gettysburg---garry-wills/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;A coworker recently recommended this book to me, thinking I would enjoy it for my interest in writing, Lincoln, and language generally. He wasn’t wrong, I did like the book. I picked it up expecting something a little different from what it is. Wills book is a strange combination of technical (if that’s the word) and historical.&lt;/p&gt;
+&lt;p&gt;Technical, in the sense the Wills diagrams the Address and several other orations, but not in a grammatical sense. He uses the framework of the Greek Funeral Oration. So, we get a lot of Grecian vocabulary; words like epainesis and parainesis, logoslergon, dikaion, etc. It took me a minute to get used to this, as I’d anticipated more of a grammatical diagram. Still, I did find it interesting to read about Pericles and several other funeral orations.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Angelo Badalamenti&#39;s Soundtrack from Twin Peaks</title>
       <link>https://tblibrary.com/books/angelo-badalamentis-soundtrack-from-twin-peaks---clare-nina-norelli/</link>
@@ -404,7 +429,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 71 , 17 , 13 , 9 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 71 , 18 , 15 , 9 , 4 , 4 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -436,7 +461,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
 
-  const dataValues = [ 58 , 22 , 13 , 10 , 8 , 5 , 4 ,];
+  const dataValues = [ 58 , 24 , 14 , 10 , 8 , 5 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -491,7 +516,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Annie Ernaux&#34;,&#34;Cormac McCarthy&#34;,&#34;Ernest Hemingway&#34;,&#34;Garth Greenwell&#34;,&#34;John Williams&#34;,&#34;Stephen King&#34;,];
 
-  const dataValues = [ 10 , 6 , 6 , 3 , 3 , 3 ,];
+  const dataValues = [ 11 , 6 , 6 , 3 , 3 , 3 ,];
 
   new Chart(ctx, {
     type: &#39;bar&#39;,
@@ -584,6 +609,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-05-23&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
         &lt;td&gt;2.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,AnnieErnaux&#34;
+      &gt;
+        &lt;td&gt;Annie Ernaux&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/a-mans-place---annie-ernaux/&#34;&gt;A Man&amp;#39;s Place&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;2026-07-03&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1136,6 +1173,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-01-26&lt;/td&gt;
         &lt;td&gt;1&lt;/td&gt;
         &lt;td&gt;-2.00&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview&#34;
+      &gt;
+        &lt;td&gt;Garry Wills&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/lincoln-at-gettysburg---garry-wills/&#34;&gt;Lincoln at Gettysburg&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Nonfiction&lt;/td&gt;
+        &lt;td&gt;History&lt;/td&gt;
+        &lt;td&gt;2026-07-04&lt;/td&gt;
+        &lt;td&gt;3.5&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -1883,6 +1932,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,justice,democracy&#34;
+      &gt;
+        &lt;td&gt;Steven Levitsky, Daniel Ziblatt&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/how-democracies-die---steven-levitsky-daniel-ziblatt/&#34;&gt;How Democracies Die&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Nonfiction&lt;/td&gt;
+        &lt;td&gt;Political Science&lt;/td&gt;
+        &lt;td&gt;2026-07-03&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;-1&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,TimothySnyder&#34;
       &gt;
         &lt;td&gt;Timothy Snyder&lt;/td&gt;
@@ -2051,6 +2112,21 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;A Man&#39;s Place\&#34;&#34;,
+      rating:  5 ,
+      fun: &#34;3&#34;,
+    },
+    {
+      title: &#34;\&#34;How Democracies Die\&#34;&#34;,
+      rating:  2 ,
+      fun: &#34;-1&#34;,
+    },
+    {
+      title: &#34;\&#34;Lincoln at Gettysburg\&#34;&#34;,
+      rating:  3.5 ,
+      fun: &#34;1.33&#34;,
+    },
     {
       title: &#34;\&#34;Angelo Badalamenti&#39;s Soundtrack from Twin Peaks\&#34;&#34;,
       rating:  0 ,
@@ -2714,6 +2790,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Memoir\&#34;&#34;,
+      fun:  &#34;3&#34;,
+    },
+    {
+      form: &#34;\&#34;Nonfiction\&#34;&#34;,
+      fun:  &#34;-1&#34;,
+    },
+    {
+      form: &#34;\&#34;Nonfiction\&#34;&#34;,
+      fun:  &#34;1.33&#34;,
+    },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
       fun:  &#34;2.33&#34;,
