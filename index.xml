@@ -6,8 +6,16 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kitchen Confidential</title>
+      <link>https://tblibrary.com/books/kitchen-confidential---anthony-bourdain/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/kitchen-confidential---anthony-bourdain/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I love Anthony Bourdain. When I moved to Chicago the first time, in 2013, I’d put on Parts Unknown late at night in my dorm and I’d fall asleep watching that show. I’ve turned it, and other Bourdain shows, on as comfort watches many times in the 13 years between then and now. I appreciate and respect his worldview and what seemed like his mission in those shows, which felt like intentional breaking down of barriers and celebration of diversity and how diversity can be a great unifying thing.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>A Man&#39;s Place</title>
       <link>https://tblibrary.com/books/a-mans-place---annie-ernaux/</link>
@@ -427,9 +435,9 @@
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewFormChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
+  const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 71 , 18 , 15 , 9 , 4 , 4 , 1 , 1 ,];
+  const dataValues = [ 71 , 18 , 15 , 9 , 4 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -461,7 +469,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
 
-  const dataValues = [ 58 , 24 , 14 , 10 , 8 , 5 , 4 ,];
+  const dataValues = [ 58 , 24 , 15 , 10 , 8 , 5 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -753,6 +761,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-06-06&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
         &lt;td&gt;1.67&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;false&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,audiobook&#34;
+      &gt;
+        &lt;td&gt;Anthony Bourdain&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/kitchen-confidential---anthony-bourdain/&#34;&gt;Kitchen Confidential&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Audiobook&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;2026-07-10&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -2791,6 +2811,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
     {
+      form: &#34;\&#34;Audiobook\&#34;&#34;,
+      fun:  &#34;null&#34;,
+    },
+    {
       form: &#34;\&#34;Memoir\&#34;&#34;,
       fun:  &#34;3&#34;,
     },
@@ -3284,7 +3308,7 @@ const formrev_raw = [
     },
 ];
 
-const formrev_allForms = [&#34;\&#34;Drama\&#34;&#34;,&#34;\&#34;Essays\&#34;&#34;,&#34;\&#34;Fiction\&#34;&#34;,&#34;\&#34;Memoir\&#34;&#34;,&#34;\&#34;Nonfiction\&#34;&#34;,&#34;\&#34;Poetry\&#34;&#34;,&#34;\&#34;Reference\&#34;&#34;,&#34;\&#34;Theory\&#34;&#34;,
+const formrev_allForms = [&#34;\&#34;Audiobook\&#34;&#34;,&#34;\&#34;Drama\&#34;&#34;,&#34;\&#34;Essays\&#34;&#34;,&#34;\&#34;Fiction\&#34;&#34;,&#34;\&#34;Memoir\&#34;&#34;,&#34;\&#34;Nonfiction\&#34;&#34;,&#34;\&#34;Poetry\&#34;&#34;,&#34;\&#34;Reference\&#34;&#34;,&#34;\&#34;Theory\&#34;&#34;,
 ];
 
 function formrev_compute(rows) {
