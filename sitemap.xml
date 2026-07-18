@@ -1,17 +1,27 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tblibrary.com/tags/bookreview/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/herveguibert/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/queer/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/mausoleum-of-lovers---herv%C3%A9-guibert/</loc>
+    <lastmod>2026-07-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tblibrary.com/tags/audiobook/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tblibrary.com/tags/bookreview/</loc>
-    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tblibrary.com/books/kitchen-confidential---anthony-bourdain/</loc>
-    <lastmod>2026-07-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/</loc>
     <lastmod>2026-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/a-mans-place---annie-ernaux/</loc>
@@ -62,9 +72,6 @@
     <loc>https://tblibrary.com/tags/horror/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tblibrary.com/tags/queer/</loc>
-    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tblibrary.com/tags/small-press-club/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
@@ -75,9 +82,6 @@
     <lastmod>2026-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/crazy-for-vincent---herve-guibert/</loc>
-    <lastmod>2026-06-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/herveguibert/</loc>
     <lastmod>2026-06-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/suicide/</loc>
