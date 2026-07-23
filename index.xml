@@ -6,8 +6,26 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Secret Wars</title>
+      <link>https://tblibrary.com/books/secret-wars-omnibus---jonathan-hickman/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/secret-wars-omnibus---jonathan-hickman/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;My one comic per year, this time Hickman’s &lt;em&gt;Secret Wars&lt;/em&gt;. By complete chance, the same guy who wrote my one-comic last year, &lt;em&gt;&lt;a href=&#34;https://tblibrary.com/books/house-of-xpowers-of-x---jonathan-hickman/&#34;&gt;House of X/Powers of X&lt;/a&gt;&lt;/em&gt;. I enjoyed this quite a bit. Read to prepare for Avengers: Doomsday which I probably will not see til it comes out on streaming; I’m not excited for the film.&lt;/p&gt;
+&lt;p&gt;Lots of characters I’ve never heard of. I enjoyed the art and the story. I have very little knowledge of Dr. Doom, but what little I had apparently comes from this comic. God Emperor Doom. Lots of fun.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speaker for the Dead</title>
+      <link>https://tblibrary.com/books/speaker-for-the-dead---orson-scott-card/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/speaker-for-the-dead---orson-scott-card/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Disclaimer: If you read this book, I suggest not paying for it. OSC&amp;rsquo;s views should not be rewarded. Visit your local library.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I remember checking this book out from the library, probably I was in 7th or 8th grade. I’d just finished Ender’s Game and enjoyed that. I was probably unprepared for how &lt;em&gt;different&lt;/em&gt; Speaker for the Dead is, and yet it was immediately preferable to me. I love the immense empathy and search for understanding within, and the warmth that is so often there.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Ghost Image</title>
       <link>https://tblibrary.com/books/ghost-image---herv%C3%A9-guibert/</link>
@@ -461,7 +479,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 72 , 20 , 15 , 9 , 4 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 74 , 20 , 15 , 9 , 4 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -493,7 +511,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
 
-  const dataValues = [ 59 , 25 , 16 , 10 , 8 , 5 , 4 ,];
+  const dataValues = [ 59 , 26 , 16 , 10 , 8 , 6 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1523,6 +1541,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         data-tags=&#34;bookreview,comics&#34;
       &gt;
         &lt;td&gt;Jonathan Hickman&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/secret-wars-omnibus---jonathan-hickman/&#34;&gt;Secret Wars&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Comic Book&lt;/td&gt;
+        &lt;td&gt;2026-07-22&lt;/td&gt;
+        &lt;td&gt;4.5&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,comics&#34;
+      &gt;
+        &lt;td&gt;Jonathan Hickman&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/house-of-xpowers-of-x---jonathan-hickman/&#34;&gt;House Of X/Powers Of X&lt;/a&gt;&lt;/td&gt;
         &lt;td&gt;Fiction&lt;/td&gt;
         &lt;td&gt;Literary Fiction&lt;/td&gt;
@@ -1781,6 +1811,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-03-28&lt;/td&gt;
         &lt;td&gt;1&lt;/td&gt;
         &lt;td&gt;-3.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,audiobook&#34;
+      &gt;
+        &lt;td&gt;Orson Scott Card&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/speaker-for-the-dead---orson-scott-card/&#34;&gt;Speaker for the Dead&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Science Fiction&lt;/td&gt;
+        &lt;td&gt;2026-07-21&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;3.16&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -2192,6 +2234,16 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;Secret Wars\&#34;&#34;,
+      rating:  4.5 ,
+      fun: &#34;3&#34;,
+    },
+    {
+      title: &#34;\&#34;Speaker for the Dead\&#34;&#34;,
+      rating:  4 ,
+      fun: &#34;3.16&#34;,
+    },
     {
       title: &#34;\&#34;Ghost Image\&#34;&#34;,
       rating:  3 ,
@@ -2880,6 +2932,14 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;3&#34;,
+    },
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;3.16&#34;,
+    },
     {
       form: &#34;\&#34;Memoir\&#34;&#34;,
       fun:  &#34;3.5&#34;,
