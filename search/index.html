@@ -10,8 +10,8 @@
 <meta name="description" content="Search - TB Library">
 <meta name="author" content="">
 <link rel="canonical" href="https://tblibrary.com/search/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b992e3649ce1932cb1ea2f5dec5b65c6654f6d71ad5ff2ce574ace61a1204f6a.css" integrity="sha256-uZLjZJzhkyyx6i9d7FtlxmVPbXGtX/LOV0rOYaEgT2o=" rel="preload stylesheet" as="style"><link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
-<script defer crossorigin="anonymous" src="/assets/js/search.0bef5410abc316d44ecf1be831635d1ff37c16a98644c336a9acfc7ad3a34fbb.js" integrity="sha256-C&#43;9UEKvDFtROzxvoMWNdH/N8FqmGRMM2qaz8etOjT7s="></script>
+<link crossorigin="anonymous" href="/assets/css/stylesheet.84834d3779b176284fad1de2a569932a3931b6bbf38598845c1814bad1db00ec.css" integrity="sha256-hINNN3mxdihPrR3ipWmTKjkxtrvzhZiEXBgUutHbAOw=" rel="preload stylesheet" as="style"><link crossorigin="anonymous" rel="preload" as="fetch" href="../index.json">
+<script defer crossorigin="anonymous" src="/assets/js/search.ac7fa942baa79bfdb6c6703233f70f7fb1aad5a0c62a8e5d3b9d45596a8f671c.js" integrity="sha256-rH&#43;pQrqnm/22xnAyM/cPf7Gq1aDGKo5dO51FWWqPZxw="></script>
 <link rel="icon" href="https://tblibrary.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
@@ -68,7 +68,7 @@
     }
 
 </script>
-<link rel="stylesheet" href="https://tblibrary.com/css/default.min.de847425b2c7de2c763eaad00630bfb4a535c9730e8d59375a77c92dbe7f8e0f.css">
+<link rel="stylesheet" href="https://tblibrary.com/css/default.min.56720ba3cfbdf1a3ca4f0081cd71424ebaa800f6869bf409f4bae311427e2561.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -113,7 +113,7 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
 
 <meta property="og:description"
       content="My book and film library">
-  <meta property="og:locale" content="en-us">
+  <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
 
   <meta name="twitter:card" content="summary">
@@ -207,19 +207,15 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
     </nav>
 </header>
 <main class="main">
-
 <h1>Search</h1>
 
+<div id="search"></div>
 
-<div id="search" class="pagefind-ui"></div>
-
+<script src="/pagefind/pagefind.js"></script>
 <script src="/pagefind/pagefind-ui.js"></script>
 <script>
-  window.addEventListener("DOMContentLoaded", function () {
-    new PagefindUI({
-      element: "#search",
-      basePath: "/pagefind/"
-    });
+  new PagefindUI({
+    element: "#search"
   });
 </script>
 
