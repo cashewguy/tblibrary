@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Queer-Ish on TB Library</title>
-    <link>http://localhost:1313/tags/queer-ish/</link>
+    <link>https://tblibrary.com/tags/queer-ish/</link>
     <description>Recent content in Queer-Ish on TB Library</description>
-    <generator>Hugo -- 0.152.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/queer-ish/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://tblibrary.com/tags/queer-ish/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Sour Cherry</title>
-      <link>http://localhost:1313/books/sour-cherry---natalia-theodoridou/</link>
-      <pubDate>Sun, 14 Jun 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/books/sour-cherry---natalia-theodoridou/</guid>
+      <title>Moby-Dick</title>
+      <link>https://tblibrary.com/books/moby-dick---herman-melville/</link>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/moby-dick---herman-melville/</guid>
       <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
-&lt;p&gt;Theodoridou’s recent book is my small press club’s pick for June, and what a strange little book. It is a retelling, kind of, of the Bluebeard story. I think I first encountered the Bluebeard story in Stephen King’s &lt;a href=&#34;https://tblibrary.com/books/the-shining---stephen-king/&#34;&gt;The Shining&lt;/a&gt;, but probably before in some form as well. In general, I think the book is quite good. Theodoridou’s framing device for &lt;em&gt;Sour Cherry&lt;/em&gt; features an unnamed narrator reciting the events of the tale as though they are a ghost story, presumably to “you” the reader, who also may or may not be a child.&lt;/p&gt;</description>
+&lt;p&gt;Sometimes a classic is a classic for a reason. I remember picking up &lt;em&gt;Moby-Dick&lt;/em&gt; sometime in elementary or maybe middle school and bouncing off of it instantly. Hardly surprising. I doubt I thought about the book at all between then and a few months ago, reading that Cormac McCarthy drew some inspiration for &lt;em&gt;Blood Meridian&lt;/em&gt; from Melville’s work, and apparently this was McCarthy’s favorite novel. Not difficult to see why, or to see the parallels.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

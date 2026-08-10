@@ -1,21 +1,40 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://tblibrary.com/tags/bookreview/</loc>
-    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/moby-dick---herman-melville/</loc>
+    <lastmod>2026-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/queer-ish/</loc>
+    <lastmod>2026-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/</loc>
+    <lastmod>2026-08-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/audiobook/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/beast-meridian---vanessa-ang%C3%A9lica-villarreal/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/poetry/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/small-press-club/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/the-adventures-of-tom-sawyer---mark-twain/</loc>
+    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/comics/</loc>
     <lastmod>2026-07-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/secret-wars-omnibus---jonathan-hickman/</loc>
     <lastmod>2026-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/</loc>
-    <lastmod>2026-07-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/audiobook/</loc>
-    <lastmod>2026-07-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/speaker-for-the-dead---orson-scott-card/</loc>
     <lastmod>2026-07-21T00:00:00+00:00</lastmod>
@@ -87,9 +106,6 @@
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/horror/</loc>
-    <lastmod>2026-06-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/small-press-club/</loc>
     <lastmod>2026-06-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/sour-cherry---natalia-theodoridou/</loc>
@@ -564,9 +580,6 @@
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/home-body/</loc>
-    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/poetry/</loc>
     <lastmod>2025-01-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/rupikaur/</loc>

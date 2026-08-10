@@ -5,9 +5,34 @@
     <link>https://tblibrary.com/</link>
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moby-Dick</title>
+      <link>https://tblibrary.com/books/moby-dick---herman-melville/</link>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/moby-dick---herman-melville/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Sometimes a classic is a classic for a reason. I remember picking up &lt;em&gt;Moby-Dick&lt;/em&gt; sometime in elementary or maybe middle school and bouncing off of it instantly. Hardly surprising. I doubt I thought about the book at all between then and a few months ago, reading that Cormac McCarthy drew some inspiration for &lt;em&gt;Blood Meridian&lt;/em&gt; from Melville’s work, and apparently this was McCarthy’s favorite novel. Not difficult to see why, or to see the parallels.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Beast Meridian</title>
+      <link>https://tblibrary.com/books/beast-meridian---vanessa-ang%C3%A9lica-villarreal/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/beast-meridian---vanessa-ang%C3%A9lica-villarreal/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I read this for our July Small Press Book Club, pairing it with &lt;a href=&#34;https://tblibrary.com/books/math-for-the-self-crippling---ursula-villarreal-moura/&#34;&gt;Math for the Self-Crippling&lt;/a&gt;, with this book being suggested by &lt;em&gt;Math&lt;/em&gt;’s author, Ursula Villarreal-Moura.&lt;/p&gt;
+&lt;p&gt;I often feel unqualified to evaluate poetry, and that feeling persists. Though, the visual layout decisions and the sense these give appeal to me. Perhaps more to me than to the others in my club. Poem &lt;em&gt;Cardinals, A Novena&lt;/em&gt; enters to bracketed segments, weaving across the page before eventually resolving outside of those brackets. My favorite of the layout experiments is on page 34, which features a blank page tailed by a footnote that can only be explained as a typographic panic attack.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Adventures of Tom Sawyer</title>
+      <link>https://tblibrary.com/books/the-adventures-of-tom-sawyer---mark-twain/</link>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/the-adventures-of-tom-sawyer---mark-twain/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I’ve read &lt;em&gt;Tom Sawyer&lt;/em&gt; several times over the years, physically and audibly. This is my second time listening to the audiobook as read by Nick Offerman, who seems born to read Twain. While I think years ago I’d have given this five stars, I find it is not my favorite Twain by a long shot. It is fun, and funny, but nothing to me compared to &lt;em&gt;Connecticut Yankee.&lt;/em&gt; Anyway, I listened to this while falling asleep at night and it was perfect for that. I cannot recommend more strongly Offerman’s readings of Twain.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Secret Wars</title>
       <link>https://tblibrary.com/books/secret-wars-omnibus---jonathan-hickman/</link>
@@ -477,9 +502,9 @@
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewFormChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Essays&#34;,&#34;Poetry&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
+  const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 74 , 20 , 15 , 9 , 4 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 76 , 20 , 15 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -511,7 +536,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
 
-  const dataValues = [ 59 , 26 , 16 , 10 , 8 , 6 , 4 ,];
+  const dataValues = [ 61 , 26 , 17 , 10 , 8 , 6 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1394,6 +1419,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,queer-ish&#34;
+      &gt;
+        &lt;td&gt;Herman Melville&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/moby-dick---herman-melville/&#34;&gt;Moby-Dick&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-08-09&lt;/td&gt;
+        &lt;td&gt;4.5&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,queer,HerveGuibert,suicide&#34;
       &gt;
         &lt;td&gt;Herve Guibert&lt;/td&gt;
@@ -1727,6 +1764,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-01-13&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
         &lt;td&gt;2.00&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,audiobook&#34;
+      &gt;
+        &lt;td&gt;Mark Twain&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-adventures-of-tom-sawyer---mark-twain/&#34;&gt;The Adventures of Tom Sawyer&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-08-08&lt;/td&gt;
+        &lt;td&gt;3.5&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -2102,7 +2151,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,known-author,chapbook&#34;
+        data-tags=&#34;bookreview,known-author,chapbook,small-press-club&#34;
       &gt;
         &lt;td&gt;Ursula Villarreal-Moura&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/math-for-the-self-crippling---ursula-villarreal-moura/&#34;&gt;Math for the Self-Crippling&lt;/a&gt;&lt;/td&gt;
@@ -2111,6 +2160,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2026-03-30&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,poetry,small-press-club&#34;
+      &gt;
+        &lt;td&gt;Vanessa Angélica Villarreal&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/beast-meridian---vanessa-ang%C3%A9lica-villarreal/&#34;&gt;Beast Meridian&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Poetry&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;2026-05-13&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;2&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -2234,6 +2295,21 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;Moby-Dick\&#34;&#34;,
+      rating:  4.5 ,
+      fun: &#34;4&#34;,
+    },
+    {
+      title: &#34;\&#34;Beast Meridian\&#34;&#34;,
+      rating:  3 ,
+      fun: &#34;2&#34;,
+    },
+    {
+      title: &#34;\&#34;The Adventures of Tom Sawyer\&#34;&#34;,
+      rating:  3.5 ,
+      fun: &#34;3&#34;,
+    },
     {
       title: &#34;\&#34;Secret Wars\&#34;&#34;,
       rating:  4.5 ,
@@ -2932,6 +3008,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;4&#34;,
+    },
+    {
+      form: &#34;\&#34;Poetry\&#34;&#34;,
+      fun:  &#34;2&#34;,
+    },
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;3&#34;,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;3&#34;,
@@ -34452,170 +34540,170 @@ Appendix, Burroughs&amp;rsquo;s original introduction:&lt;/li&gt;
       <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
 &lt;h1 id=&#34;table-of-poems&#34;&gt;Table of Poems&lt;/h1&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;&lt;strong&gt;Title&lt;/strong&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;strong&gt;Page&lt;/strong&gt;&lt;/th&gt;
-          &lt;th&gt;&lt;strong&gt;Flag&lt;/strong&gt;&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Poem. (cornflakes)&lt;/td&gt;
-          &lt;td&gt;31&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Daggers.&lt;/td&gt;
-          &lt;td&gt;74&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Poem. (rip)&lt;/td&gt;
-          &lt;td&gt;86&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;Let him go in mind&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;91&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;True Homosexual Love.&lt;/td&gt;
-          &lt;td&gt;105&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Dear Friend Go Away, Please.&lt;/td&gt;
-          &lt;td&gt;106&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;There You Go Baby.&lt;/td&gt;
-          &lt;td&gt;148&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;He is a Rose.&lt;/td&gt;
-          &lt;td&gt;155&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;New brave wired ones.&lt;/td&gt;
-          &lt;td&gt;24&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Queers&lt;/td&gt;
-          &lt;td&gt;35&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;How Odd.&lt;/td&gt;
-          &lt;td&gt;43&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;soon the mind will be heavy&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;62&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;I Tell You Now.&lt;/td&gt;
-          &lt;td&gt;65&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;From Hospital.&lt;/td&gt;
-          &lt;td&gt;67&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Bootless.&lt;/td&gt;
-          &lt;td&gt;70&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;Two queers live on a hill&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;80&lt;/td&gt;
-          &lt;td&gt;Favorite&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;oral pictures of love&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;93&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Nerves Blotted Out.&lt;/td&gt;
-          &lt;td&gt;108&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;I love my arse to be sucked&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;112&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;desert bones&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;114&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;All Sunday Long.&lt;/td&gt;
-          &lt;td&gt;122&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Radio-Me: The Big Send Up of Everything Around Us.&lt;/td&gt;
-          &lt;td&gt;130&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;The world is at war&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;139&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;To my mother, dead.&lt;/td&gt;
-          &lt;td&gt;141&lt;/td&gt;
-          &lt;td&gt;Poem&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Looking for a Poem.&lt;/td&gt;
-          &lt;td&gt;20&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Between You and Humanity.&lt;/td&gt;
-          &lt;td&gt;21&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&amp;ldquo;I can’t sell my penis because&amp;rdquo;&lt;/td&gt;
-          &lt;td&gt;41&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;This Poem.&lt;/td&gt;
-          &lt;td&gt;54&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Answer don’t move.&lt;/td&gt;
-          &lt;td&gt;119&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Reatity.&lt;/td&gt;
-          &lt;td&gt;127&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;I am frozen with knowledge.&lt;/td&gt;
-          &lt;td&gt;148&lt;/td&gt;
-          &lt;td&gt;Stanza&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;strong&gt;Title&lt;/strong&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;strong&gt;Page&lt;/strong&gt;&lt;/th&gt;
+					&lt;th&gt;&lt;strong&gt;Flag&lt;/strong&gt;&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Poem. (cornflakes)&lt;/td&gt;
+					&lt;td&gt;31&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Daggers.&lt;/td&gt;
+					&lt;td&gt;74&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Poem. (rip)&lt;/td&gt;
+					&lt;td&gt;86&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;Let him go in mind&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;91&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;True Homosexual Love.&lt;/td&gt;
+					&lt;td&gt;105&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Dear Friend Go Away, Please.&lt;/td&gt;
+					&lt;td&gt;106&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;There You Go Baby.&lt;/td&gt;
+					&lt;td&gt;148&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;He is a Rose.&lt;/td&gt;
+					&lt;td&gt;155&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;New brave wired ones.&lt;/td&gt;
+					&lt;td&gt;24&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Queers&lt;/td&gt;
+					&lt;td&gt;35&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;How Odd.&lt;/td&gt;
+					&lt;td&gt;43&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;soon the mind will be heavy&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;62&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;I Tell You Now.&lt;/td&gt;
+					&lt;td&gt;65&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;From Hospital.&lt;/td&gt;
+					&lt;td&gt;67&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Bootless.&lt;/td&gt;
+					&lt;td&gt;70&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;Two queers live on a hill&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;80&lt;/td&gt;
+					&lt;td&gt;Favorite&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;oral pictures of love&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;93&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Nerves Blotted Out.&lt;/td&gt;
+					&lt;td&gt;108&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;I love my arse to be sucked&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;112&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;desert bones&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;114&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;All Sunday Long.&lt;/td&gt;
+					&lt;td&gt;122&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Radio-Me: The Big Send Up of Everything Around Us.&lt;/td&gt;
+					&lt;td&gt;130&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;The world is at war&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;139&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;To my mother, dead.&lt;/td&gt;
+					&lt;td&gt;141&lt;/td&gt;
+					&lt;td&gt;Poem&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Looking for a Poem.&lt;/td&gt;
+					&lt;td&gt;20&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Between You and Humanity.&lt;/td&gt;
+					&lt;td&gt;21&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&amp;ldquo;I can’t sell my penis because&amp;rdquo;&lt;/td&gt;
+					&lt;td&gt;41&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;This Poem.&lt;/td&gt;
+					&lt;td&gt;54&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Answer don’t move.&lt;/td&gt;
+					&lt;td&gt;119&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Reatity.&lt;/td&gt;
+					&lt;td&gt;127&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;I am frozen with knowledge.&lt;/td&gt;
+					&lt;td&gt;148&lt;/td&gt;
+					&lt;td&gt;Stanza&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h1 id=&#34;review-1&#34;&gt;Review&lt;/h1&gt;
 &lt;p&gt;I picked this up from the bookstore after loving Love Leda so much. I have been trying to read a little more poetry. Like my recent review for Rupi Kaur&amp;rsquo;s The Sun &amp;amp; Her Flowers, I have no idea how to review poetry. I don&amp;rsquo;t know what good poetry looks like or what bad poetry looks like. All I know is that sometimes words are strung together and they give me an emotional reaction. So that&amp;rsquo;s what I&amp;rsquo;m rating this collection on.&lt;/p&gt;</description>
