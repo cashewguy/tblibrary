@@ -660,7 +660,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,small-press-club&#34;
+        data-tags=&#34;bookreview,small-press-club,queer&#34;
       &gt;
         &lt;td&gt;Ana Simo&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/heartland---ana-simo/&#34;&gt;Heartland&lt;/a&gt;&lt;/td&gt;
@@ -1464,7 +1464,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,HerveGuibert,photography&#34;
+        data-tags=&#34;bookreview,queer,HerveGuibert,photography&#34;
       &gt;
         &lt;td&gt;Hervé Guibert&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/ghost-image---herv%C3%A9-guibert/&#34;&gt;Ghost Image&lt;/a&gt;&lt;/td&gt;
