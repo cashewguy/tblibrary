@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Giovanni&#39;s Room</title>
+      <link>https://tblibrary.com/books/giovannis-room---james-baldwin/</link>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/giovannis-room---james-baldwin/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I first read &lt;em&gt;Giovanni’s Room&lt;/em&gt; four years ago. I remember gripping it tightly the whole time, bent over and racing through it. Not 200 pages, Baldwin moves through the story so incisively that it really does feel like the drop of a guillotine.&lt;/p&gt;
+&lt;p&gt;I do not remember detesting David, our narrator, so much on my first read. Depressed moody people may be able to relate to either being or wanting to be in an empty home with a big bottle of wine and looking moodily out of windows (certain I can), but David does begin to feel like an alien. In his early experience with Joey, he vanishes out of insecurity and fear. That’s understandable—coming of age, a much different era than we’re in now. Even in our current era, I can remember first realizing I’d fallen for a boy in one of my high school classes, and that was terrifying.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Moby-Dick</title>
       <link>https://tblibrary.com/books/moby-dick---herman-melville/</link>
@@ -504,7 +513,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 76 , 20 , 15 , 9 , 5 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 77 , 20 , 16 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -536,7 +545,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
 
-  const dataValues = [ 61 , 26 , 17 , 10 , 8 , 6 , 4 ,];
+  const dataValues = [ 62 , 27 , 17 , 10 , 8 , 6 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1515,6 +1524,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,reread,queer&#34;
+      &gt;
+        &lt;td&gt;James Baldwin&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/giovannis-room---james-baldwin/&#34;&gt;Giovanni&amp;#39;s Room&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-08-15&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,joandidion,essay&#34;
       &gt;
         &lt;td&gt;Joan Didion&lt;/td&gt;
@@ -1860,6 +1881,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-03-28&lt;/td&gt;
         &lt;td&gt;1&lt;/td&gt;
         &lt;td&gt;-3.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,queer,sociology&#34;
+      &gt;
+        &lt;td&gt;Oliver Davis, Tim Dean&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/hatred-of-sex---oliver-davis-tim-dean/&#34;&gt;Hatred of Sex&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Nonfiction&lt;/td&gt;
+        &lt;td&gt;Sexuality &amp;amp; Gender&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;2.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -2295,6 +2328,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;Giovanni&#39;s Room\&#34;&#34;,
+      rating:  5 ,
+      fun:  1.33 ,
+    },
     {
       title: &#34;\&#34;Moby-Dick\&#34;&#34;,
       rating:  4.5 ,
@@ -2945,6 +2983,11 @@ const funrev_points = [
       rating: &#34;2&#34;,
       fun: &#34;0.33&#34;,
     },
+    {
+      title: &#34;\&#34;Hatred of Sex\&#34;&#34;,
+      rating:  0 ,
+      fun:  2.33 ,
+    },
 ];
 &lt;/script&gt;
 
@@ -3008,6 +3051,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:   1.33 ,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;4&#34;,
@@ -3535,6 +3582,10 @@ const formrev_raw = [
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
       fun:  &#34;0.33&#34;,
+    },
+    {
+      form: &#34;\&#34;Nonfiction\&#34;&#34;,
+      fun:   2.33 ,
     },
 ];
 
@@ -35113,6 +35164,27 @@ I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. Tha
 &lt;br /&gt;
 &lt;p&gt;Bizarrely, I began 2025 intending to write an essay titled &amp;ldquo;A Year with Cormac&amp;rdquo; having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year &lt;i&gt;without&lt;/i&gt; Cormac; I didn&amp;rsquo;t read a single title from McCarthy this year, and skipped my annual reread of The Road.
 &lt;br /&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hatred of Sex</title>
+      <link>https://tblibrary.com/books/hatred-of-sex---oliver-davis-tim-dean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/hatred-of-sex---oliver-davis-tim-dean/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Start your review here.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+&lt;p&gt;Paste quotes or reflections here.&lt;/p&gt;
+&lt;div class=&#34;book-meta&#34;&gt;
+  &lt;p&gt;&lt;strong&gt;Author:&lt;/strong&gt; Oliver Davis, Tim Dean&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Last read:&lt;/strong&gt; &lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Rating:&lt;/strong&gt; N/A&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Form:&lt;/strong&gt; Nonfiction&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Genre:&lt;/strong&gt; Sexuality &amp;amp; Gender&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Times read:&lt;/strong&gt; 1&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Copies owned:&lt;/strong&gt; 1&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Fun score:&lt;/strong&gt; 2.33&lt;/p&gt;
+&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>
