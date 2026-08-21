@@ -3,8 +3,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tblibrary.com/tags/audiobook/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tblibrary.com/tags/bookreview/</loc>
-    <lastmod>2026-08-16T00:00:00+00:00</lastmod>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/wishful-drinking---carrie-fisher/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/giovannis-room---james-baldwin/</loc>
     <lastmod>2026-08-16T00:00:00+00:00</lastmod>
@@ -15,17 +24,11 @@
     <loc>https://tblibrary.com/tags/reread/</loc>
     <lastmod>2026-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tblibrary.com/tags/</loc>
-    <lastmod>2026-08-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tblibrary.com/books/moby-dick---herman-melville/</loc>
     <lastmod>2026-08-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/queer-ish/</loc>
     <lastmod>2026-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/audiobook/</loc>
-    <lastmod>2026-08-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/beast-meridian---vanessa-ang%C3%A9lica-villarreal/</loc>
     <lastmod>2026-08-08T00:00:00+00:00</lastmod>
