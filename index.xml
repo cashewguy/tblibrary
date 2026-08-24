@@ -6,8 +6,16 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>American Tabloid</title>
+      <link>https://tblibrary.com/books/american-tabloid---james-ellroy/</link>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/american-tabloid---james-ellroy/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;I purchased this book after hearing Brian Koppelman recommend it on the &lt;a href=&#34;https://www.theringer.com/podcasts/the-rewatchables/2021/12/02/jfk-with-bill-simmons-chris-ryan-sean-fennessey-and-brian-koppelman&#34;&gt;Ringer’s JFK Rewatchables&lt;/a&gt; episode. I’d heard of it before, but safe to say it was never on my radar. It sat on my shelf for a few months and as I was winding down the final chapters of &lt;em&gt;&lt;a href=&#34;https://tblibrary.com/books/moby-dick---herman-melville/&#34;&gt;Moby-Dick&lt;/a&gt;&lt;/em&gt; I walked over and stared at the shelf and picked it up. It’s hard to argue with a first page that starts like this:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Wishful Drinking</title>
       <link>https://tblibrary.com/books/wishful-drinking---carrie-fisher/</link>
@@ -521,7 +529,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 77 , 20 , 17 , 9 , 5 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 78 , 20 , 17 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -553,7 +561,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
 
-  const dataValues = [ 62 , 27 , 18 , 10 , 8 , 6 , 4 ,];
+  const dataValues = [ 63 , 27 , 18 , 10 , 8 , 6 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1556,6 +1564,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,historical-fiction&#34;
+      &gt;
+        &lt;td&gt;James Ellroy&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/american-tabloid---james-ellroy/&#34;&gt;American Tabloid&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-08-24&lt;/td&gt;
+        &lt;td&gt;4.5&lt;/td&gt;
+        &lt;td&gt;2.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,joandidion,essay&#34;
       &gt;
         &lt;td&gt;Joan Didion&lt;/td&gt;
@@ -2349,6 +2369,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;American Tabloid\&#34;&#34;,
+      rating:  4.5 ,
+      fun:  2.33 ,
+    },
+    {
       title: &#34;\&#34;Wishful Drinking\&#34;&#34;,
       rating:  4 ,
       fun:  2.67 ,
@@ -3076,6 +3101,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:   2.33 ,
+    },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
       fun:   2.67 ,
