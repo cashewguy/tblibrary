@@ -529,7 +529,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 78 , 20 , 17 , 9 , 5 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 79 , 20 , 16 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -561,7 +561,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
 
-  const dataValues = [ 63 , 27 , 18 , 10 , 8 , 6 , 4 ,];
+  const dataValues = [ 63 , 26 , 18 , 10 , 8 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -988,7 +988,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview&#34;
+        data-tags=&#34;bookreview,ripreads&#34;
       &gt;
         &lt;td&gt;Colin Meloy&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/wildwood---colin-meloy/&#34;&gt;Wildwood&lt;/a&gt;&lt;/td&gt;
@@ -1432,7 +1432,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,frequently-cited,philosophy,justice,hannaharendt&#34;
+        data-tags=&#34;bookreview,frequently-cited,philosophy,justice,hannaharendt,ripreads&#34;
       &gt;
         &lt;td&gt;Hannah Arendt&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-human-condition/&#34;&gt;The Human Condition&lt;/a&gt;&lt;/td&gt;
@@ -1456,7 +1456,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,queer-ish&#34;
+        data-tags=&#34;bookreview,queer-ish,ripreads&#34;
       &gt;
         &lt;td&gt;Herman Melville&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/moby-dick---herman-melville/&#34;&gt;Moby-Dick&lt;/a&gt;&lt;/td&gt;
@@ -1552,6 +1552,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,ripreads&#34;
+      &gt;
+        &lt;td&gt;J.R.R. Tolkien&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-lord-of-the-rings---jrr-tolkien/&#34;&gt;The Lord Of The Rings&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Fantasy&lt;/td&gt;
+        &lt;td&gt;2023-03-10&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;4.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,reread,queer&#34;
       &gt;
         &lt;td&gt;James Baldwin&lt;/td&gt;
@@ -1564,7 +1576,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,historical-fiction&#34;
+        data-tags=&#34;bookreview,historical-fiction,ripreads&#34;
       &gt;
         &lt;td&gt;James Ellroy&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/american-tabloid---james-ellroy/&#34;&gt;American Tabloid&lt;/a&gt;&lt;/td&gt;
@@ -1921,18 +1933,6 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-03-28&lt;/td&gt;
         &lt;td&gt;1&lt;/td&gt;
         &lt;td&gt;-3.33&lt;/td&gt;
-      &lt;/tr&gt;&lt;tr
-        data-owned=&#34;true&#34;
-        data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,queer,sociology&#34;
-      &gt;
-        &lt;td&gt;Oliver Davis, Tim Dean&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/hatred-of-sex---oliver-davis-tim-dean/&#34;&gt;Hatred of Sex&lt;/a&gt;&lt;/td&gt;
-        &lt;td&gt;Nonfiction&lt;/td&gt;
-        &lt;td&gt;Sexuality &amp;amp; Gender&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;2.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -3034,9 +3034,9 @@ const funrev_points = [
       fun: &#34;0.33&#34;,
     },
     {
-      title: &#34;\&#34;Hatred of Sex\&#34;&#34;,
-      rating:  0 ,
-      fun:  2.33 ,
+      title: &#34;\&#34;The Lord Of The Rings\&#34;&#34;,
+      rating:  5 ,
+      fun:  4.33 ,
     },
 ];
 &lt;/script&gt;
@@ -3642,8 +3642,8 @@ const formrev_raw = [
       fun:  &#34;0.33&#34;,
     },
     {
-      form: &#34;\&#34;Nonfiction\&#34;&#34;,
-      fun:   2.33 ,
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:   4.33 ,
     },
 ];
 
@@ -35191,6 +35191,16 @@ Y.C.: Almost never. I start to make it up and have happen what would happen as i
 &lt;p&gt;When I was in high school, we lived in a little * apartment in rural Illinois. It was across the street, a short walk from the factory where my mom (and several relatives) worked. We were on the South side of the tracks - a small open field separated us from them. Trains no longer run through this track and haven&amp;rsquo;t for years, as far as I know. I used to walk over to the high school, only about a mile away, but rarely with sidewalks available.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>The Lord Of The Rings</title>
+      <link>https://tblibrary.com/books/the-lord-of-the-rings---jrr-tolkien/</link>
+      <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/the-lord-of-the-rings---jrr-tolkien/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Note from 8/27/26— I’m adding this review here, but it is from 2023 and predates my review style now. Posting it here to establish the ripreads tag.&lt;/p&gt;
+&lt;p&gt;This review is reposted from elsewhere and primarily about ROTK:&lt;/p&gt;
+&lt;p&gt;I deeply enjoyed reading the first two LOTR books, after an encounter in my youth that put me off of them. Yet, for whatever reason, ROTK stands alone. I inhaled this book. I basically didn&amp;rsquo;t put it down once I&amp;rsquo;d picked it up. Did I spend my holiday Monday off of work, drinking wine, following my cat around my apartment, reading it to her out loud, and in character? None will ever know for sure.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Books Reviewed in 2025</title>
       <link>https://tblibrary.com/2025/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -35208,25 +35218,20 @@ I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. Tha
 &lt;br /&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Hatred of Sex</title>
-      <link>https://tblibrary.com/books/hatred-of-sex---oliver-davis-tim-dean/</link>
+      <title>Ripley Reads</title>
+      <link>https://tblibrary.com/ripreads/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://tblibrary.com/books/hatred-of-sex---oliver-davis-tim-dean/</guid>
-      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
-&lt;p&gt;Start your review here.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
-&lt;p&gt;Paste quotes or reflections here.&lt;/p&gt;
-&lt;div class=&#34;book-meta&#34;&gt;
-  &lt;p&gt;&lt;strong&gt;Author:&lt;/strong&gt; Oliver Davis, Tim Dean&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Last read:&lt;/strong&gt; &lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Rating:&lt;/strong&gt; N/A&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Form:&lt;/strong&gt; Nonfiction&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Genre:&lt;/strong&gt; Sexuality &amp;amp; Gender&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Times read:&lt;/strong&gt; 1&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Copies owned:&lt;/strong&gt; 1&lt;/p&gt;
-  &lt;p&gt;&lt;strong&gt;Fun score:&lt;/strong&gt; 2.33&lt;/p&gt;
-&lt;/div&gt;</description>
+      <guid>https://tblibrary.com/ripreads/</guid>
+      <description>&lt;center&gt;
+&lt;div class=&#34;giant-text&#34;&gt;
+  Ripley Reads
+&lt;/div&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;img src=&#34;https://tblibrary.com/images/ripreads.jpg&#34;
+alt=&#34;Ripley&#34;
+style=&#34;border-radius: 20px;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I like to read out loud sometimes. Sometimes it&amp;rsquo;s because the prose is so good and so musical that it demands to be read aloud. This was the case for &lt;a href=&#34;https://tblibrary.com/books/moby-dick---herman-melville/&#34;&gt;Moby-Dick&lt;/a&gt;. Occassionally a book is so dense that it&amp;rsquo;s helpful to speak out loud to force yourself to slow down (I read little bits of &lt;a href=&#34;https://tblibrary.com/books/the-human-condition/&#34;&gt;The Human Condition&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Then again, sometimes I just like to pace around my apartment with a book in one hand and glass of wine in the other. It&amp;rsquo;s hard to resist reading in character in times like that.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
