@@ -3,19 +3,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tblibrary.com/books/american-tabloid---james-ellroy/</loc>
-    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tblibrary.com/tags/bookreview/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/queer/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/sociology/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/unlimited-intimacy---tim-dean/</loc>
+    <lastmod>2026-09-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/books/american-tabloid---james-ellroy/</loc>
     <lastmod>2026-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/historical-fiction/</loc>
     <lastmod>2026-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/ripreads/</loc>
-    <lastmod>2026-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/</loc>
     <lastmod>2026-08-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/audiobook/</loc>
@@ -25,9 +34,6 @@
     <lastmod>2026-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/giovannis-room---james-baldwin/</loc>
-    <lastmod>2026-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://tblibrary.com/tags/queer/</loc>
     <lastmod>2026-08-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/tags/reread/</loc>

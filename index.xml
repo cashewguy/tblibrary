@@ -6,8 +6,18 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unlimited Intimacy</title>
+      <link>https://tblibrary.com/books/unlimited-intimacy---tim-dean/</link>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/unlimited-intimacy---tim-dean/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Note: Rather annoyed to go looking for metadata on this book and find &lt;a href=&#34;https://uofrpress.ca/Books/R/Raw&#34;&gt;RAW:PReP, PEDAGOGY, AND THE POLITICS OF BAREBACKING&lt;/a&gt; which comes 10-years later and includes an afterward from Dean. While I later reference&lt;/em&gt; Hatred of Sex &lt;em&gt;I will also have to read this and perhaps return to some of my critiques below.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Tim Dean’s &lt;em&gt;Unlimited Intimacy&lt;/em&gt; released in 2009, 28 years after the first &lt;a href=&#34;https://www.cdc.gov/mmwr/preview/mmwrhtml/june_5.htm&#34;&gt;CDC reporting&lt;/a&gt; of what would eventually be called AIDS, and 3 years before the FDA approved Truvada (PrEP) for pre-exposure prophylaxis. Its situation in time makes &lt;em&gt;Unlimited Intimacy&lt;/em&gt; a little quirky. Reading in 2026, so many of the statements feel ancient, and the mindsets archaic. Such that generational differences cannot be put aside while considering the contents. Perhaps as a result of those generational differences, some of Dean’s contentions and conclusions feel strange and ill-considered. In particular, Dean’s paintbrush when it comes to men who bareback is obscenely wide—in some paragraphs he seems to suggest that anyone fucking without a condom is hard mostly as a result of gambling with HIV.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>American Tabloid</title>
       <link>https://tblibrary.com/books/american-tabloid---james-ellroy/</link>
@@ -529,7 +539,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 79 , 20 , 16 , 9 , 5 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 79 , 20 , 17 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -561,7 +571,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
 
-  const dataValues = [ 63 , 26 , 18 , 10 , 8 , 6 , 5 ,];
+  const dataValues = [ 63 , 27 , 18 , 10 , 8 , 6 , 5 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -2188,6 +2198,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,queer,sociology&#34;
+      &gt;
+        &lt;td&gt;Tim Dean&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/unlimited-intimacy---tim-dean/&#34;&gt;Unlimited Intimacy&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Nonfiction&lt;/td&gt;
+        &lt;td&gt;Sexuality &amp;amp; Gender&lt;/td&gt;
+        &lt;td&gt;2026-08-30&lt;/td&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;-0.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,TimothySnyder&#34;
       &gt;
         &lt;td&gt;Timothy Snyder&lt;/td&gt;
@@ -2368,6 +2390,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;Unlimited Intimacy\&#34;&#34;,
+      rating:  3 ,
+      fun:  -0.33 ,
+    },
     {
       title: &#34;\&#34;American Tabloid\&#34;&#34;,
       rating:  4.5 ,
@@ -3101,6 +3128,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Nonfiction\&#34;&#34;,
+      fun:   -0.33 ,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:   2.33 ,
@@ -35224,7 +35255,7 @@ I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. Tha
       <guid>https://tblibrary.com/2026/</guid>
       <description>&lt;center&gt;
 &lt;div class=&#34;giant-text&#34;&gt;
-  38
+  39
 Books	in 2026
 &lt;/div&gt;
 &lt;/center&gt;
@@ -35406,8 +35437,18 @@ Books	in 2026
   
 
   
+
+  
+  
+
+  
+    
     
+  
+
+  
     
+    
   
 
   
@@ -35772,6 +35813,8 @@ Books	in 2026
 
 
 
+
+  
 
   
 
@@ -35906,6 +35949,20 @@ Books	in 2026
   
 
 
+
+  
+  
+
+  
+    
+    
+
+    
+    
+  
+
+  
+  
 
   
   
@@ -36525,7 +36582,7 @@ Books	in 2026
       }
 
       const rawLabels = &#34;[\&#34;0.0\&#34;,\&#34;2.0\&#34;,\&#34;2.5\&#34;,\&#34;3.0\&#34;,\&#34;3.5\&#34;,\&#34;4.0\&#34;,\&#34;4.5\&#34;,\&#34;5.0\&#34;]&#34;;
-      const rawData   = &#34;[4,3,1,5,4,11,3,7]&#34;;
+      const rawData   = &#34;[4,3,1,6,4,11,3,7]&#34;;
 
       const labels = normalizeToArray(rawLabels).map(v =&gt; String(v));
       const data   = normalizeToArray(rawData).map(v =&gt; Number(v));
@@ -36589,6 +36646,12 @@ Books	in 2026
 
 
 
+
+  
+  
+    
+    
+  
 
   
   
