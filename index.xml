@@ -6,8 +6,24 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paradise Lost</title>
+      <link>https://tblibrary.com/books/paradise-lost---john-milton/</link>
+      <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/paradise-lost---john-milton/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Really good! I find that I do not have complicated thoughts. I bought this copy of The Portable Milton from Vintage at some long past point and it sat on my shelf for ages. Some time ago I removed it from my shelf and, decided I’d never read it, put it on the “to little free library” table. By some cosmic chance I then saw the painting &lt;em&gt;Pandemonium&lt;/em&gt; by John Martin:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Valley of Vengeful Ghosts</title>
+      <link>https://tblibrary.com/books/the-valley-of-vengeful-ghosts---kim-fu/</link>
+      <pubDate>Sun, 20 Sep 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/the-valley-of-vengeful-ghosts---kim-fu/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Featuring one of the least-relatable, most annoying protagonists of a book that I’ve read in recent memory! The story follows a therapist in the wake of her mother’s death by, more or less, assisted suicide in her terminal illness. I do not understand the title, because there are not a lot of ghosts (maybe two) and none of them are at any point vengeful. Basically, the woman buys a model house and it is full of problems. Also, she starts to hallucinate her dead mother. (Mild spoilers below.)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Unlimited Intimacy</title>
       <link>https://tblibrary.com/books/unlimited-intimacy---tim-dean/</link>
@@ -539,7 +555,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 79 , 20 , 17 , 9 , 5 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 81 , 20 , 17 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -569,9 +585,9 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewGenreChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,];
+  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,&#34;Horror&#34;,];
 
-  const dataValues = [ 63 , 27 , 18 , 10 , 8 , 6 , 5 ,];
+  const dataValues = [ 63 , 25 , 18 , 10 , 8 , 6 , 5 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1622,6 +1638,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,classic,ripreads&#34;
+      &gt;
+        &lt;td&gt;John Milton&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/paradise-lost---john-milton/&#34;&gt;Paradise Lost&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Mythology&lt;/td&gt;
+        &lt;td&gt;2026-09-13&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;1.5&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview&#34;
       &gt;
         &lt;td&gt;John Williams&lt;/td&gt;
@@ -1739,6 +1767,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2023-12-08&lt;/td&gt;
         &lt;td&gt;2&lt;/td&gt;
         &lt;td&gt;0.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,small-press-club&#34;
+      &gt;
+        &lt;td&gt;Kim Fu&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-valley-of-vengeful-ghosts---kim-fu/&#34;&gt;The Valley of Vengeful Ghosts&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Horror&lt;/td&gt;
+        &lt;td&gt;2026-09-20&lt;/td&gt;
+        &lt;td&gt;2.5&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
@@ -2390,6 +2430,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;Paradise Lost\&#34;&#34;,
+      rating:  4 ,
+      fun:  1.5 ,
+    },
     {
       title: &#34;\&#34;Unlimited Intimacy\&#34;&#34;,
       rating:  3 ,
@@ -3128,6 +3173,14 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:   1.5 ,
+    },
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;null&#34;,
+    },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
       fun:   -0.33 ,
@@ -35255,7 +35308,7 @@ I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. Tha
       <guid>https://tblibrary.com/2026/</guid>
       <description>&lt;center&gt;
 &lt;div class=&#34;giant-text&#34;&gt;
-  39
+  41
 Books	in 2026
 &lt;/div&gt;
 &lt;/center&gt;
@@ -35447,6 +35500,26 @@ Books	in 2026
   
 
   
+
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+  
     
     
   
@@ -35810,9 +35883,13 @@ Books	in 2026
   
 
   
+
 
 
 
+  
+
+  
 
   
 
@@ -35949,6 +36026,34 @@ Books	in 2026
   
 
 
+
+  
+  
+
+  
+    
+    
+
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+
+    
+    
+  
+
+  
+  
 
   
   
@@ -36582,7 +36687,7 @@ Books	in 2026
       }
 
       const rawLabels = &#34;[\&#34;0.0\&#34;,\&#34;2.0\&#34;,\&#34;2.5\&#34;,\&#34;3.0\&#34;,\&#34;3.5\&#34;,\&#34;4.0\&#34;,\&#34;4.5\&#34;,\&#34;5.0\&#34;]&#34;;
-      const rawData   = &#34;[4,3,1,6,4,11,3,7]&#34;;
+      const rawData   = &#34;[4,3,2,6,4,12,3,7]&#34;;
 
       const labels = normalizeToArray(rawLabels).map(v =&gt; String(v));
       const data   = normalizeToArray(rawData).map(v =&gt; Number(v));
@@ -36646,6 +36751,15 @@ Books	in 2026
 
 
 
+
+  
+  
+    
+    
+  
+
+  
+  
 
   
   
