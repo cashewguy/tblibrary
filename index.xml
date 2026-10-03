@@ -6,8 +6,17 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blood Meridian</title>
+      <link>https://tblibrary.com/books/blood-meridian---cormac-mccarthy/</link>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/blood-meridian---cormac-mccarthy/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Blood Meridian&lt;/em&gt; is considered McCarthy’s masterpiece. It bathes in violence. An occasional refrain on the &lt;em&gt;Reading McCarthy&lt;/em&gt; podcast is, “no author has killed as many babies as McCarthy.” This is so. One coming to McCarthy with only this perception, and perhaps the images of a burntout country and ash from &lt;em&gt;The Road&lt;/em&gt;, they probably think the books are reveling in that violence. That is not so.&lt;/p&gt;
+&lt;p&gt;The Kid comes out of Tennessee into the West and tumbles and starts problems until he falls in with Captain Glanton’s gang of scalphunters. Among that gang eventually are The Kid, Toadvine, Expriest Tobin, and several others. The Judge is the neonlit attraction. He arrives over and again from nowhere and leaves to nowhere and while he’s there he wanders around nude and glowing and pontificating. The Judge attracts a lot of attention from readers; maybe the expriest attracts just a little less. On this my second read, the expriest stood out the most and it is easy for the reader to imagine the Kid with the Judge on one shoulder and the Expriest on another whispering in his ears.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Paradise Lost</title>
       <link>https://tblibrary.com/books/paradise-lost---john-milton/</link>
@@ -555,7 +564,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 81 , 20 , 17 , 9 , 5 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 82 , 20 , 17 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -587,7 +596,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,&#34;Horror&#34;,];
 
-  const dataValues = [ 63 , 25 , 18 , 10 , 8 , 6 , 5 , 4 ,];
+  const dataValues = [ 64 , 25 , 18 , 10 , 8 , 6 , 5 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -642,7 +651,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Annie Ernaux&#34;,&#34;Cormac McCarthy&#34;,&#34;Ernest Hemingway&#34;,&#34;Garth Greenwell&#34;,&#34;John Williams&#34;,&#34;Stephen King&#34;,];
 
-  const dataValues = [ 11 , 6 , 6 , 3 , 3 , 3 ,];
+  const dataValues = [ 11 , 7 , 6 , 3 , 3 , 3 ,];
 
   new Chart(ctx, {
     type: &#39;bar&#39;,
@@ -1023,6 +1032,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2026-06-12&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,cormacmccarthy&#34;
+      &gt;
+        &lt;td&gt;Cormac McCarthy&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/blood-meridian---cormac-mccarthy/&#34;&gt;Blood Meridian&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Literary Fiction&lt;/td&gt;
+        &lt;td&gt;2026-10-01&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -2431,6 +2452,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Blood Meridian\&#34;&#34;,
+      rating:  5 ,
+      fun:  1.33 ,
+    },
+    {
       title: &#34;\&#34;Paradise Lost\&#34;&#34;,
       rating:  4 ,
       fun:  1.5 ,
@@ -3173,6 +3199,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:   1.33 ,
+    },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:   1.5 ,
@@ -35308,7 +35338,7 @@ I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. Tha
       <guid>https://tblibrary.com/2026/</guid>
       <description>&lt;center&gt;
 &lt;div class=&#34;giant-text&#34;&gt;
-  41
+  42
 Books	in 2026
 &lt;/div&gt;
 &lt;/center&gt;
@@ -35470,6 +35500,16 @@ Books	in 2026
 
 
 
+
+  
+  
+
+  
+    
+    
+  
+
+  
 
   
   
@@ -35969,7 +36009,7 @@ Books	in 2026
 &lt;section class=&#34;stat-block stat-authors&#34;&gt;
   &lt;ol class=&#34;top-authors&#34;&gt;
     
-      &lt;li&gt;Cormac McCarthy &lt;span class=&#34;muted&#34;&gt;(3)&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;Cormac McCarthy &lt;span class=&#34;muted&#34;&gt;(4)&lt;/span&gt;&lt;/li&gt;
     
       &lt;li&gt;Hervé Guibert &lt;span class=&#34;muted&#34;&gt;(2)&lt;/span&gt;&lt;/li&gt;
     
@@ -36026,6 +36066,20 @@ Books	in 2026
   
 
 
+
+  
+  
+
+  
+    
+    
+
+    
+    
+  
+
+  
+  
 
   
   
@@ -36687,7 +36741,7 @@ Books	in 2026
       }
 
       const rawLabels = &#34;[\&#34;0.0\&#34;,\&#34;2.0\&#34;,\&#34;2.5\&#34;,\&#34;3.0\&#34;,\&#34;3.5\&#34;,\&#34;4.0\&#34;,\&#34;4.5\&#34;,\&#34;5.0\&#34;]&#34;;
-      const rawData   = &#34;[4,3,2,6,4,12,3,7]&#34;;
+      const rawData   = &#34;[4,3,2,6,4,12,3,8]&#34;;
 
       const labels = normalizeToArray(rawLabels).map(v =&gt; String(v));
       const data   = normalizeToArray(rawData).map(v =&gt; Number(v));
@@ -36751,6 +36805,12 @@ Books	in 2026
 
 
 
+
+  
+  
+    
+    
+  
 
   
   
