@@ -6,8 +6,16 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Command and Control</title>
+      <link>https://tblibrary.com/books/command-and-control---eric-schlosser/</link>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/command-and-control---eric-schlosser/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;An excellent examination of nuclear command and control and the illusion of safety through the Titan II missile disaster in Damascus, Arkansas, in 1980. Over and over, safety concerns with nuclear weapons are raised to anyone who will listen: the Strategic Air Command, the Army, Navy, Air Force, the Joint Chiefs, Senators, Presidents. Over and over, none of them did anything. One of the central figures of the book, Bob Peurifoy, works for decades in a bureaucracy that is vain, sensitive, paranoid, and often nonsensical.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Blood Meridian</title>
       <link>https://tblibrary.com/books/blood-meridian---cormac-mccarthy/</link>
@@ -564,7 +572,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 82 , 20 , 17 , 9 , 5 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 82 , 20 , 19 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -594,9 +602,9 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewGenreChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,&#34;Horror&#34;,];
+  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,&#34;History&#34;,&#34;Horror&#34;,];
 
-  const dataValues = [ 64 , 25 , 18 , 10 , 8 , 6 , 5 , 4 ,];
+  const dataValues = [ 64 , 23 , 18 , 10 , 8 , 6 , 5 , 4 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1212,6 +1220,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-01-04&lt;/td&gt;
         &lt;td&gt;2&lt;/td&gt;
         &lt;td&gt;-1.67&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,nuclear&#34;
+      &gt;
+        &lt;td&gt;Eric Schlosser&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/command-and-control---eric-schlosser/&#34;&gt;Command and Control&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Nonfiction&lt;/td&gt;
+        &lt;td&gt;History&lt;/td&gt;
+        &lt;td&gt;2026-10-19&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;1.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -2079,6 +2099,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,favorites,nuclear,foliosociety&#34;
+      &gt;
+        &lt;td&gt;Richard Rhodes&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-making-of-the-atomic-bomb---richard-rhodes/&#34;&gt;The Making of the Atomic Bomb&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Nonfiction&lt;/td&gt;
+        &lt;td&gt;History&lt;/td&gt;
+        &lt;td&gt;2023-08-10&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
         data-tags=&#34;bookreview,queer&#34;
       &gt;
         &lt;td&gt;Robert Glück&lt;/td&gt;
@@ -2451,6 +2483,11 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;br /&gt;
 &lt;script&gt;
 const funrev_points = [
+    {
+      title: &#34;\&#34;Command and Control\&#34;&#34;,
+      rating:  4 ,
+      fun:  1.33 ,
+    },
     {
       title: &#34;\&#34;Blood Meridian\&#34;&#34;,
       rating:  5 ,
@@ -3200,6 +3237,10 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
     {
+      form: &#34;\&#34;Nonfiction\&#34;&#34;,
+      fun:   1.33 ,
+    },
+    {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:   1.33 ,
     },
@@ -3754,6 +3795,10 @@ const formrev_raw = [
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
       fun:  &#34;0.33&#34;,
+    },
+    {
+      form: &#34;\&#34;Nonfiction\&#34;&#34;,
+      fun:  &#34;null&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
@@ -35305,6 +35350,14 @@ Y.C.: Almost never. I start to make it up and have happen what would happen as i
 &lt;p&gt;When I was in high school, we lived in a little * apartment in rural Illinois. It was across the street, a short walk from the factory where my mom (and several relatives) worked. We were on the South side of the tracks - a small open field separated us from them. Trains no longer run through this track and haven&amp;rsquo;t for years, as far as I know. I used to walk over to the high school, only about a mile away, but rarely with sidewalks available.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>The Making of the Atomic Bomb</title>
+      <link>https://tblibrary.com/books/the-making-of-the-atomic-bomb---richard-rhodes/</link>
+      <pubDate>Thu, 10 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/the-making-of-the-atomic-bomb---richard-rhodes/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;When I finished reading through the final chapter’s last pages, I wondered: what’s the most important book ever written? I did a quick Google and found that all the suggested lists used the word “influential” instead, not what I wanted. I put quotes around the query and was not too pleased to find a bunch of christian websites using SEO to convince Google to serve an answer: the Bible.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>The Lord Of The Rings</title>
       <link>https://tblibrary.com/books/the-lord-of-the-rings---jrr-tolkien/</link>
       <pubDate>Fri, 10 Mar 2023 00:00:00 +0000</pubDate>
@@ -35338,7 +35391,7 @@ I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. Tha
       <guid>https://tblibrary.com/2026/</guid>
       <description>&lt;center&gt;
 &lt;div class=&#34;giant-text&#34;&gt;
-  42
+  43
 Books	in 2026
 &lt;/div&gt;
 &lt;/center&gt;
@@ -35560,8 +35613,18 @@ Books	in 2026
   
 
   
+
+  
+  
+
+  
+    
     
+  
+
+  
     
+    
   
 
   
@@ -35926,6 +35989,8 @@ Books	in 2026
 
 
 
+
+  
 
   
 
@@ -36066,6 +36131,20 @@ Books	in 2026
   
 
 
+
+  
+  
+
+  
+    
+    
+
+    
+    
+  
+
+  
+  
 
   
   
@@ -36741,7 +36820,7 @@ Books	in 2026
       }
 
       const rawLabels = &#34;[\&#34;0.0\&#34;,\&#34;2.0\&#34;,\&#34;2.5\&#34;,\&#34;3.0\&#34;,\&#34;3.5\&#34;,\&#34;4.0\&#34;,\&#34;4.5\&#34;,\&#34;5.0\&#34;]&#34;;
-      const rawData   = &#34;[4,3,2,6,4,12,3,8]&#34;;
+      const rawData   = &#34;[4,3,2,6,4,13,3,8]&#34;;
 
       const labels = normalizeToArray(rawLabels).map(v =&gt; String(v));
       const data   = normalizeToArray(rawData).map(v =&gt; Number(v));
@@ -36805,6 +36884,12 @@ Books	in 2026
 
 
 
+
+  
+  
+    
+    
+  
 
   
   
