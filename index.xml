@@ -6,8 +6,25 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Lost</title>
+      <link>https://tblibrary.com/books/getting-lost---annie-ernaux/</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/getting-lost---annie-ernaux/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Ernaux’s diaries from an affair with a married Russian diplomat, previously autofictionalized in &lt;em&gt;&lt;a href=&#34;https://tblibrary.com/books/simple-passion---annie-ernaux/&#34;&gt;Simple Passion&lt;/a&gt;.&lt;/em&gt; My book club had mixed thoughts. I am not to be trusted as Ernaux is my favorite living writer, but I loved the text. It is so familiar to me, the obsession and the &lt;em&gt;nameless terror&lt;/em&gt;. Like &lt;em&gt;SP&lt;/em&gt;, I see so much of myself in the worry, anxiety, and the self-decimating thoughts; the insane want to understand one’s meaning to another. As if understanding will salve your sores.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simple Passion</title>
+      <link>https://tblibrary.com/books/simple-passion---annie-ernaux/</link>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/simple-passion---annie-ernaux/</guid>
+      <description>&lt;h2 id=&#34;22-october-2026-review&#34;&gt;22 October 2026 Review&lt;/h2&gt;
+&lt;p&gt;Revisiting a few minutes after concluding &lt;em&gt;&lt;a href=&#34;https://tblibrary.com/books/getting-lost---annie-ernaux/&#34;&gt;Getting Lost&lt;/a&gt;&lt;/em&gt;. Remains a frontrunner for my favorite Ernaux. My book club read &lt;em&gt;Getting Lost&lt;/em&gt; this month and I found the discussion pretty interesting, though I’ll save that for that review.&lt;/p&gt;
+&lt;p&gt;Re-reading after having read &lt;em&gt;GL&lt;/em&gt;, it’s interesting to see the 1:1 transpositions from it to &lt;em&gt;Simple Passion.&lt;/em&gt; I find that I don’t have any new thoughts, revisiting about 18 months later.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Command and Control</title>
       <link>https://tblibrary.com/books/command-and-control---eric-schlosser/</link>
@@ -572,7 +589,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 82 , 20 , 19 , 9 , 5 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 83 , 20 , 19 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -604,7 +621,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,&#34;History&#34;,&#34;Horror&#34;,];
 
-  const dataValues = [ 64 , 23 , 18 , 10 , 8 , 6 , 5 , 4 , 4 ,];
+  const dataValues = [ 64 , 24 , 18 , 10 , 8 , 6 , 5 , 4 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -659,7 +676,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Annie Ernaux&#34;,&#34;Cormac McCarthy&#34;,&#34;Ernest Hemingway&#34;,&#34;Garth Greenwell&#34;,&#34;John Williams&#34;,&#34;Stephen King&#34;,];
 
-  const dataValues = [ 11 , 7 , 6 , 3 , 3 , 3 ,];
+  const dataValues = [ 12 , 7 , 6 , 3 , 3 , 3 ,];
 
   new Chart(ctx, {
     type: &#39;bar&#39;,
@@ -752,6 +769,30 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-05-23&lt;/td&gt;
         &lt;td&gt;3&lt;/td&gt;
         &lt;td&gt;2.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,AnnieErnaux&#34;
+      &gt;
+        &lt;td&gt;Annie Ernaux&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/getting-lost---annie-ernaux/&#34;&gt;Getting Lost&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;Memoir&lt;/td&gt;
+        &lt;td&gt;2026-10-22&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;2.33&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;true&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,AnnieErnaux,favorites&#34;
+      &gt;
+        &lt;td&gt;Annie Ernaux&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/simple-passion---annie-ernaux/&#34;&gt;Simple Passion&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Autofiction&lt;/td&gt;
+        &lt;td&gt;2026-10-22&lt;/td&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;2.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -860,18 +901,6 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2025-04-03&lt;/td&gt;
         &lt;td&gt;5&lt;/td&gt;
         &lt;td&gt;1.33&lt;/td&gt;
-      &lt;/tr&gt;&lt;tr
-        data-owned=&#34;true&#34;
-        data-read=&#34;false&#34;
-        data-tags=&#34;bookreview,AnnieErnaux,favorites&#34;
-      &gt;
-        &lt;td&gt;Annie Ernaux&lt;/td&gt;
-        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/simple-passion/&#34;&gt;Simple Passion&lt;/a&gt;&lt;/td&gt;
-        &lt;td&gt;Memoir&lt;/td&gt;
-        &lt;td&gt;Memoir&lt;/td&gt;
-        &lt;td&gt;2025-04-02&lt;/td&gt;
-        &lt;td&gt;5&lt;/td&gt;
-        &lt;td&gt;2.33&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -2484,6 +2513,16 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; review_apply());
 &lt;script&gt;
 const funrev_points = [
     {
+      title: &#34;\&#34;Getting Lost\&#34;&#34;,
+      rating:  4 ,
+      fun:  2.33 ,
+    },
+    {
+      title: &#34;\&#34;Simple Passion\&#34;&#34;,
+      rating:  5 ,
+      fun:  2.67 ,
+    },
+    {
       title: &#34;\&#34;Command and Control\&#34;&#34;,
       rating:  4 ,
       fun:  1.33 ,
@@ -2969,11 +3008,6 @@ const funrev_points = [
       fun: &#34;0.33&#34;,
     },
     {
-      title: &#34;\&#34;Simple Passion\&#34;&#34;,
-      rating: &#34;5&#34;,
-      fun: &#34;2.33&#34;,
-    },
-    {
       title: &#34;\&#34;The Sovereignty of Good\&#34;&#34;,
       rating: &#34;5&#34;,
       fun: &#34;0.00&#34;,
@@ -3236,6 +3270,14 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; {
 &lt;h2 id=&#34;fun-by-form-fiction-nonfiction-etc&#34;&gt;Fun by Form (Fiction, Nonfiction, etc.)&lt;/h2&gt;
 &lt;p&gt;&lt;script&gt;
 const formrev_raw = [
+    {
+      form: &#34;\&#34;Memoir\&#34;&#34;,
+      fun:   2.33 ,
+    },
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:   2.67 ,
+    },
     {
       form: &#34;\&#34;Nonfiction\&#34;&#34;,
       fun:   1.33 ,
@@ -3635,10 +3677,6 @@ const formrev_raw = [
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;0.33&#34;,
-    },
-    {
-      form: &#34;\&#34;Memoir\&#34;&#34;,
-      fun:  &#34;2.33&#34;,
     },
     {
       form: &#34;\&#34;Theory\&#34;&#34;,
@@ -34320,16 +34358,6 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; lib_apply());
 &lt;p&gt;I picked this up because &lt;em&gt;Singular Adventures&lt;/em&gt; is cited in Philippe Besson&amp;rsquo;s Lie With me, which I adored. This collection of short stories has entries in it that I love and will re-read, but the first half is flat out bad. Some of the first part has the sort of over-the-top smut eroticism that I wrote in high school, fantasizing about the locker room, and yet it almost always punishes the reader for having fun by taking strange and dark turns.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Simple Passion</title>
-      <link>https://tblibrary.com/books/simple-passion/</link>
-      <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://tblibrary.com/books/simple-passion/</guid>
-      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
-&lt;p&gt;What an incredible piece of writing. In 61 pages, Ernaux illustrates how all-encompassing love can become, how it can turn into an obsession where everything is subject to it. No event is without link to the object of love, everything takes on a mystical connection.&lt;/p&gt;
-&lt;!--excerpt--&gt;
-&lt;p&gt;At first I was tagging or highlighting things that I related to, had experienced in my affections. That became a real burden because it happens on almost every page.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>The Sovereignty of Good</title>
       <link>https://tblibrary.com/books/the-sovereignty-of-good/</link>
       <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
@@ -35374,7 +35402,7 @@ Y.C.: Almost never. I start to make it up and have happen what would happen as i
       <guid>https://tblibrary.com/2025/</guid>
       <description>&lt;center&gt;
 &lt;div class=&#34;giant-text&#34;&gt;
-  90
+  89
 Books	in 2025
 &lt;/div&gt;
 &lt;/center&gt;
@@ -35391,7 +35419,7 @@ I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. Tha
       <guid>https://tblibrary.com/2026/</guid>
       <description>&lt;center&gt;
 &lt;div class=&#34;giant-text&#34;&gt;
-  43
+  45
 Books	in 2026
 &lt;/div&gt;
 &lt;/center&gt;
@@ -35553,6 +35581,26 @@ Books	in 2026
 
 
 
+
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+  
 
   
   
@@ -36076,9 +36124,9 @@ Books	in 2026
     
       &lt;li&gt;Cormac McCarthy &lt;span class=&#34;muted&#34;&gt;(4)&lt;/span&gt;&lt;/li&gt;
     
-      &lt;li&gt;Hervé Guibert &lt;span class=&#34;muted&#34;&gt;(2)&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;Annie Ernaux &lt;span class=&#34;muted&#34;&gt;(3)&lt;/span&gt;&lt;/li&gt;
     
-      &lt;li&gt;John Williams &lt;span class=&#34;muted&#34;&gt;(2)&lt;/span&gt;&lt;/li&gt;
+      &lt;li&gt;Hervé Guibert &lt;span class=&#34;muted&#34;&gt;(2)&lt;/span&gt;&lt;/li&gt;
     
   &lt;/ol&gt;
 &lt;/section&gt;
@@ -36131,6 +36179,34 @@ Books	in 2026
   
 
 
+
+  
+  
+
+  
+    
+    
+
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+
+    
+    
+  
+
+  
+  
 
   
   
@@ -36820,7 +36896,7 @@ Books	in 2026
       }
 
       const rawLabels = &#34;[\&#34;0.0\&#34;,\&#34;2.0\&#34;,\&#34;2.5\&#34;,\&#34;3.0\&#34;,\&#34;3.5\&#34;,\&#34;4.0\&#34;,\&#34;4.5\&#34;,\&#34;5.0\&#34;]&#34;;
-      const rawData   = &#34;[4,3,2,6,4,13,3,8]&#34;;
+      const rawData   = &#34;[4,3,2,6,4,14,3,9]&#34;;
 
       const labels = normalizeToArray(rawLabels).map(v =&gt; String(v));
       const data   = normalizeToArray(rawData).map(v =&gt; Number(v));
@@ -36884,6 +36960,18 @@ Books	in 2026
 
 
 
+
+  
+  
+    
+    
+  
+
+  
+  
+    
+    
+  
 
   
   
