@@ -6,8 +6,15 @@
     <description>Recent content in Now on TB Library</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://tblibrary.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Legend of Zelda: Ocarina of Time</title>
+      <link>https://tblibrary.com/books/ocarina-of-time---nintendo/</link>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/ocarina-of-time---nintendo/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;s say it is early 1999. I live in a town of 800 people, just off the &amp;ldquo;main&amp;rdquo; road. The house is a grey thing, a little formless to my memory. You enter to the kitchen, on the left is a bathroom, and then through an entryway is a living room. What would be a dining room, to my mind, is the bedroom. There are two other rooms on the ground floor, but for reasons beyond memory they are uninhabited and uninhabitable. In one of them are some boxes of stuff (I think toys and boxes and things like that); near the top is the box for the Nintendo 64 that&amp;rsquo;s on the living room floor. There&amp;rsquo;s one, and only one, cartridge for the system in the house: Super Mario 64.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Getting Lost</title>
       <link>https://tblibrary.com/books/getting-lost---annie-ernaux/</link>
@@ -589,7 +596,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Memoir&#34;,&#34;Nonfiction&#34;,&#34;Theory&#34;,&#34;Poetry&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,&#34;Drama&#34;,&#34;Reference&#34;,];
 
-  const dataValues = [ 83 , 20 , 19 , 9 , 5 , 4 , 1 , 1 , 1 ,];
+  const dataValues = [ 84 , 20 , 19 , 9 , 5 , 4 , 1 , 1 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -619,9 +626,9 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewGenreChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,&#34;History&#34;,&#34;Horror&#34;,];
+  const labels = [&#34;Literary Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Essay \/ Criticism&#34;,&#34;Science Fiction&#34;,&#34;Fantasy&#34;,&#34;Horror&#34;,&#34;History&#34;,];
 
-  const dataValues = [ 64 , 24 , 18 , 10 , 8 , 6 , 5 , 4 , 4 ,];
+  const dataValues = [ 64 , 24 , 18 , 10 , 8 , 6 , 5 , 5 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1072,7 +1079,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,cormacmccarthy&#34;
+        data-tags=&#34;bookreview,CormacMcCarthy&#34;
       &gt;
         &lt;td&gt;Cormac McCarthy&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/blood-meridian---cormac-mccarthy/&#34;&gt;Blood Meridian&lt;/a&gt;&lt;/td&gt;
@@ -1084,7 +1091,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,cormacmccarthy,screenplay&#34;
+        data-tags=&#34;bookreview,CormacMcCarthy,screenplay&#34;
       &gt;
         &lt;td&gt;Cormac McCarthy&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/whales-and-men---cormac-mccarthy/&#34;&gt;Whales and Men&lt;/a&gt;&lt;/td&gt;
@@ -1120,7 +1127,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,cormacmccarthy&#34;
+        data-tags=&#34;bookreview,CormacMcCarthy&#34;
       &gt;
         &lt;td&gt;Cormac McCarthy&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/suttree/&#34;&gt;Suttree&lt;/a&gt;&lt;/td&gt;
@@ -1132,7 +1139,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;false&#34;
         data-read=&#34;true&#34;
-        data-tags=&#34;bookreview,cormacmccarthy&#34;
+        data-tags=&#34;bookreview,CormacMcCarthy&#34;
       &gt;
         &lt;td&gt;Cormac McCarthy&lt;/td&gt;
         &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-sunset-limited/&#34;&gt;The Sunset Limited&lt;/a&gt;&lt;/td&gt;
@@ -2222,6 +2229,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;4&lt;/td&gt;
         &lt;td&gt;2.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
+        data-owned=&#34;false&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,silvia-moreno-garcia&#34;
+      &gt;
+        &lt;td&gt;Silvia Moreno-Garcia&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/silver-nitrate---silvia-moreno-garcia/&#34;&gt;Silver Nitrate&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Horror&lt;/td&gt;
+        &lt;td&gt;2025-03-02&lt;/td&gt;
+        &lt;td&gt;0&lt;/td&gt;
+        &lt;td&gt;0.00&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
         data-tags=&#34;bookreview,SimonCritchley,essay,suicide&#34;
@@ -3053,6 +3072,11 @@ const funrev_points = [
       fun: &#34;2.00&#34;,
     },
     {
+      title: &#34;\&#34;Silver Nitrate\&#34;&#34;,
+      rating: &#34;0&#34;,
+      fun: &#34;0.00&#34;,
+    },
+    {
       title: &#34;\&#34;Love, Leda\&#34;&#34;,
       rating: &#34;5&#34;,
       fun: &#34;1.67&#34;,
@@ -3713,6 +3737,10 @@ const formrev_raw = [
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;2.00&#34;,
+    },
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;0.00&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
