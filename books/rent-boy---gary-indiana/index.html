@@ -11,7 +11,7 @@
 I bought this without preconception from Giovanni’s Room in Philadelphia, which I make a point to visit and support every time I’m in town. I’d already gathered up something like 4 books, but when I got to the counter I saw this sitting there promoting their book club. Short, rather provocative title. I picked it up, opened to a random page and it was a pretty graphic gay sex scene. Obviously I purchased it instantly.">
 <meta name="author" content="Gary Indiana">
 <link rel="canonical" href="https://tblibrary.com/books/rent-boy---gary-indiana/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.1791afa40f3ee176f866911699d9cac9fb6d7452541f834cd1f53e676fff5325.css" integrity="sha256-F5GvpA8&#43;4Xb4ZpEWmdnKyfttdFJUH4NM0fU&#43;Z2//UyU=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tblibrary.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
@@ -98,6 +98,84 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
 </script>
 
 

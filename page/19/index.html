@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.162.1"><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>TB Library</title>
+
+<meta name="description" content="My book library">
+<meta name="author" content="">
+<link rel="canonical" href="https://tblibrary.com/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tblibrary.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://tblibrary.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://tblibrary.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://tblibrary.com/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://tblibrary.com/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://tblibrary.com/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:url" content="https://tblibrary.com/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content=" Review: Now">
+
+<meta property="og:description"
+      content="What I’m reading now… Updated Nov 15, 2026 — The World-Ending Fire: The Essential Wendell Berry — Wendell Berry
+— Love &amp; Limerence — Dorothy Tennov
+— Philosophical Investigations — Ludwig Wittgenstein
+(I recently came back from spending a week in the Wittliff Collections’ Cormac McCarthy Archives, I read The Road leading up to this and then read drafts a few times, I’m still figuring out how I want to document those and where.)">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Now">
+  <meta name="twitter:description" content="What I’m reading now… Updated Nov 15, 2026 — The World-Ending Fire: The Essential Wendell Berry — Wendell Berry
+— Love &amp; Limerence — Dorothy Tennov
+— Philosophical Investigations — Ludwig Wittgenstein
+(I recently came back from spending a week in the Wittliff Collections’ Cormac McCarthy Archives, I read The Road leading up to this and then read drafts a few times, I’m still figuring out how I want to document those and where.)">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TB Library",
+  "url": "https://tblibrary.com/",
+  "description": "My book library",
+  "logo": "https://tblibrary.com/favicon.ico",
+  "sameAs": [
+      
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://tblibrary.com/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://tblibrary.com/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/books/" title="Reviews">
+                    <span>Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main"> 
+<div class="post-content"><h1 id="what-im-reading-now">What I&rsquo;m reading now&hellip;<a hidden class="anchor" aria-hidden="true" href="#what-im-reading-now">#</a></h1>
+<p><em>Updated Nov 15, 2026
+</em></p>
+<p>— <em>The World-Ending Fire: The Essential Wendell Berry</em> — Wendell Berry</p>
+<p>— <em>Love &amp; Limerence</em> — Dorothy Tennov</p>
+<p>— <em>Philosophical Investigations</em> — Ludwig Wittgenstein</p>
+<p><em>(I recently came back from spending a week in the Wittliff Collections&rsquo; Cormac McCarthy Archives, I read <em>The Road</em> leading up to this and then read drafts a few times, I&rsquo;m still figuring out how I want to document those and where.)</em></p>
+<!-- On hold / In progress:
+
+— *The Years of Lyndon Johnson: Master of the Senate* — Robert A. Caro
+
+— *Kurt Vonnegut: The Complete Novels* — Kurt Vonnegut
+
+— *An Enquiry Concerning Human Understanding* — David Hume
+
+— *The Illiad* — Homer (tx Emily Wilson; re-read)
+
+-->
+<br />
+<p><a href="/2025" class="yib">My 2025 Year in Books!</a></p>
+<h1 id="recent-reviews">Recent Reviews<a hidden class="anchor" aria-hidden="true" href="#recent-reviews">#</a></h1>
+
+
+</div>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/kitchen-curse.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Kitchen Curse
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I haven’t ready many short story collections, so have no idea how to review or critique these. I felt like the collection was uneven. A few stories stood out as enjoyable, or at least graspable. Some were flatly gross and I didn’t really get them (the first two, in particular, which are also the most scatalogical).
+There were plenty of times when I could detect satire, but knowing essentially nothing of the sociopolitical situation in Indonesia, the punch was lost on me.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-25 00:00:00 +0000 UTC'>April 25, 2024</span>&nbsp;·&nbsp;<span>Eka Kurniawan</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Kitchen Curse" href="https://tblibrary.com/books/kitchen-curse---eka-kurniawan/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/cascade-failure.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cascade Failure
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Thanks to Tor and the Goodreads Giveaways for an ARC of this book.
+This new novel, from debut author L.M. Sagas, is billed as “fast, brash, and wickedly fun” by Dayton Ward. On the inside, author J.S. Dewes says it has “earned its place among my favorite found family tales, alongside Killjoys, Mass Effect, and Battlestar Galactica.”
+I couldn’t stop thinking about Mass Effect the whole way through. Mass Effect is one of my all-time favorite video game series. There are big chunks of this book that read a bit like ME fan fiction. I don’t know whether that is good or bad. Though I love Mass Effect, my joy here is less than full. I think it’s because the story is so oriented around the “found family” and writing has a style tries to emphasize the ‘fun’ and ‘gritty space crew’ over everything else.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-23 00:00:00 +0000 UTC'>April 23, 2024</span>&nbsp;·&nbsp;<span>L.M. Sagas</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Cascade Failure" href="https://tblibrary.com/books/cascade-failure---l.m.-sagas/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/circe.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Circe
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I feel like I’ve heard almost nothing but praise for this and Song of Achilles over the last few years. Song of Achilles has been on my list for a good while, but I happened on this in a little free library so I read it first.
+Once I began approaching this as a series of short stories, rather than a single novel, I started having a better time. I think the chapter layout of this robs it a little, because while there are threads that weave throughout, big chunks of the book have nothing to do with the others. It felt like 3-4 short stories.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-18 00:00:00 +0000 UTC'>April 18, 2024</span>&nbsp;·&nbsp;<span>Madeline Miller</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Circe" href="https://tblibrary.com/books/circe---madeline-miller/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-elephant-s-journey.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Elephant&#39;s Journey
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This is a pretty quirky little book. The core story is interesting. It chronicles the journey of an elephant from Lisbon to Vienna in the middle of the sixteenth century. There are numerous digressions along the way hinting at the era and location’s politics, society, religion, and experience of elephants.
+I found the book challenging to read. Jose Saramago has a writing style unlike any I’ve seen. He does not use paragraphs in the traditional sense - in one stretch of the book, a single paragraph goes on for more than 10 pages, if I recall correctly. Similarly, the period is demoted in the rank of punctuation to lieutenant to the Captain Comma. In one sentence I counted 53 commas (the sentence went on and on for perhaps three dozen lines, nearly a full page). This makes for strange reading. It also means if you get distracted or lose your place, it is a challenge to find it again. The dialogue is also written with minimal attribution, and exchanges all occur mid-sentence without quotation marks. The novel asks a lot of your attention.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-06 00:00:00 +0000 UTC'>April 6, 2024</span>&nbsp;·&nbsp;<span>José Saramago</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Elephant&#39;s Journey" href="https://tblibrary.com/books/the-elephants-journey---jos%C3%A9-saramago/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/outer-dark.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Outer Dark
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I think I’d give this a 3.5/5 if we were being very specific. It is perhaps the most gruesome of the McCarthy novels I’ve read, including The Road. The gruesomeness is not the same, with the exception of one particularly disturbing scene. But, the level of it is more similar to that in Blood Meridian.
+Similar to Blood Meridian, there is an ongoing dread all the time. The co-protagonists wander the countryside. One, looking for her newborn child, encounters varying levels of kindness or at least apathy with a few exceptions. The other, seemingly wandering aimlessly*, encounters varying levels of violence, or at least apathy, with a few exceptions. The second character, Culla, claims at a few points to be searching for his sister, though I observe no evidence of this.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-04-02 00:00:00 +0000 UTC'>April 2, 2024</span>&nbsp;·&nbsp;<span>Cormac McCarthy</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Outer Dark" href="https://tblibrary.com/books/outer-dark---cormac-mccarthy/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-wager.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Wager
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Grann’s new book is quite readable! I was very lucky to find a new copy, dust-jacket and all, in a little free library. It is a more straightforward story than that of Killers of the Flower Moon, and the thesis seems a little less pointed, but a quality read nonetheless.
+Much of Grann’s writing goes about recounting the differing perspectives of the survivors of the Wager shipwreck. The castaways, as they struggle with lack of food, shelter, and all the other needs, gradually break into factions and nearly lose their humanity. Grann explores, somewhat lightly, how quickly the bonds of brotherhood dissolve. He does not take much time to explore the things humans will do in these perilous situations. There are only a few passing references to cannibalism, for example.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-28 00:00:00 +0000 UTC'>March 28, 2024</span>&nbsp;·&nbsp;<span>David Grann</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Wager" href="https://tblibrary.com/books/the-wager---david-grann/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/dune-messiah.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Dune Messiah
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Probably a little closer to a 3.75/5. While very different from DUNE, I found this enjoyable in a different way. This is much shorter, and more interior and cerebral. The cast of characters is a little different with some notable changes and absences, I found myself yearning for characters we don’t see. What would X have thought? Why is Y absent? New cultures/species/organizations/what have you are present and these are interesting, though feel a bit shallower than those in the first book. I will say again that I think Denis made a wise decision to leave out all the CHOAM stuff in his adaptations - it was so boring in the first book that even Frank seems to have abandoned it.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-24 00:00:00 +0000 UTC'>March 24, 2024</span>&nbsp;·&nbsp;<span>Frank Herbert</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Dune Messiah" href="https://tblibrary.com/books/dune-messiah---frank-herbert/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/ten-low.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Ten Low
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    2.5/5
+I’m unusually conflicted about this book. On the one hand, some of the story ideas and characters are interesting and I found the book very readable. On the other, it’s pretty repetitive, some parts don’t make sense, and the editing is poor.
+Most of what I have to say is about the editing. I stopped about 90 pages in to flip through the publication details and then the acknowledgements to find out the editor’s name, because I had to know who let this thing out the door like this. I’ve never seen an author use so many commas and comma-set phrases and em-dashes and em-dashed phrases and commas inside of dashes and dashes inside of commas and such and such. Holy cow! I found it so distracting. The author is saying a lot that doesn’t need to be said, and then covering it in a web of commas and clauses. The writing could do with simplification. If the story were any less interesting, this writing would have been inexcusable. The editor should have worked more with the author to hone this a little more.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-21 00:00:00 +0000 UTC'>March 21, 2024</span>&nbsp;·&nbsp;<span>Stark Holborn</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Ten Low" href="https://tblibrary.com/books/ten-low---stark-holborn/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/dune.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Dune
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    My friend Laleh’s review (https://www.goodreads.com/review/show/4955092306) starts: “I’m not quite sure why I expected to dislike one of the most popular science fiction books of all time, but I did.” I felt the same, going in. When Denis’s DUNE came out a few years back, people raved. I kept hearing, “you’ve just GOT to see it on a big screen!” Sometimes when things are universally loved and praised, and I’m told how perfect they are, I have a spiteful urge to abstain. I didn’t go see the movie. Eventually, when I watched it on my TV at home, nothing really stood out to me. The second movie did get to me and I really enjoyed it.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-19 00:00:00 +0000 UTC'>March 19, 2024</span>&nbsp;·&nbsp;<span>Frank Herbert</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Dune" href="https://tblibrary.com/books/dune---frank-herbert/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/duma-key.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Duma Key
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    The first time I read this book, I was in Kansas with bupkis to do except read and trounce around in the woods. I remember reading this and Under the Dome together, inhaling them over what was probably a week. Duma Key is the one that stands out the most to me, even though Under the Dome is certainly much closer to my life experience.
+King likes to say that writing is telepathy - and it shines through in this book. Everything feels so clear to me as I read, and I was surprised at how much stuck in my memory. There are certain scenes (and paintings) in the book that have always bounced around my brain, but sometimes as I read, I remember something I’ve forgotten just as it is happening, and it’s a delight.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-10 00:00:00 +0000 UTC'>March 10, 2024</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-headphones tb-flag-icon" title="Audiobook"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Duma Key" href="https://tblibrary.com/books/duma-key---stephen-king/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="num-pagination">
+    <ul>
+      
+        
+          <li><a href="/">1</a></li>
+        
+      
+        
+          <li><a href="/page/2/">2</a></li>
+        
+      
+        
+          <li><a href="/page/3/">3</a></li>
+        
+      
+        
+          <li><a href="/page/4/">4</a></li>
+        
+      
+        
+          <li><a href="/page/5/">5</a></li>
+        
+      
+        
+          <li><a href="/page/6/">6</a></li>
+        
+      
+        
+          <li><a href="/page/7/">7</a></li>
+        
+      
+        
+          <li><a href="/page/8/">8</a></li>
+        
+      
+        
+          <li><a href="/page/9/">9</a></li>
+        
+      
+        
+          <li><a href="/page/10/">10</a></li>
+        
+      
+        
+          <li><a href="/page/11/">11</a></li>
+        
+      
+        
+          <li><a href="/page/12/">12</a></li>
+        
+      
+        
+          <li><a href="/page/13/">13</a></li>
+        
+      
+        
+          <li><a href="/page/14/">14</a></li>
+        
+      
+        
+          <li><a href="/page/15/">15</a></li>
+        
+      
+        
+          <li><a href="/page/16/">16</a></li>
+        
+      
+        
+          <li><a href="/page/17/">17</a></li>
+        
+      
+        
+          <li><a href="/page/18/">18</a></li>
+        
+      
+        
+          <li class="active">19</li>
+        
+      
+        
+          <li><a href="/page/20/">20</a></li>
+        
+      
+        
+          <li><a href="/page/21/">21</a></li>
+        
+      
+        
+          <li><a href="/page/22/">22</a></li>
+        
+      
+        
+          <li><a href="/page/23/">23</a></li>
+        
+      
+        
+          <li><a href="/page/24/">24</a></li>
+        
+      
+        
+          <li><a href="/page/25/">25</a></li>
+        
+      
+        
+          <li><a href="/page/26/">26</a></li>
+        
+      
+        
+          <li><a href="/page/27/">27</a></li>
+        
+      
+        
+          <li><a href="/page/28/">28</a></li>
+        
+      
+        
+          <li><a href="/page/29/">29</a></li>
+        
+      
+        
+          <li><a href="/page/30/">30</a></li>
+        
+      
+    </ul>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://tblibrary.com/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>

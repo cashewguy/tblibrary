@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Reviews | TB Library</title>
+<meta name="keywords" content="">
+<meta name="description" content="Reviews - TB Library">
+<meta name="author" content="">
+<link rel="canonical" href="https://tblibrary.com/books/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tblibrary.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://tblibrary.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://tblibrary.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/json" href="https://tblibrary.com/books/index.json" title="json">
+<link rel="alternate" hreflang="en" href="https://tblibrary.com/books/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://tblibrary.com/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:url" content="https://tblibrary.com/books/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content=" Review: Reviews">
+
+<meta property="og:description"
+      content="My book library">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reviews">
+  <meta name="twitter:description" content="My book library">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Reviews",
+      "item": "https://tblibrary.com/books/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://tblibrary.com/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://tblibrary.com/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/books/" title="Reviews">
+                    <span class="active">Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main"> 
+<header class="page-header">
+  <h1>
+    Reviews
+  </h1>
+</header>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/11-22-63.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">11/22/63
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    My second time reading this, about 10 years later. When an author as works like The Stand, and The Shining (not to mention huge worlds and explorations of them, like The Dark Tower series), it’s hard to point to a magnum opus. Still, I wonder if this is it.
+11/22/63 isn’t a horror like many of King’s works, not really. Yet, it features some horrific events, with the same can’t-put-the-book-down grip. It may well be his most romantic book - and is there any kind of story that carries romance like time travel?
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-28 00:00:00 +0000 UTC'>November 28, 2023</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to 11/22/63" href="https://tblibrary.com/books/11-22-63---stephen-king/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-gunslinger.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Gunslinger
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This is at least my third time reading The Gunslinger. The first was way back in Junior High, with my first attempt at the cycle (I cried off at either Wolves of Calla or Song of Susannah). The second was with the audiobooks a few years ago.
+The first of the audiobooks at the time was read by George Guidall, who I came to associate more with Les Miserables than The Dark Tower. I like George’s narration, and I loved Frank Muller’s narration of a few of the Tower books he narrated. I found myself reading Gunslinger this time in a merge of their voices, fitting perfectly.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-12 00:00:00 +0000 UTC'>November 12, 2023</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-headphones tb-flag-icon" title="Audiobook"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Gunslinger" href="https://tblibrary.com/books/the-gunslinger---stephen-king/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/fairy-tale.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fairy Tale
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I really enjoyed this! I found it a little slow to start, and kind of disorientating for two reasons. 1) Unlike many (most?) of King’s books, this isn’t set in Maine, but in Illinois (my home state), so it felt pretty close to home. 2) The protagonist is a high school kid, in high school at roughly the same year that I graduated high school. This caused some odd friction when King writes about “opening up Safari” or “going to the Tube” or “everything’s on the Net” which is “awesome sauce.”
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-11 00:00:00 +0000 UTC'>November 11, 2023</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Fairy Tale" href="https://tblibrary.com/books/fairy-tale---stephen-king/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/carrie.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Carrie
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Starting dedicated Stephen King month (November 2023, for whatever reason) with this book. I saw the movie years and years ago and remembered the big plot points, but had no idea the book moved in and out of different perspectives, news clippings, etc. I found it pretty riveting!
+Author: Stephen King
+Last read: 2023-11-06
+Rating: 4
+Form: Fiction
+Genre: Horror
+Times read: 1
+Copies owned: 0
+Fun score: 1.33
+
+    </p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-06 00:00:00 +0000 UTC'>November 6, 2023</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Carrie" href="https://tblibrary.com/books/carrie---stephen-king/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-house-in-the-cerulean-sea.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The House in the Cerulean Sea
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I liked this. A very wholesome story, though one that I really had to work to leave behind my real world perspective as a social worker and former caseworker (though not in child welfare).
+This book has a lot in it about “objectivity” and I sort of wish it were explored a little more. Good boundaries really are important in this line of work, but good boundaries doesn’t translate to cold, compassionless work by itself. But, I realize this book wasn’t written for that. I can solemnly swear that none of my casenotes read like Mr. Baker’s reports.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-05 00:00:00 +0000 UTC'>November 5, 2023</span>&nbsp;·&nbsp;<span>T.J. Klune</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The House in the Cerulean Sea" href="https://tblibrary.com/books/the-house-in-the-cerulean-sea---t.j.-klune/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/a-man-of-the-people.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A Man of the People
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I found this fascinating. I’ve read books where the narrator is unreliable, but less often do I see a narrator that essentially deludes himself in thought in the way this book’s does. The men in the book are driven by petty squabbles, lust for money and possessions (including, in their eyes, women), and take their country on a descent with their feuds. I found the commentary of educated elites vs “commoners” striking and unfortunately, apt today globally.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-28 00:00:00 +0000 UTC'>October 28, 2023</span>&nbsp;·&nbsp;<span>Chinua Achebe</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to A Man of the People" href="https://tblibrary.com/books/a-man-of-the-people---chinua-achebe/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/age-of-cage.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Age of Cage
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    DNF. I got to page 97 out of 220 pages of content in this book, and the writer made me work to get there.
+This is a shallow recounting of Cage’s filmography. If you would like pages spelling out summaries of Cage’s films loosely connected by biographies of the various people directing, writing, and casting them, you may enjoy it. Very little of Cage’s personal life is covered. Very little of what informs Cage’s decisions is covered. The writer often suggests things very boldly with not much in the way of evidence — thankfully these are typically opinions, but it still feels odd.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-25 00:00:00 +0000 UTC'>October 25, 2023</span>&nbsp;·&nbsp;<span>Keith Phipps</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Age of Cage" href="https://tblibrary.com/books/age-of-cage---keith-phipps/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-bad-beginning.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Bad Beginning
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I read this in elementary school the first time. I remember being entranced with the series and had many of them back then. I itched to re-read this one recently and thankfully the library had a Kindle copy. It does what it says on the box! Short, quick to read, and pretty ludicrous if you stop to think about the plot. But it’s a kids book, so why would you?
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-24 00:00:00 +0000 UTC'>October 24, 2023</span>&nbsp;·&nbsp;<span>Lemony Snicket</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Bad Beginning" href="https://tblibrary.com/books/the-bad-beginning---lemony-snicket/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-elements-of-style.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Elements of Style
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    It’s hard to argue with a book barely 40 pages of text long that is considered one of the best books on writing. I’d write more, but my thoughts don’t mean much and I’m already breaking too many of Strunk’s rules just in these few lines.
+Author: William Strunk Jr.
+Last read: 2023-10-24
+Rating: 5
+Form: Reference
+Genre: Writing
+Times read: 1
+Copies owned: 0
+Fun score: 3.00
+
+    </p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-24 00:00:00 +0000 UTC'>October 24, 2023</span>&nbsp;·&nbsp;<span>William Strunk Jr.</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Elements of Style" href="https://tblibrary.com/books/the-elements-of-style---william-strunk-jr/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/on-writing.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">On Writing
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This is the second or third time I’ve read the book (first time reading the Tenth Anniversary Edition). I love King’s writing, and his advice on writing here is short (maybe not always sweet) and to the point.
+I’m going to reply to this review with a comment or two tomorrow so I can port over some of my highlights and tabs from the physical book to goodreads for my future reference.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-10-23 00:00:00 +0000 UTC'>October 23, 2023</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-headphones tb-flag-icon" title="Audiobook"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to On Writing" href="https://tblibrary.com/books/on-writing---stephen-king/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="num-pagination">
+    <ul>
+      
+        
+          <li><a href="/books/">1</a></li>
+        
+      
+        
+          <li><a href="/books/page/2/">2</a></li>
+        
+      
+        
+          <li><a href="/books/page/3/">3</a></li>
+        
+      
+        
+          <li><a href="/books/page/4/">4</a></li>
+        
+      
+        
+          <li><a href="/books/page/5/">5</a></li>
+        
+      
+        
+          <li><a href="/books/page/6/">6</a></li>
+        
+      
+        
+          <li><a href="/books/page/7/">7</a></li>
+        
+      
+        
+          <li><a href="/books/page/8/">8</a></li>
+        
+      
+        
+          <li><a href="/books/page/9/">9</a></li>
+        
+      
+        
+          <li><a href="/books/page/10/">10</a></li>
+        
+      
+        
+          <li><a href="/books/page/11/">11</a></li>
+        
+      
+        
+          <li><a href="/books/page/12/">12</a></li>
+        
+      
+        
+          <li><a href="/books/page/13/">13</a></li>
+        
+      
+        
+          <li><a href="/books/page/14/">14</a></li>
+        
+      
+        
+          <li><a href="/books/page/15/">15</a></li>
+        
+      
+        
+          <li><a href="/books/page/16/">16</a></li>
+        
+      
+        
+          <li><a href="/books/page/17/">17</a></li>
+        
+      
+        
+          <li><a href="/books/page/18/">18</a></li>
+        
+      
+        
+          <li><a href="/books/page/19/">19</a></li>
+        
+      
+        
+          <li><a href="/books/page/20/">20</a></li>
+        
+      
+        
+          <li><a href="/books/page/21/">21</a></li>
+        
+      
+        
+          <li><a href="/books/page/22/">22</a></li>
+        
+      
+        
+          <li class="active">23</li>
+        
+      
+        
+          <li><a href="/books/page/24/">24</a></li>
+        
+      
+        
+          <li><a href="/books/page/25/">25</a></li>
+        
+      
+        
+          <li><a href="/books/page/26/">26</a></li>
+        
+      
+        
+          <li><a href="/books/page/27/">27</a></li>
+        
+      
+        
+          <li><a href="/books/page/28/">28</a></li>
+        
+      
+        
+          <li><a href="/books/page/29/">29</a></li>
+        
+      
+        
+          <li><a href="/books/page/30/">30</a></li>
+        
+      
+    </ul>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://tblibrary.com/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>

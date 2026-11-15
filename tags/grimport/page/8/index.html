@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Grimport | TB Library</title>
+<meta name="keywords" content="">
+<meta name="description" content="My book library">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/tags/grimport/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/grimport/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/grimport/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="http://localhost:1313/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:url" content="http://localhost:1313/tags/grimport/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content=" Review: Grimport">
+
+<meta property="og:description"
+      content="My book library">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Grimport">
+  <meta name="twitter:description" content="My book library">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/books/" title="Reviews">
+                    <span>Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main"> 
+<header class="page-header">
+  <h1>
+    Grimport
+  </h1>
+</header>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/deadeye-dick.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Deadeye Dick
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Like many Vonnegut books, this is an almost rambling (coherently so) account from the protagonist about the circumstances of their life. Vonnegut is one of my favorite writers when it comes to satire, and this one explores guns and violence, the bomb, and to an extent small town life. It not my favorite of his writings, but I still enjoyed it.
+Author: Kurt Vonnegut Jr.
+Last read: 2023-12-14
+Rating: 4
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-14 00:00:00 +0000 UTC'>December 14, 2023</span>&nbsp;·&nbsp;<span>Kurt Vonnegut Jr.</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Deadeye Dick" href="http://localhost:1313/books/deadeye-dick---kurt-vonnegut-jr/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-big-sleep.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Big Sleep
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I love noir and detective movies, I especially love noir detective movies. I’m not sure how I’ve read so much but never hit Chandler, one of the Ur-detective-noir novelists. Written in 1939 and in the genre its in, it’s no surprise to find dated language and characterizations some (including myself) would find offensive today. You have to set that aside because they are ultimately manifestations of the world and setting Chandler is writing in. I loved the over-the-top noir of it all.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-13 00:00:00 +0000 UTC'>December 13, 2023</span>&nbsp;·&nbsp;<span>Raymond Chandler</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Big Sleep" href="http://localhost:1313/books/the-big-sleep---raymond-chandler/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/do-androids-dream-of-electric-sheep.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Do Androids Dream of Electric Sheep?
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This was one of the most bizarre and intense books I’ve read in recent memory. About halfway through, I thought, “I’m going to have to re-read this as soon as I finish it.” That thought wasn’t anxiety, it was thrill. I’m going to do all I can to resist that urge and give it some space before a re-read. I loved this but couldn’t tell you at all what I thought about it in detail yet, 5 minutes after finishing it.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-10 00:00:00 +0000 UTC'>December 10, 2023</span>&nbsp;·&nbsp;<span>Philip K. Dick</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Do Androids Dream of Electric Sheep?" href="http://localhost:1313/books/do-androids-dream-of-electric-sheep---philip-k.-dick/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/man-s-search-for-meaning.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Man&#39;s Search for Meaning
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    The first part of this book—Frankl’s exploration of his time and experiences in concentration camps and the impact these horrors had on his psyche and that of those around him—is very good. There isn’t really much I can say on it that isn’t said better elsewhere.
+The second part, his primer on Logotherapy, was not really for me. It is very clearly something of its time and there is much about it that I like as a social worker and someone who works with people. That said, it doesn’t resonate anything like the first part which really is a special work.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-07 00:00:00 +0000 UTC'>December 7, 2023</span>&nbsp;·&nbsp;<span>Viktor E. Frankl</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Man&#39;s Search for Meaning" href="http://localhost:1313/books/mans-search-for-meaning---viktor-e.-frankl/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-waste-land-and-other-poems.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Waste Land and Other Poems
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    If you’re skimming goodreads reviews wondering if you should read this or not, just skip this review. I bought the book because I’m a fool.
+There I was, in my little local bookshop one day for their summer sale. There I was, such a fool, spotting THE WASTE LANDS from across the room, this giant edition with author’s notes. “Oh look, T.S. Elliot. He was Lawrence of Arabia, you know?” I said to my friend who was with me. I’d always known that Lawrence of Arabia wrote a book or something and that the film was in some way apparently inspired by this. Awfully small little paperback for such a long film.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-07 00:00:00 +0000 UTC'>December 7, 2023</span>&nbsp;·&nbsp;<span>T.S. Eliot</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Waste Land and Other Poems" href="http://localhost:1313/books/the-waste-land-and-other-poems---t.s.-eliot/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/say-nothing.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Say Nothing
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Thrilling!
+At first, I struggled to get into it. I think because of the plethora of names, locations, factions, etc., that are explored to set the scenery. Possibly because I knew absolutely nothing at all about The Troubles except whatever I’ve picked up from the odd Tom Clancy book/movie (and, thus, very probably less than nothing).
+The book is exceptionally well paced, and the author threads the stories so delicately that when the pictures start to come together there are times when you can’t help but sit upright.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-12-05 00:00:00 +0000 UTC'>December 5, 2023</span>&nbsp;·&nbsp;<span>Patrick Radden Keefe</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Say Nothing" href="http://localhost:1313/books/say-nothing---patrick-radden-keefe/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/longitude.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Longitude
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    An enjoyable little popular retelling of the search for longitude. Interesting and compellingly told. Some of the prose is a bit novel and I had to re-read a few sentences to get the meaning. Overall, quite nice.
+Author: Dava Sobel
+Last read: 2023-11-30
+Rating: 4
+Form: Nonfiction
+Genre: History
+Times read: 1
+Copies owned: 0
+Fun score: 2.67
+
+    
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-30 00:00:00 +0000 UTC'>November 30, 2023</span>&nbsp;·&nbsp;<span>Dava Sobel</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Longitude" href="http://localhost:1313/books/longitude---dava-sobel/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/11-22-63.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">11/22/63
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    My second time reading this, about 10 years later. When an author as works like The Stand, and The Shining (not to mention huge worlds and explorations of them, like The Dark Tower series), it’s hard to point to a magnum opus. Still, I wonder if this is it.
+11/22/63 isn’t a horror like many of King’s works, not really. Yet, it features some horrific events, with the same can’t-put-the-book-down grip. It may well be his most romantic book - and is there any kind of story that carries romance like time travel?
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-28 00:00:00 +0000 UTC'>November 28, 2023</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to 11/22/63" href="http://localhost:1313/books/11-22-63---stephen-king/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-gunslinger.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Gunslinger
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This is at least my third time reading The Gunslinger. The first was way back in Junior High, with my first attempt at the cycle (I cried off at either Wolves of Calla or Song of Susannah). The second was with the audiobooks a few years ago.
+The first of the audiobooks at the time was read by George Guidall, who I came to associate more with Les Miserables than The Dark Tower. I like George’s narration, and I loved Frank Muller’s narration of a few of the Tower books he narrated. I found myself reading Gunslinger this time in a merge of their voices, fitting perfectly.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-12 00:00:00 +0000 UTC'>November 12, 2023</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-headphones tb-flag-icon" title="Audiobook"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Gunslinger" href="http://localhost:1313/books/the-gunslinger---stephen-king/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/fairy-tale.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fairy Tale
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I really enjoyed this! I found it a little slow to start, and kind of disorientating for two reasons. 1) Unlike many (most?) of King’s books, this isn’t set in Maine, but in Illinois (my home state), so it felt pretty close to home. 2) The protagonist is a high school kid, in high school at roughly the same year that I graduated high school. This caused some odd friction when King writes about “opening up Safari” or “going to the Tube” or “everything’s on the Net” which is “awesome sauce.”
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-11 00:00:00 +0000 UTC'>November 11, 2023</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Fairy Tale" href="http://localhost:1313/books/fairy-tale---stephen-king/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="num-pagination">
+    <ul>
+      
+        
+          <li><a href="/tags/grimport/">1</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/2/">2</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/3/">3</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/4/">4</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/5/">5</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/6/">6</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/7/">7</a></li>
+        
+      
+        
+          <li class="active">8</li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/9/">9</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/10/">10</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/11/">11</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/12/">12</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/13/">13</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/14/">14</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/15/">15</a></li>
+        
+      
+    </ul>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>

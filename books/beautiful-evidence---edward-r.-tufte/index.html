@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Beautiful Evidence | TB Library</title>
+<meta name="keywords" content="bookreview">
+<meta name="description" content="Review
+Another read for work, though I hesitate to log this because in truth I skimmed it aside from a few particularly relevant chapters (notably, the Sparkline sections and the chapter where Tufte lights up powerpoint). This is certainly a very pretty book to look at, with a great variety of charts, pictures, and views on how various types of evidence come together (or don’t). That said, the age of the text shows.">
+<meta name="author" content="Edward R. Tufte">
+<link rel="canonical" href="https://tblibrary.com/books/beautiful-evidence---edward-r.-tufte/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tblibrary.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://tblibrary.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://tblibrary.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/json" href="https://tblibrary.com/books/beautiful-evidence---edward-r.-tufte/index.json" title="json">
+<link rel="alternate" hreflang="en" href="https://tblibrary.com/books/beautiful-evidence---edward-r.-tufte/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://tblibrary.com/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+<meta property="og:url" content="https://tblibrary.com/books/beautiful-evidence---edward-r.-tufte/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content="★★★ —  Review: Beautiful Evidence">
+
+<meta property="og:description"
+      content="Another read for work, though I hesitate to log this because in truth I skimmed it aside from a few particularly relevant chapters (notably, the Sparkline sections and the chapter where Tufte lights up powerpoint). This is certainly a very pretty book to look at, with a great variety of charts, pictures, and views on how various types of evidence come together (or don’t). That said, the age of the text shows.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="books">
+    <meta property="article:published_time" content="2023-06-28T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-06-28T00:00:00+00:00">
+    <meta property="article:tag" content="Bookreview">
+    <meta property="og:image" content="https://tblibrary.com/covers/beautiful-evidence.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tblibrary.com/covers/beautiful-evidence.jpg">
+  <meta name="twitter:title" content="Beautiful Evidence">
+  <meta name="twitter:description" content="Review Another read for work, though I hesitate to log this because in truth I skimmed it aside from a few particularly relevant chapters (notably, the Sparkline sections and the chapter where Tufte lights up powerpoint). This is certainly a very pretty book to look at, with a great variety of charts, pictures, and views on how various types of evidence come together (or don’t). That said, the age of the text shows.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Reviews",
+      "item": "https://tblibrary.com/books/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Beautiful Evidence",
+      "item": "https://tblibrary.com/books/beautiful-evidence---edward-r.-tufte/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Beautiful Evidence",
+  "name": "Beautiful Evidence",
+  "description": "Review Another read for work, though I hesitate to log this because in truth I skimmed it aside from a few particularly relevant chapters (notably, the Sparkline sections and the chapter where Tufte lights up powerpoint). This is certainly a very pretty book to look at, with a great variety of charts, pictures, and views on how various types of evidence come together (or don’t). That said, the age of the text shows.\n",
+  "keywords": [
+    "bookreview"
+  ],
+  "articleBody": "Review Another read for work, though I hesitate to log this because in truth I skimmed it aside from a few particularly relevant chapters (notably, the Sparkline sections and the chapter where Tufte lights up powerpoint). This is certainly a very pretty book to look at, with a great variety of charts, pictures, and views on how various types of evidence come together (or don’t). That said, the age of the text shows.\nTufte repeats a theme throughout the book - words, numbers, charts, pictures, these are all pieces of evidence, and should live within the same universe. Sparklines are a terribly interesting example of this. They have certainly been standard in the financial world as long as I can recall, but when I think of how to apply them to things like homeless services and other domains, I get a little finicky. Tufte notes that these typography-sized charts are able to stand on their own, unadorned by labels and grids and such, because the text around them provides the context. That is very interesting, but I wonder. The most powerful example of these is the glucose chart - but it is adorned with a variety of labels (or at least, the colored points - which I like).\nI found myself very curious to apply these to datasets I work with - I just wrote a 6 page memo with a variety of graphs and charts that I grated my teeth at when e-mailing them out. How could I have improved these with some of Tufte’s theory? How could Sparklines have been used? If I want to do this, though, I have to have some capacity to MAKE them, and that is a question even Tufte doesn’t know how to answer. On page 61 he notes that it is cumbersome (in 2006) to produce these, people need a page layout software (ie Word, though I think he’s probably really talking about InDesign), a graphic design program (which again, I think could be collapsed into InDesign), and a statistical analysis software capable of generating a chart that could be resized in the other softwares. This is a bit of a mess. It is no easier, so far as I know, in 2023. The most time consuming part of my 6 page memo (other than the actual data analysis) was figuring out how to make the charts align properly in MS Word. We still haven’t figured this out, and Tufte doesn’t make any meaningful suggestions. The one suggestion he seems to make is going back to the MS-DOS days, where everything was in one program. I think that ship has probably sailed. I am also skeptical of all these functionalities living in one software - I’m concerned it would be a software that does many things poorly instead of one thing relatively well.\nI did particularly enjoy Tufte’s hatred of powerpoint. Though, in the nearly 20 years since this book’s publication, I wonder if we’re starting to slowly move past it. I think if I e-mailed out a 2-page technical memo ahead of a meeting it might cause a row of seizures (though I would certainly prefer it). This certainly comes from the era of powerpoints as content rather than powerpoints as an aid to content. I think many of us (but not all) have gotten better about this. A recurring problem that I’ve had when trying to break past powerpoint is how to show large tables of data on a screen - I need something that I can intuitively zoom in and out of, but that is a tall order when you can break a table across multiple powerpoint slides for emphasis.\nAn interesting text - if you walk into someone’s house and this is their coffee table book, ask to see the incredible fold out of Minard’s map of the retreat of the French army from Russia. Tufte is clearly in love with this graphic, and for good reason.\nAuthor: Edward R. Tufte\nLast read: 2023-06-28\nRating: 3\nForm: Reference\nGenre: Science\nTimes read: 1\nCopies owned: 0\nFun score: 0.00\n",
+  "wordCount" : "681",
+  "inLanguage": "en",
+  "image":"https://tblibrary.com/covers/beautiful-evidence.jpg","datePublished": "2023-06-28T00:00:00Z",
+  "dateModified": "2023-06-28T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Edward R. Tufte"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tblibrary.com/books/beautiful-evidence---edward-r.-tufte/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TB Library",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tblibrary.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://tblibrary.com/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://tblibrary.com/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/books/" title="Reviews">
+                    <span>Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<div class="tb-review-layout">
+
+
+  <h1>Beautiful Evidence</h1>
+  <p>June 28, 2023 — Edward R. Tufte</p>
+  
+    <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#review" aria-label="Review">Review</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  
+  <aside class="tb-review-sidebar">
+  	
+  		<img src="/covers/beautiful-evidence.jpg" class="tb-cover-art">
+	
+    <center>
+<div class="tb-rating">
+
+  
+
+  
+  
+
+    
+    
+    
+
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+
+    
+
+    
+
+    
+
+    
+      <i class="fa-regular fa-star tb-star tb-star-empty"></i>
+    
+      <i class="fa-regular fa-star tb-star tb-star-empty"></i>
+    
+
+  
+
+  
+    
+        
+  
+
+  
+
+  
+
+</div>
+</center>
+
+    <div class="tb-meta">
+</div>
+  </aside>
+
+  <div class="tb-review-content">
+    <h2 id="review">Review</h2>
+<p>Another read for work, though I hesitate to log this because in truth I skimmed it aside from a few particularly relevant chapters (notably, the Sparkline sections and the chapter where Tufte lights up powerpoint). This is certainly a very pretty book to look at, with a great variety of charts, pictures, and views on how various types of evidence come together (or don’t). That said, the age of the text shows.</p>
+<p>Tufte repeats a theme throughout the book - words, numbers, charts, pictures, these are all pieces of evidence, and should live within the same universe. Sparklines are a terribly interesting example of this. They have certainly been standard in the financial world as long as I can recall, but when I think of how to apply them to things like homeless services and other domains, I get a little finicky. Tufte notes that these typography-sized charts are able to stand on their own, unadorned by labels and grids and such, because the text around them provides the context. That is very interesting, but I wonder. The most powerful example of these is the glucose chart - but it is adorned with a variety of labels (or at least, the colored points - which I like).</p>
+<p>I found myself very curious to apply these to datasets I work with - I just wrote a 6 page memo with a variety of graphs and charts that I grated my teeth at when e-mailing them out. How could I have improved these with some of Tufte’s theory? How could Sparklines have been used? If I want to do this, though, I have to have some capacity to MAKE them, and that is a question even Tufte doesn’t know how to answer. On page 61 he notes that it is cumbersome (in 2006) to produce these, people need a page layout software (ie Word, though I think he’s probably really talking about InDesign), a graphic design program (which again, I think could be collapsed into InDesign), and a statistical analysis software capable of generating a chart that could be resized in the other softwares. This is a bit of a mess. It is no easier, so far as I know, in 2023. The most time consuming part of my 6 page memo (other than the actual data analysis) was figuring out how to make the charts align properly in MS Word. We still haven’t figured this out, and Tufte doesn’t make any meaningful suggestions. The one suggestion he seems to make is going back to the MS-DOS days, where everything was in one program. I think that ship has probably sailed. I am also skeptical of all these functionalities living in one software - I’m concerned it would be a software that does many things poorly instead of one thing relatively well.</p>
+<p>I did particularly enjoy Tufte’s hatred of powerpoint. Though, in the nearly 20 years since this book’s publication, I wonder if we’re starting to slowly move past it. I think if I e-mailed out a 2-page technical memo ahead of a meeting it might cause a row of seizures (though I would certainly prefer it). This certainly comes from the era of powerpoints <em>as content</em> rather than powerpoints as an aid to content. I think many of us (but not all) have gotten better about this. A recurring problem that I’ve had when trying to break past powerpoint is how to show large tables of data on a screen - I need something that I can intuitively zoom in and out of, but that is a tall order when you can break a table across multiple powerpoint slides for emphasis.</p>
+<p>An interesting text - if you walk into someone’s house and this is their coffee table book, ask to see the incredible fold out of Minard’s map of the retreat of the French army from Russia. Tufte is clearly in love with this graphic, and for good reason.</p>
+<div class="book-meta">
+  <p><strong>Author:</strong> Edward R. Tufte</p>
+  <p><strong>Last read:</strong> 2023-06-28</p>
+  <p><strong>Rating:</strong> 3</p>
+  <p><strong>Form:</strong> Reference</p>
+  <p><strong>Genre:</strong> Science</p>
+  <p><strong>Times read:</strong> 1</p>
+  <p><strong>Copies owned:</strong> 0</p>
+  <p><strong>Fun score:</strong> 0.00</p>
+</div>
+
+
+  </div>
+<br />
+  <div class="tb-review-tags">
+    
+      <h2>Tags:</h2>
+      
+        <a href="/tags/bookreview/" class="bookchart-btn tag-btn">
+          bookreview
+        </a>
+      
+    
+  </div>
+
+</div>
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://tblibrary.com/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>

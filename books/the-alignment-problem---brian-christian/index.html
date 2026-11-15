@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>The Alignment Problem | TB Library</title>
+<meta name="keywords" content="bookreview">
+<meta name="description" content="Review
+I am thoroughly impressed with Christian’s documentation of AI’s development and emergence from nascent geekery to world-altering capital-T Thing. This book released in 2020, and a mere 3.5 years later basically every tech product you’re likely to see has had “AI” thrown at the front or back of its name. There is so much fear, uncertainty, and doubt around this technology that half of the conversations I’m in that involve it seem to want to resolve into people fleeing for the woods.">
+<meta name="author" content="Brian Christian">
+<link rel="canonical" href="https://tblibrary.com/books/the-alignment-problem---brian-christian/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tblibrary.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://tblibrary.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://tblibrary.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/json" href="https://tblibrary.com/books/the-alignment-problem---brian-christian/index.json" title="json">
+<link rel="alternate" hreflang="en" href="https://tblibrary.com/books/the-alignment-problem---brian-christian/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://tblibrary.com/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+<meta property="og:url" content="https://tblibrary.com/books/the-alignment-problem---brian-christian/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content="★★★★ —  Review: The Alignment Problem">
+
+<meta property="og:description"
+      content="I am thoroughly impressed with Christian’s documentation of AI’s development and emergence from nascent geekery to world-altering capital-T Thing. This book released in 2020, and a mere 3.5 years later basically every tech product you’re likely to see has had “AI” thrown at the front or back of its name. There is so much fear, uncertainty, and doubt around this technology that half of the conversations I’m in that involve it seem to want to resolve into people fleeing for the woods.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="books">
+    <meta property="article:published_time" content="2024-06-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-15T00:00:00+00:00">
+    <meta property="article:tag" content="Bookreview">
+    <meta property="og:image" content="https://tblibrary.com/covers/the-alignment-problem.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tblibrary.com/covers/the-alignment-problem.jpg">
+  <meta name="twitter:title" content="The Alignment Problem">
+  <meta name="twitter:description" content="Review I am thoroughly impressed with Christian’s documentation of AI’s development and emergence from nascent geekery to world-altering capital-T Thing. This book released in 2020, and a mere 3.5 years later basically every tech product you’re likely to see has had “AI” thrown at the front or back of its name. There is so much fear, uncertainty, and doubt around this technology that half of the conversations I’m in that involve it seem to want to resolve into people fleeing for the woods.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Reviews",
+      "item": "https://tblibrary.com/books/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The Alignment Problem",
+      "item": "https://tblibrary.com/books/the-alignment-problem---brian-christian/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Alignment Problem",
+  "name": "The Alignment Problem",
+  "description": "Review I am thoroughly impressed with Christian’s documentation of AI’s development and emergence from nascent geekery to world-altering capital-T Thing. This book released in 2020, and a mere 3.5 years later basically every tech product you’re likely to see has had “AI” thrown at the front or back of its name. There is so much fear, uncertainty, and doubt around this technology that half of the conversations I’m in that involve it seem to want to resolve into people fleeing for the woods.\n",
+  "keywords": [
+    "bookreview"
+  ],
+  "articleBody": "Review I am thoroughly impressed with Christian’s documentation of AI’s development and emergence from nascent geekery to world-altering capital-T Thing. This book released in 2020, and a mere 3.5 years later basically every tech product you’re likely to see has had “AI” thrown at the front or back of its name. There is so much fear, uncertainty, and doubt around this technology that half of the conversations I’m in that involve it seem to want to resolve into people fleeing for the woods.\nChristian does a good job of documenting the historical, psychological, ethical, and epistemological origins of AI. I was particularly drawn to the psychological analogies, many of which surprised me. I rented this from the library in physical form and so to save my notes for future reference had to painstakingly write page numbers on index cards and go back to scan/dictate the text to my Notes app, but I’m posting those here for my convenience.\n—\nNotes:\nThe Alignment Problem\nP30 - In one of the first articles explicitly addressing the notion of bias in computing systems, the University of Washington’s Batya Friedman and Cornell’s Helen Nissenbaum had warned that “computer systems, for instance, are comparatively inexpensive to disseminate, and thus, once developed, a biased system has the potential for widespread impact. If the system becomes a standard in the field, the bias becomes pervasive.”, ^40 (Representation)\nP49 - As Princeton’s Arvind Narayanan puts it: “Contrary to the ’tech moves too fast for society to keep up’ cliché, commercial deployments of tech often move glacially-just look at the banking and airline mainframes still running. ML [machine-learning] models being trained today might still be in production in 50 years, and that’s terrifying.” ^93 (Representation)\nFeedback loops\n“Machine learning is not, by default, fair or just in any meaningful way.” - Moritz Hardt (^3, Fairness)\n“No machinery is more efficient than the human element that operates it.” (??)\n“One of the most important things in any prediction is to make sure that you’re actually predicting what you think you’re predicting. This is harder than it sounds.”\nP123 - Thorndike sees here the makings of a bigger, more general law of nature. As he puts it, the results of our actions are either “satisfying” or “annoying.” When the result of an action is “satisfying,” we tend to do it more. When on the other hand the outcome is “annoying,” we’ll do it less. The more clear the connection between action and outcome, the stronger the resulting change. Thorndike calls this idea, perhaps the most famous and durable of his career, “the law of effect.\"\nAs he puts it:\nThe Law of Effect is: When a modifiable connection between a situation and a response is made and is accompanied or followed by a satisfying state of affairs, that connection’s strength is increased: When made and accompanied or followed by an annoying state of affairs its strength is decreased. The strengthening effect of satisfyingness (or the weakening effect of annoy-ingness upon a bond varies with the closeness of the connection between it and the bond. ^7 (Reinforcement)\nP127 - Continuing to develop machines that could learn, in other words—by human instruction or their own experience-would alleviate the need for programming. Moreover it would enable computers to do things we didn’t know how to program them to do.\nP141 - “this is apparently the first application of this algorithm to a complex non-trivial task,” TESAURO wrote. Re: use of algorithms to play go, I got you got, learning from guesses steadily coming to learn one adventure position look like. … “it is spelling it, with zero knowledge built in, the network is able to learn from scratch to play the entire game at a fairly strong, intermediate level of performance, which is clearly better than conventional commercial programs, and which in fact, surpasses comparable networks trained on a massive human expert data set. This indicates that TD learning may work better in practice than one would expect based on current theory.“\nP151 - Meanwhile, we take up another question. Reinforcement learning in its classical form takes for granted the structure of the rewards in the world and asks the question of how to arrive at the behavior-the “policy” —that maximally reaps them. But in many ways this obscures the more interesting—and more dire—matter that faces us at the brink of Al. We find ourselves rather more interested in the exact opposite of this question: Given the behavior we want from our machines, how do we structure the environment’s rewards to bring that behavior about?\nHow do we get what we want when it is we who sit in the back of the audience, in the critic’s chair—we who administer the food pellets, or their digital equivalent?\nThis is the alignment problem, in the context of a reinforcement learner. Though the question has taken on a new urgency in the last five to ten years, as we shall see it is every bit as deeply rooted in the past as reinforcement learning itself.\nP160 - But Miyamoto had a problem. There are also good mushrooms, which you have to learn, not to dodge, but to seek. “This gave us a real head-ache,” he explains. “We needed somehow to make sure the player understood that this was something really good.” So now what? The good mushroom approaches you in an area where you have too little headroom to easily jump over it-you brace for impact, but instead of killing you, it makes you double in size. The mechanics of the game have been established, and now you are let loose. You think you are simply playing.\nBut you are carefully, precisely, inconspicuously being trained. You learn the rule, then you learn the exception. You learn the basic mechanics, then you are given free rein.\nP161 - in both cases, the use of a curriculum – an easier version of the problem, followed by a harder version – succeeding in cases we’re trying to learn the more difficult problem by itself could not.\nP169 - “As a general rule,” says Russell, “it is better to design performance measures according to what one actually wants in the environment, rather than according to how one thinks the agent should behave.”^50 Put differently, the key insight is that we should strive to reward states of the world, not actions of our agent. These states typically represent “progress” toward the ultimate goal, whether that progress is represented in physical distance or in something more conceptual like completed subgoals (chapters of a book, say, or portions of a mechanical assembly). (^50 Shaping).\nP185 - Learned helplessness; “As the celebrated aphorist Ashleigh Brilliant put it, “If you’re careful enough, nothing bad or good will ever happen to you.” ^11 (Curiosity)\nP202 - All rewards are internal. ^61 (Curiosity).\nP222 - Conway lloyd Morgan - “Five minutes’ demonstration is worth more than five hours’ talking where the object is to impart skill. It is of comparatively little use to describe or explain how a skilled feat is to be accomplished; it is far more helpful to show how it is done.” ^32 (Imitation)\nP228 - At its root, the problem stems from the fact that the learner sees an expert execution of the problem, and an expert almost never gets into trouble. No matter how good the learner is, though, they will make mistakes – whether blatant or supple. But because the learner never saw the expert get into trouble, they have also never seen the expert get out. In fact, when the beginner makes beginner mistakes, they may end up in a situation that is completely different from anything they saw during their observation of the expert. “That means,“ says Sergey Levine, “that, you know, all bets are off.” (Cascading errors).\nP247 - Eliezer Yudkowsky, cofounder of the Machine Intelligence Research Institute, wrote an influential 2004 manuscript in which he argues for imbuing machines, not simply to imitate and hold or norms as we imperfectly embody them, but rather, we should instill in machines what he calls our “coherent extrapolated volition.“ “In poetic terms, “he writes, “our coherent extrapolated volition is our wish if we knew more, thought faster, were more the people we wish we were.“\nP251 - Warneken, along with his collaborator Michael Tomasello of Duke, was the first to systematically show, in 2006, that human infants as young as eighteen months old will reliably identify a fellow human facing a problem, will identify the human’s goal and the obstacle in the way, and will spontaneously help if they can-even if their help is not requested, even if the adult doesn’t so much as make eye contact with them, and even when they expect (and receive) no reward for doing so.^2 (Inference)\nP261 - We are now, it is fair to say, well beyond the point where our machines can do only that which we can program into them in the explicit language of math and code.\nP268 - Russell dubbed this new framework cooperative inverse reinforcement learning (“CIRL,” for short).^40 In the CIRL formulation, the human and the computer work together to jointly maximize a single reward function - and initially only the human knows what it is.\n“We we’re trying to think, what’s the simplest change we can make to the current math and the current theoretical systems that fixes the theory that leads to these sort of existential-risk problems?“ says Hadfield-Menell. “What is a math problem where the optimal thing is what we actually want?“^41 (Inference)\nP282 - He has the students play games where they must decide which side of various bets to take, figuring out how to turn their beliefs and hunches into probabilities, and deriving the laws of probability theory from scratch. They are games of epistemology: What do you know? And what do you believe? And how confident are you, exactly? “That gives you a very good tool for machine learning,” says Gal, “to build algorithms—to build computational tools —that can basically use these sorts of principles of rationality to talk about uncertainty.” (…) Gal: “I wouldn’t rely on a model that couldn’t tell me whether it’s actually certain about its predictions.” (re: uncertainty in models and models communicating uncertainty; ensembling; dropouts…).^14\nThere’s a certain irony here, in that deep learning–despite being deeply rooted in statistics—has, as a rule, not made uncertainty a first-class citizen.\nNote from TB: thinking about uncertainty in prioritization. Weighing measures in a prioritization algorithm.\nP292 - Another researcher who has been focused on these problems in recent years is DeepMind’s Victoria Krakovna. Krakovna notes that one of the big problems with penalties for impact is that in some cases, achieving a specific goal necessarily requires high-impact actions, but this could lead to what’s called “offsetting”: taking further high-impact actions to counterbalance the earlier ones. This isn’t always bad: if the system makes a mess of some kind, we probably want it to clean up after itself. But sometimes these “offsetting” actions are problematic. We don’t want a system that cures someone’s fatal illness but then-to nullify the high impact of the cure-kills them. ^43 (Uncertainty)\nNote from TB: thinking about uncertainty in prioritization again, and how to measure / quantify “impact on PEH,” in algorithm. What is the impact of each stage of the prioritization process, from inflow to referral, etc.\nP294 - Turner’s idea is that the reason we care about the Shanghai Stock Exchange, or the integrity of our cherished vase, or, for that matter, the ability to move boxes around the virtual warehouse, is it those things for whatever reason matter to us, and they matter to us because they are ultimately in some way or other tied to our goals. We want to save for retirement, put flowers in the vase, complete the sokoban level. What if we model this idea of goals explicitly? His proposal goes by the name “attainable utility preservation“: giving the system a set of auxiliary goals in the game environment, and making sure that it can still effectively pursue these auxiliary goals after it’s done whatever points-scoring actions the game incentivizes. Fascinatingly, the mandate to preserve a tangible utility seems to foster good behavior in the AI safety gridworlds even when the auxiliary goals are generated at random. ^49 (Uncertainty)\nP295 - One of the most chilling and prescient quotations in the field of AI safety comes in a famous 1960 article on the “Moral and Technical Consequences of Automation” by MIT’s Norbert Wiener: “If we use, to achieve our purposes, a mechanical agency with whose operation we cannot efficiently interfere once we have started it… then we had better be quite sure that the purpose put into the machine is the purpose which we really desire and not merely a colorful imitation of it.\"^51 It is the first succinct expression of the alignment problem.\nNo less crucial, however, is this statement’s flip side: If we were not sure that the objectives and constraints we gave the machine entirely and perfectly specified what we did and didn’t want the machine to do, then we had better be sure we can intervene. In the Al safety literature, this concept goes by the name of “corrigibility,” and—soberingly—it’s a whole lot more complicated than it seems.^52 (Uncertainty)\nP299 - But, they found, there’s a major catch. If the system’s model of what you care about is fundamentally “misspecified”-there are things you care about of which it’s not even aware and that don’t even enter into the system’s model of your rewards-then it’s going to be confused about your motivation. For instance, if the system doesn’t understand the subtleties of human appetite, it may not understand why you requested a steak dinner at six o’clock but then declined the opportunity to have a second steak dinner at seven o’clock. If locked into an oversimplified or misspecified model where steak (in this case) must be entirely good or entirely bad, then one of these two choices, it concludes, must have been a mistake on your part. It will interpret your behavior as “irrational,” and that, as we’ve seen, is the road to incorrigibility, to disobedience.\"^63 (Uncertainty)\n——\nNotes\nRepresentation\n40 - Friedman and Nissenbaum, “Bias in Computer Systems.” 93 - Narayanan on Twitter: https://twitter.com/random_walker/status/993866661852864512 Fairness\n3 - Hardt, “How Big Data Is Unfair.” Reinforcement\n7 - Thorndike, The Psychology of Learning. Shaping\n50 - Russell and Norvid, Artificial Intelligence. Curiosity\n11 - See Henry Alford, “The Wisdom of Ashleigh Brilliant,” http://www.ashleighbrilliant.com/BrilliantWisdom.html, excerpted from Alford, How to Live (New York: Twelve, 2009). 61 - Singh, Lewis, and Barto. For more discussion, see Oudeyer and Kaplan, “What Is Intrinsic Motivation?” Sing, Lewis, and Barto — “Where Do Rewards Come From?” In “Proceedings of the Annual Conference of the Cognitive Science Society,” 2601-06. 2009. Imitation\n32 - Morgan, “An Introduction to Comparative Psychology.” Inference\n2 - See also Meltzoff, “Understanding the intentions of Others” which showed that eighteen-month olds can successfully imitate the intended acts that adults tried and failed to do, indicating that they ‘situate people within a psychological framework that differentiates between the surface behavior of people and a deeper level involving goals and intentions.’ The citation for the Warneken paper: Warneken, Felix, and Michael Tomasello. “Altruistic Helping in Human Infants and Young Chimpanzees.” Science 311, no. 5765 (2006): 1301-03. 40 - Hadfield-Menell et al., “Cooperative Inverse Reinforcement Learning.” (“CIRL” is pronounced with a soft c, homophonous with the last name of strong AI skeptic John Searle (no relation). I have agitated within the community that a hard c “curl” pronunciation makes more sense, given that “cooperative” uses a hard c, but it appears the die is cast.). Note from TB: I agree w/ the hard c note. 41 - Dylan Hadfield-Menell, personal interview, March 15, 2018. Uncertainty\n14 - Yarin Gal, “Modern Deep Learning Through Bayesian Eyes” (lecture), Microsoft Research, December 11, 2015, https://www.microsoft.com/en-us/research/video/modern-deep-learning-through-bayesian-eyes/. 43 - As Eliezer Yudkowsky put it, “If you’re going to cure cancer, make sure the patient still dies!” See https://intelligence.org/2016/12/28/ai-alignment-why-its-hard-and-where-to-start/. See also Armstrong and Levinstein, “Low Impact Artificial Intelligence,” which uses the example of an asteroid headed for earth. A system constrained to only take “low-impact” actions might fail to divert it—or, perhaps even worse, a system capable of offsetting might divert the asteroid, saving the planet, and then blow the planet up anyway. 49 - Mind Safety Kesearer o designing-agent-incentives-to-avoid-side-effects-elac80ea6107. Turner, Hadfield-Menell, and Tadepalli, “Conservative Agency via Attainable Utility Preservation.” See also Turner’s “Reframing Impact” sequence at http://www.alignmentforum.org/s/7CdoznhJaLEKHwvJW and additional discussion in his “Towards a New Impact Measure,” https://www.alignmentforum.org/ posts/yEa7kwoMpsBgaBCgb/towards-a-new-impact-measure; he writes, “I have a theory that AUP seemingly works for advanced agents not because the content of the attainable set’s utilities actually matters, but rather because there exists a common utility achievement currency of power.” See Turner, “Optimal Farsighted Agents Tend to Seek Power.” For more on the notion of power in an Al safety context, including an information-theoretic account of “empowerment,” see Amodei et al., “Concrete Problems in Al Safety,” which, in turn, references Salge, Glackin, and Polani, “Empowerment: An Introduction,” and Mohamed and Rezende, “Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning.” 51 - Wiener, “Some Moral and Technical Consequences of Automation.” 52 - According to Paul Christiano, “corrigibility” as a tenet of AI safety began with Machine intelligence Research Institute’s Eliezer Yudkowsky, and the name itself came from Robert Miles. See Christiano’s “Corrigibility,” https://ai-alignment.com/corrigibility-3039e668638. 63 - For more on corrigibility and model misspecification using this paradigm, see also, e.g., Carey, “Incorrigibility in the CIRL Framework.” Author: Brian Christian\nLast read: 2024-06-15\nRating: 4\nForm: Nonfiction\nGenre: Technology\nTimes read: 1\nCopies owned: 0\nFun score: 1.67\n",
+  "wordCount" : "2942",
+  "inLanguage": "en",
+  "image":"https://tblibrary.com/covers/the-alignment-problem.jpg","datePublished": "2024-06-15T00:00:00Z",
+  "dateModified": "2024-06-15T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Brian Christian"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tblibrary.com/books/the-alignment-problem---brian-christian/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TB Library",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tblibrary.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://tblibrary.com/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://tblibrary.com/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/books/" title="Reviews">
+                    <span>Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<div class="tb-review-layout">
+
+
+  <h1>The Alignment Problem</h1>
+  <p>June 15, 2024 — Brian Christian</p>
+  
+    <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#review" aria-label="Review">Review</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  
+  <aside class="tb-review-sidebar">
+  	
+  		<img src="/covers/the-alignment-problem.jpg" class="tb-cover-art">
+	
+    <center>
+<div class="tb-rating">
+
+  
+
+  
+  
+
+    
+    
+    
+
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+
+    
+
+    
+
+    
+
+    
+      <i class="fa-regular fa-star tb-star tb-star-empty"></i>
+    
+
+  
+
+  
+    
+        
+  
+
+  
+
+  
+
+</div>
+</center>
+
+    <div class="tb-meta">
+</div>
+  </aside>
+
+  <div class="tb-review-content">
+    <h2 id="review">Review</h2>
+<p>I am thoroughly impressed with Christian’s documentation of AI’s development and emergence from nascent geekery to world-altering capital-T Thing. This book released in 2020, and a mere 3.5 years later basically every tech product you’re likely to see has had “AI” thrown at the front or back of its name. There is so much fear, uncertainty, and doubt around this technology that half of the conversations I’m in that involve it seem to want to resolve into people fleeing for the woods.</p>
+<p>Christian does a good job of documenting the historical, psychological, ethical, and epistemological origins of AI. I was particularly drawn to the psychological analogies, many of which surprised me. I rented this from the library in physical form and so to save my notes for future reference had to painstakingly write page numbers on index cards and go back to scan/dictate the text to my Notes app, but I’m posting those here for my convenience.</p>
+<p>—</p>
+<p>Notes:</p>
+<p>The Alignment Problem</p>
+<p>P30 - In one of the first articles explicitly addressing the notion of bias in computing systems, the University of Washington&rsquo;s Batya Friedman and Cornell&rsquo;s Helen Nissenbaum had warned that &ldquo;computer systems, for instance, are comparatively inexpensive to disseminate, and thus, once developed, a biased system has the potential for widespread impact. If the system becomes a standard in the field, the bias becomes pervasive.&rdquo;, ^40 (Representation)</p>
+<p>P49 - As Princeton&rsquo;s Arvind Narayanan puts it: &ldquo;Contrary to the &rsquo;tech moves too fast for society to keep up&rsquo; cliché, commercial deployments of tech often move glacially-just look at the banking and airline mainframes still running. ML [machine-learning] models being trained today might still be in production in 50 years, and that&rsquo;s terrifying.&rdquo; ^93 (Representation)</p>
+<p>Feedback loops</p>
+<p>“Machine learning is not, by default, fair or just in any meaningful way.” - Moritz Hardt (^3, Fairness)</p>
+<p>“No machinery is more efficient than the human element that operates it.” (??)</p>
+<p>“One of the most important things in any prediction is to make sure that you’re actually predicting what you think you’re predicting. This is harder than it sounds.”</p>
+<p>P123 - Thorndike sees here the makings of a bigger, more general law of nature. As he puts it, the results of our actions are either &ldquo;satisfying&rdquo; or &ldquo;annoying.&rdquo; When the result of an action is &ldquo;satisfying,&rdquo; we tend to do it more. When on the other hand the outcome is &ldquo;annoying,&rdquo; we&rsquo;ll do it less. The more clear the connection between action and outcome, the stronger the resulting change. Thorndike calls this idea, perhaps the most famous and durable of his career, &ldquo;the law of effect.&quot;<br>
+As he puts it:</p>
+<p>The Law of Effect is: When a modifiable connection between a situation and a response is made and is accompanied or followed by a satisfying state of affairs, that connection&rsquo;s strength is increased: When made and accompanied or followed by an annoying state of affairs its strength is decreased. The strengthening effect of satisfyingness (or the weakening effect of annoy-ingness upon a bond varies with the closeness of the connection between it and the bond. ^7 (Reinforcement)</p>
+<p>P127 - Continuing to develop machines that could learn, in other words—by human instruction or their own experience-would alleviate the need for programming. Moreover it would enable computers to do things we didn&rsquo;t know how to program them to do.</p>
+<p>P141 - “this is apparently the first application of this algorithm to a complex non-trivial task,” TESAURO wrote. Re: use of algorithms to play go, I got you got, learning from guesses steadily coming to learn one adventure position look like. … “it is spelling it, with zero knowledge built in, the network is able to learn from scratch to play the entire game at a fairly strong, intermediate level of performance, which is clearly better than conventional commercial programs, and which in fact, surpasses comparable networks trained on a massive human expert data set. This indicates that TD learning may work better in practice than one would expect based on current theory.“</p>
+<p>P151 - Meanwhile, we take up another question. Reinforcement learning in its classical form takes for granted the structure of the rewards in the world and asks the question of how to arrive at the behavior-the &ldquo;policy&rdquo; —that maximally reaps them. But in many ways this obscures the more interesting—and more dire—matter that faces us at the brink of Al. We find ourselves rather more interested in the exact opposite of this question: Given the behavior we want from our machines, how do we structure the environment&rsquo;s rewards to bring that behavior about?<br>
+How do we get what we want when it is we who sit in the back of the audience, in the critic&rsquo;s chair—we who administer the food pellets, or their digital equivalent?<br>
+This is the alignment problem, in the context of a reinforcement learner. Though the question has taken on a new urgency in the last five to ten years, as we shall see it is every bit as deeply rooted in the past as reinforcement learning itself.</p>
+<p>P160 - But Miyamoto had a problem. There are also good mushrooms, which you have to learn, not to dodge, but to seek. &ldquo;This gave us a real head-ache,&rdquo; he explains. &ldquo;We needed somehow to make sure the player understood that this was something really good.&rdquo; So now what? The good mushroom approaches you in an area where you have too little headroom to easily jump over it-you brace for impact, but instead of killing you, it makes you double in size. The mechanics of the game have been established, and now you are let loose. You think you are simply playing.<br>
+But you are carefully, precisely, inconspicuously being trained. You learn the rule, then you learn the exception. You learn the basic mechanics, then you are given free rein.</p>
+<p>P161 - in both cases, the use of a curriculum – an easier version of the problem, followed by a harder version – succeeding in cases we’re trying to learn the more difficult problem by itself could not.</p>
+<p>P169 - &ldquo;As a general rule,&rdquo; says Russell, &ldquo;it is better to design performance measures according to what one actually wants in the environment, rather than according to how one thinks the agent should behave.”^50 Put differently, the key insight is that we should strive to reward states of the world, not actions of our agent. These states typically represent &ldquo;progress&rdquo; toward the ultimate goal, whether that progress is represented in physical distance or in something more conceptual like completed subgoals (chapters of a book, say, or portions of a mechanical assembly). (^50 Shaping).</p>
+<p>P185 - Learned helplessness; “As the celebrated aphorist Ashleigh Brilliant put it, “If you’re careful enough, nothing bad or good will ever happen to you.” ^11 (Curiosity)</p>
+<p>P202 - All rewards are internal. ^61 (Curiosity).</p>
+<p>P222 - Conway lloyd Morgan - “Five minutes’ demonstration is worth more than five hours’ talking where the object is to impart skill. It is of comparatively little use to describe or explain how a skilled feat is to be accomplished; it is far more helpful to show how it is done.” ^32 (Imitation)</p>
+<p>P228 - At its root, the problem stems from the fact that the learner sees an expert execution of the problem, and an expert almost never gets into trouble. No matter how good the learner is, though, they will make mistakes – whether blatant or supple. But because the learner never saw the expert get into trouble, they have also never seen the expert get out. In fact, when the beginner makes beginner mistakes, they may end up in a situation that is completely different from anything they saw during their observation of the expert. “That means,“ says Sergey Levine, “that, you know, all bets are off.” (Cascading errors).</p>
+<p>P247 - Eliezer Yudkowsky, cofounder of the Machine Intelligence Research Institute, wrote an influential 2004 manuscript in which he argues for imbuing machines, not simply to imitate and hold or norms as we imperfectly embody them, but rather, we should instill in machines what he calls our “coherent extrapolated volition.“ “In poetic terms, “he writes, “our coherent extrapolated volition is our wish if we knew more, thought faster, were more the people we wish we were.“</p>
+<p>P251 - Warneken, along with his collaborator Michael Tomasello of Duke, was the first to systematically show, in 2006, that human infants as young as eighteen months old will reliably identify a fellow human facing a problem, will identify the human&rsquo;s goal and the obstacle in the way, and will spontaneously help if they can-even if their help is not requested, even if the adult doesn&rsquo;t so much as make eye contact with them, and even when they expect (and receive) no reward for doing so.^2 (Inference)</p>
+<p>P261 - We are now, it is fair to say, well beyond the point where our machines can do only that which we can program into them in the explicit language of math and code.</p>
+<p>P268 - Russell dubbed this new framework cooperative inverse reinforcement learning (&ldquo;CIRL,&rdquo; for short).^40 In the CIRL formulation, the human and the computer work together to jointly maximize a single reward function - and initially only the human knows what it is.<br>
+“We we’re trying to think, what’s the simplest change we can make to the current math and the current theoretical systems that fixes the theory that leads to these sort of existential-risk problems?“ says Hadfield-Menell. “What is a math problem where the optimal thing is what we actually want?“^41 (Inference)</p>
+<p>P282 - He has the students play games where they must decide which side of various bets to take, figuring out how to turn their beliefs and hunches into probabilities, and deriving the laws of probability theory from scratch. They are games of epistemology: What do you know? And what do you believe? And how confident are you, exactly? &ldquo;That gives you a very good tool for machine learning,&rdquo; says Gal, &ldquo;to build algorithms—to build computational tools —that can basically use these sorts of principles of rationality to talk about uncertainty.&rdquo; (…) Gal: “I wouldn’t rely on a model that couldn’t tell me whether it’s actually certain about its predictions.” (re: uncertainty in models and models communicating uncertainty; ensembling; dropouts…).^14<br>
+There&rsquo;s a certain irony here, in that deep learning&ndash;despite being deeply rooted in statistics—has, as a rule, not made uncertainty a first-class citizen.<br>
+Note from TB: thinking about uncertainty in prioritization. Weighing measures in a prioritization algorithm.</p>
+<p>P292 - Another researcher who has been focused on these problems in recent years is DeepMind&rsquo;s Victoria Krakovna. Krakovna notes that one of the big problems with penalties for impact is that in some cases, achieving a specific goal necessarily requires high-impact actions, but this could lead to what&rsquo;s called &ldquo;offsetting&rdquo;: taking further high-impact actions to counterbalance the earlier ones. This isn&rsquo;t always bad: if the system makes a mess of some kind, we probably want it to clean up after itself. But sometimes these &ldquo;offsetting&rdquo; actions are problematic. We don&rsquo;t want a system that cures someone&rsquo;s fatal illness but then-to nullify the high impact of the cure-kills them. ^43 (Uncertainty)<br>
+Note from TB: thinking about uncertainty in prioritization again, and how to measure / quantify “impact on PEH,” in algorithm. What is the impact of each stage of the prioritization process, from inflow to referral, etc.</p>
+<p>P294 - Turner’s idea is that the reason we care about the Shanghai Stock Exchange, or the integrity of our cherished vase, or, for that matter, the ability to move boxes around the virtual warehouse, is it those things for whatever reason matter to us, and they matter to us because they are ultimately in some way or other tied to our goals. We want to save for retirement, put flowers in the vase, complete the sokoban level. What if we model this idea of goals explicitly? His proposal goes by the name “attainable utility preservation“: giving the system a set of auxiliary goals in the game environment, and making sure that it can still effectively pursue these auxiliary goals after it’s done whatever points-scoring actions the game incentivizes. Fascinatingly, the mandate to preserve a tangible utility seems to foster good behavior in the AI safety gridworlds even when the auxiliary goals are generated at random. ^49 (Uncertainty)</p>
+<p>P295 - One of the most chilling and prescient quotations in the field of AI safety comes in a famous 1960 article on the &ldquo;Moral and Technical Consequences of Automation&rdquo; by MIT&rsquo;s Norbert Wiener: &ldquo;If we use, to achieve our purposes, a mechanical agency with whose operation we cannot efficiently interfere once we have started it&hellip; then we had better be quite sure that the purpose put into the machine is the purpose which we really desire and not merely a colorful imitation of it.&quot;^51 It is the first succinct expression of the alignment problem.<br>
+No less crucial, however, is this statement&rsquo;s flip side: If we were not sure that the objectives and constraints we gave the machine entirely and perfectly specified what we did and didn&rsquo;t want the machine to do, then we had better be sure we can intervene. In the Al safety literature, this concept goes by the name of “corrigibility,” and—soberingly—it’s a whole lot more complicated than it seems.^52 (Uncertainty)</p>
+<p>P299 - But, they found, there&rsquo;s a major catch. If the system&rsquo;s model of what you care about is fundamentally &ldquo;misspecified&rdquo;-there are things you care about of which it&rsquo;s not even aware and that don&rsquo;t even enter into the system&rsquo;s model of your rewards-then it&rsquo;s going to be confused about your motivation. For instance, if the system doesn&rsquo;t understand the subtleties of human appetite, it may not understand why you requested a steak dinner at six o&rsquo;clock but then declined the opportunity to have a second steak dinner at seven o&rsquo;clock. If locked into an oversimplified or misspecified model where steak (in this case) must be entirely good or entirely bad, then one of these two choices, it concludes, must have been a mistake on your part. It will interpret your behavior as &ldquo;irrational,&rdquo; and that, as we&rsquo;ve seen, is the road to incorrigibility, to disobedience.&quot;^63 (Uncertainty)</p>
+<p>——</p>
+<p>Notes</p>
+<p>Representation</p>
+<ul>
+<li>40 - Friedman and Nissenbaum, “Bias in Computer Systems.”</li>
+<li>93 - Narayanan on Twitter: <a href="https://twitter.com/random_walker/status/993866661852864512">https://twitter.com/random_walker/status/993866661852864512</a></li>
+</ul>
+<p>Fairness</p>
+<ul>
+<li>3 - Hardt, “How Big Data Is Unfair.”</li>
+</ul>
+<p>Reinforcement</p>
+<ul>
+<li>7 - Thorndike, The Psychology of Learning.</li>
+</ul>
+<p>Shaping</p>
+<ul>
+<li>50 - Russell and Norvid, Artificial Intelligence.</li>
+</ul>
+<p>Curiosity</p>
+<ul>
+<li>11 - See Henry Alford, “The Wisdom of Ashleigh Brilliant,” <a href="http://www.ashleighbrilliant.com/BrilliantWisdom.html">http://www.ashleighbrilliant.com/BrilliantWisdom.html</a>, excerpted from Alford, How to Live (New York: Twelve, 2009).</li>
+<li>61 - Singh, Lewis, and Barto. For more discussion, see Oudeyer and Kaplan, “What Is Intrinsic Motivation?”</li>
+<li>Sing, Lewis, and Barto — “Where Do Rewards Come From?” In “Proceedings of the Annual Conference of the Cognitive Science Society,” 2601-06. 2009.</li>
+</ul>
+<p>Imitation</p>
+<ul>
+<li>32 - Morgan, “An Introduction to Comparative Psychology.”</li>
+</ul>
+<p>Inference</p>
+<ul>
+<li>2 - See also Meltzoff, “Understanding the intentions of Others” which showed that eighteen-month olds can successfully imitate the intended acts that adults tried and failed to do, indicating that they ‘situate people within a psychological framework that differentiates between the surface behavior of people and a deeper level involving goals and intentions.’</li>
+<li>The citation for the Warneken paper: Warneken, Felix, and Michael Tomasello. “Altruistic Helping in Human Infants and Young Chimpanzees.” Science 311, no. 5765 (2006): 1301-03.</li>
+<li>40 - Hadfield-Menell et al., “Cooperative Inverse Reinforcement Learning.” (“CIRL” is pronounced with a soft c, homophonous with the last name of strong AI skeptic John Searle (no relation). I have agitated within the community that a hard c “curl” pronunciation makes more sense, given that “cooperative” uses a hard c, but it appears the die is cast.).</li>
+<li>Note from TB: I agree w/ the hard c note.</li>
+<li>41 - Dylan Hadfield-Menell, personal interview, March 15, 2018.</li>
+</ul>
+<p>Uncertainty</p>
+<ul>
+<li>14 - Yarin Gal, “Modern Deep Learning Through Bayesian Eyes” (lecture), Microsoft Research, December 11, 2015, <a href="https://www.microsoft.com/en-us/research/video/modern-deep-learning-through-bayesian-eyes/">https://www.microsoft.com/en-us/research/video/modern-deep-learning-through-bayesian-eyes/</a>.</li>
+<li>43 - As Eliezer Yudkowsky put it, “If you’re going to cure cancer, make sure the patient still dies!” See <a href="https://intelligence.org/2016/12/28/ai-alignment-why-its-hard-and-where-to-start/">https://intelligence.org/2016/12/28/ai-alignment-why-its-hard-and-where-to-start/</a>. See also Armstrong and Levinstein, “Low Impact Artificial Intelligence,” which uses the example of an asteroid headed for earth. A system constrained to only take “low-impact” actions might fail to divert it—or, perhaps even worse, a system capable of offsetting might divert the asteroid, saving the planet, and then blow the planet up anyway.</li>
+<li>49 - Mind Safety Kesearer o</li>
+<li>designing-agent-incentives-to-avoid-side-effects-elac80ea6107.</li>
+<li>
+<ol start="49">
+<li>Turner, Hadfield-Menell, and Tadepalli, &ldquo;Conservative Agency via Attainable Utility Preservation.&rdquo; See also Turner&rsquo;s &ldquo;Reframing Impact&rdquo; sequence at <a href="http://www.alignmentforum.org/s/7CdoznhJaLEKHwvJW">http://www.alignmentforum.org/s/7CdoznhJaLEKHwvJW</a> and additional discussion in his &ldquo;Towards a New Impact Measure,&rdquo; <a href="https://www.alignmentforum.org/">https://www.alignmentforum.org/</a> posts/yEa7kwoMpsBgaBCgb/towards-a-new-impact-measure; he writes, &ldquo;I have a theory that AUP seemingly works for advanced agents not because the content of the attainable set&rsquo;s utilities actually matters, but rather because there exists a common utility achievement currency of power.&rdquo; See Turner, &ldquo;Optimal Farsighted Agents Tend to Seek Power.&rdquo; For more on the notion of power in an Al safety context, including an information-theoretic account of &ldquo;empowerment,&rdquo; see Amodei et al., &ldquo;Concrete Problems in Al Safety,&rdquo; which, in turn, references Salge, Glackin, and Polani, &ldquo;Empowerment: An Introduction,&rdquo; and Mohamed and Rezende, &ldquo;Variational Information Maximisation for Intrinsically Motivated Reinforcement Learning.&rdquo;</li>
+</ol>
+</li>
+<li>51 - Wiener, “Some Moral and Technical Consequences of Automation.”</li>
+<li>52 - According to Paul Christiano, “corrigibility” as a tenet of AI safety began with Machine intelligence Research Institute’s Eliezer Yudkowsky, and the name itself came from Robert Miles. See Christiano’s “Corrigibility,” <a href="https://ai-alignment.com/corrigibility-3039e668638">https://ai-alignment.com/corrigibility-3039e668638</a>.</li>
+<li>63 - For more on corrigibility and model misspecification using this paradigm, see also, e.g., Carey, “Incorrigibility in the CIRL Framework.”</li>
+</ul>
+<div class="book-meta">
+  <p><strong>Author:</strong> Brian Christian</p>
+  <p><strong>Last read:</strong> 2024-06-15</p>
+  <p><strong>Rating:</strong> 4</p>
+  <p><strong>Form:</strong> Nonfiction</p>
+  <p><strong>Genre:</strong> Technology</p>
+  <p><strong>Times read:</strong> 1</p>
+  <p><strong>Copies owned:</strong> 0</p>
+  <p><strong>Fun score:</strong> 1.67</p>
+</div>
+
+
+  </div>
+<br />
+  <div class="tb-review-tags">
+    
+      <h2>Tags:</h2>
+      
+        <a href="/tags/bookreview/" class="bookchart-btn tag-btn">
+          bookreview
+        </a>
+      
+    
+  </div>
+
+</div>
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://tblibrary.com/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>

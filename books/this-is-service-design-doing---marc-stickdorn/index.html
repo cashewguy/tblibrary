@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>This Is Service Design Doing | TB Library</title>
+<meta name="keywords" content="bookreview">
+<meta name="description" content="Review
+I’ve owned this book for several years, but other than a really light skim some time ago, haven’t picked it up. I’m coming into a change management role right now and thought I should pick it up. Once again, this is a technical reference book (it’s literally called “A Practitioners’ Handbook” - so I don’t think it is really designed for someone to sit down and read it work for word like a piece of literature. That’s not what I did - I did a version of academic skimming with a few sections that seemed particularly relevant getting a deep read. I think the book wants to be read this way given it is highly sectioned and labeled, with key text highlighted. I really liked this.">
+<meta name="author" content="Marc Stickdorn">
+<link rel="canonical" href="https://tblibrary.com/books/this-is-service-design-doing---marc-stickdorn/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tblibrary.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://tblibrary.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://tblibrary.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/json" href="https://tblibrary.com/books/this-is-service-design-doing---marc-stickdorn/index.json" title="json">
+<link rel="alternate" hreflang="en" href="https://tblibrary.com/books/this-is-service-design-doing---marc-stickdorn/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://tblibrary.com/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
+
+<meta property="og:url" content="https://tblibrary.com/books/this-is-service-design-doing---marc-stickdorn/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content="★★★ —  Review: This Is Service Design Doing">
+
+<meta property="og:description"
+      content="I’ve owned this book for several years, but other than a really light skim some time ago, haven’t picked it up. I’m coming into a change management role right now and thought I should pick it up. Once again, this is a technical reference book (it’s literally called “A Practitioners’ Handbook” - so I don’t think it is really designed for someone to sit down and read it work for word like a piece of literature. That’s not what I did - I did a version of academic skimming with a few sections that seemed particularly relevant getting a deep read. I think the book wants to be read this way given it is highly sectioned and labeled, with key text highlighted. I really liked this.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="books">
+    <meta property="article:published_time" content="2023-06-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-06-29T00:00:00+00:00">
+    <meta property="article:tag" content="Bookreview">
+    <meta property="og:image" content="https://tblibrary.com/covers/this-is-service-design-doing.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tblibrary.com/covers/this-is-service-design-doing.jpg">
+  <meta name="twitter:title" content="This Is Service Design Doing">
+  <meta name="twitter:description" content="Review I’ve owned this book for several years, but other than a really light skim some time ago, haven’t picked it up. I’m coming into a change management role right now and thought I should pick it up. Once again, this is a technical reference book (it’s literally called “A Practitioners’ Handbook” - so I don’t think it is really designed for someone to sit down and read it work for word like a piece of literature. That’s not what I did - I did a version of academic skimming with a few sections that seemed particularly relevant getting a deep read. I think the book wants to be read this way given it is highly sectioned and labeled, with key text highlighted. I really liked this.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Reviews",
+      "item": "https://tblibrary.com/books/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "This Is Service Design Doing",
+      "item": "https://tblibrary.com/books/this-is-service-design-doing---marc-stickdorn/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "This Is Service Design Doing",
+  "name": "This Is Service Design Doing",
+  "description": "Review I’ve owned this book for several years, but other than a really light skim some time ago, haven’t picked it up. I’m coming into a change management role right now and thought I should pick it up. Once again, this is a technical reference book (it’s literally called “A Practitioners’ Handbook” - so I don’t think it is really designed for someone to sit down and read it work for word like a piece of literature. That’s not what I did - I did a version of academic skimming with a few sections that seemed particularly relevant getting a deep read. I think the book wants to be read this way given it is highly sectioned and labeled, with key text highlighted. I really liked this.\n",
+  "keywords": [
+    "bookreview"
+  ],
+  "articleBody": "Review I’ve owned this book for several years, but other than a really light skim some time ago, haven’t picked it up. I’m coming into a change management role right now and thought I should pick it up. Once again, this is a technical reference book (it’s literally called “A Practitioners’ Handbook” - so I don’t think it is really designed for someone to sit down and read it work for word like a piece of literature. That’s not what I did - I did a version of academic skimming with a few sections that seemed particularly relevant getting a deep read. I think the book wants to be read this way given it is highly sectioned and labeled, with key text highlighted. I really liked this.\nThis is certainly an element of change management from a very particular viewpoint: designers, primarily in the technology domain. That said, I think there is a lot here that can be applied analogously elsewhere. Many of the facilitation, ideation, and planning tools, in particular, strike me as useful. I really liked the tools around Personas and Journey Maps. I saw these in practice for the first time this week unrelatedly and it was great to see a different view of them.\nA lot of this book comes across as… Not exactly “dumbing down” academic subjects, but certainly making them easier to digest. If you haven’t had an academic research course, and you’re not engaging in academic research, the research component of this book is probably very useful. If you have, it might just be a helpful refresher.\nI made a lot of marks and bookmarks to come back to this as a technical reference and I do plan to keep it around for access to the tools and cases to see what I can use from it analogously in organizational and programmatic change management.\nAuthor: Marc Stickdorn\nLast read: 2023-06-29\nRating: 3\nForm: Reference\nGenre: Arts / Photography\nTimes read: 1\nCopies owned: 1\nFun score: 0.00\n",
+  "wordCount" : "334",
+  "inLanguage": "en",
+  "image":"https://tblibrary.com/covers/this-is-service-design-doing.jpg","datePublished": "2023-06-29T00:00:00Z",
+  "dateModified": "2023-06-29T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Marc Stickdorn"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tblibrary.com/books/this-is-service-design-doing---marc-stickdorn/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "TB Library",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tblibrary.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://tblibrary.com/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://tblibrary.com/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/books/" title="Reviews">
+                    <span>Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main">
+
+<div class="tb-review-layout">
+
+
+  <h1>This Is Service Design Doing</h1>
+  <p>June 29, 2023 — Marc Stickdorn</p>
+  
+    <details class="toc" >
+    <summary accesskey="c" title="(Alt + C)">
+        <span class="title">Table of Contents</span>
+    </summary>
+
+    <div class="inner"><ul>
+            <li>
+                <a href="#review" aria-label="Review">Review</a>
+            </li>
+        </ul>
+    </div>
+</details>
+
+  
+  <aside class="tb-review-sidebar">
+  	
+  		<img src="/covers/this-is-service-design-doing.jpg" class="tb-cover-art">
+	
+    <center>
+<div class="tb-rating">
+
+  
+
+  
+  
+
+    
+    
+    
+
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+      <i class="fa-solid fa-star tb-star"></i>
+    
+
+    
+
+    
+
+    
+
+    
+      <i class="fa-regular fa-star tb-star tb-star-empty"></i>
+    
+      <i class="fa-regular fa-star tb-star tb-star-empty"></i>
+    
+
+  
+
+  
+    
+        
+  
+
+  
+
+  
+
+</div>
+</center>
+
+    <div class="tb-meta">
+</div>
+  </aside>
+
+  <div class="tb-review-content">
+    <h2 id="review">Review</h2>
+<p>I’ve owned this book for several years, but other than a really light skim some time ago, haven’t picked it up. I’m coming into a change management role right now and thought I should pick it up. Once again, this is a technical reference book (it’s literally called “A Practitioners’ Handbook” - so I don’t think it is really designed for someone to sit down and read it work for word like a piece of literature. That’s not what I did - I did a version of academic skimming with a few sections that seemed particularly relevant getting a deep read. I think the book wants to be read this way given it is highly sectioned and labeled, with key text highlighted. I really liked this.</p>
+<p>This is certainly an element of change management from a very particular viewpoint: designers, primarily in the technology domain. That said, I think there is a lot here that can be applied analogously elsewhere. Many of the facilitation, ideation, and planning tools, in particular, strike me as useful. I really liked the tools around Personas and Journey Maps. I saw these in practice for the first time this week unrelatedly and it was great to see a different view of them.</p>
+<p>A lot of this book comes across as… Not exactly “dumbing down” academic subjects, but certainly making them easier to digest. If you haven’t had an academic research course, and you’re not engaging in academic research, the research component of this book is probably very useful. If you have, it might just be a helpful refresher.</p>
+<p>I made a lot of marks and bookmarks to come back to this as a technical reference and I do plan to keep it around for access to the tools and cases to see what I can use from it analogously in organizational and programmatic change management.</p>
+<div class="book-meta">
+  <p><strong>Author:</strong> Marc Stickdorn</p>
+  <p><strong>Last read:</strong> 2023-06-29</p>
+  <p><strong>Rating:</strong> 3</p>
+  <p><strong>Form:</strong> Reference</p>
+  <p><strong>Genre:</strong> Arts / Photography</p>
+  <p><strong>Times read:</strong> 1</p>
+  <p><strong>Copies owned:</strong> 1</p>
+  <p><strong>Fun score:</strong> 0.00</p>
+</div>
+
+
+  </div>
+<br />
+  <div class="tb-review-tags">
+    
+      <h2>Tags:</h2>
+      
+        <a href="/tags/bookreview/" class="bookchart-btn tag-btn">
+          bookreview
+        </a>
+      
+    
+  </div>
+
+</div>
+
+
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://tblibrary.com/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Grimport | TB Library</title>
+<meta name="keywords" content="">
+<meta name="description" content="My book library">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/tags/grimport/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/grimport/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/grimport/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="http://localhost:1313/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:url" content="http://localhost:1313/tags/grimport/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content=" Review: Grimport">
+
+<meta property="og:description"
+      content="My book library">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Grimport">
+  <meta name="twitter:description" content="My book library">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/books/" title="Reviews">
+                    <span>Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main"> 
+<header class="page-header">
+  <h1>
+    Grimport
+  </h1>
+</header>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-road.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Road
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    New review/thoughts from my April 2024 read: https://tbindc.substack.com/p/the-road
+Below - review from July 5th, 2023.
+The Road is a stunning book. It is dark, cold, and in many ways horrible. The love of the father for the son does radiate through it and ruptures off of the page. The most anxiety-inducing and bone-chilling questions imaginable by a parent are raised directly (“Can you do it? When the time comes? Can you?”) and indirectly.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-10-29 00:00:00 +0000 UTC'>October 29, 2026</span>&nbsp;·&nbsp;<span>Cormac McCarthy</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Road" href="http://localhost:1313/books/the-road---cormac-mccarthy/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-stonemason.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Stonemason
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Bouncing between 2 and 3 stars for this. A lot of it doesn’t work that well for me. I think it’s because I have the benefit of seeing McCarthy execute many of these themes with much greater strength both before and after the publication of Stonemason. There are great individual lines — including a reference to fathers weighing in ledgerbooks, which will show up again in The Road. Altogether, though, it is a collection of threads that do not really form a fabric for me.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2026-01-20 00:00:00 +0000 UTC'>January 20, 2026</span>&nbsp;·&nbsp;<span>Cormac McCarthy</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Stonemason" href="http://localhost:1313/books/the-stonemason---cormac-mccarthy/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/a-connecticut-yankee-in-king-arthur-s-court.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A Connecticut Yankee in King Arthur&#39;s Court
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    4/14/23 - This is one of my all-time favorite books, and I picked up my paperback copy and started reading then re-reading chapters I particularly enjoy earlier this year. Then a few weeks ago I resumed a previous re-read on the audiobook version. Early this morning while walking I finished up the last third or so of it, so I’m calling this as a 2023 book for me. I love this book!
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-11-22 00:00:00 +0000 UTC'>November 22, 2025</span>&nbsp;·&nbsp;<span>Mark Twain</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to A Connecticut Yankee in King Arthur&#39;s Court" href="http://localhost:1313/books/a-connecticut-yankee-in-king-arthurs-court---mark-twain/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-hitchhiker-s-guide-to-the-galaxy.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Hitchhiker&#39;s Guide to the Galaxy
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Reading this is like being tucked into a warm bed and feeling absolutely comfortable.
+A few favorite lines from this readthrough:
+“However, no one knew quite why it did this because it invariably delivered a cupful of liquid that was almost, but not quite, entirely unlike tea.”
+…“the recession came and we decided it would save a lot of bother if we just slept through it.”
+“Ten million years of planning and work gone just like that. Ten million years, Earthman, can you conceive of that kind of time span? A galactic civilization could grow from a single worm five times over in that time. Gone.” He paused. “Well, that’s bureaucracy for you.”
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-11-22 00:00:00 +0000 UTC'>November 22, 2025</span>&nbsp;·&nbsp;<span>Douglas Adams</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-headphones tb-flag-icon" title="Audiobook"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Hitchhiker&#39;s Guide to the Galaxy" href="http://localhost:1313/books/the-hitchhikers-guide-to-the-galaxy---douglas-adams/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-drawing-of-the-three.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Drawing of the Three
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This review is for, I think, my third read of The Drawing of the Three. I’ve spent November re-reading a bunch of King’s works, and am surprised at how nice it feels. Apart from the nostalgia—not so much for the times in which I read these at first, which were not good times, and these books were escapes from—there is the familiarity of the world and characters.
+Just like my re-read of Duma Key, I found myself remembering things just before they happened, or picking up on things that I remember from later books I hadn’t realized were being foreshadowed. I still have a sense of anticipation, suspense, as I read about Roland’s sickness, Eddie’s detox, and Susannah’s emergence.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-08-27 00:00:00 +0000 UTC'>August 27, 2025</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Drawing of the Three" href="http://localhost:1313/books/the-drawing-of-the-three---stephen-king/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/studio-ghibli-architecture-in-animation.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Studio Ghibli: Architecture in Animation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    A very beautiful coffee table book featuring water colors, background stills, reference drawings, etc ft the architecture in the Ghibli films. I adore these movies, they are some of the most beautiful works produced in animation history. This has a lot of interviews and discussion about the various architectural styles and decisions, which are super interesting! Would be a lovely companion in rewatching the films.
+I am a little frustrated by the square form factor. Mainly because there are a few two-page spreads of stunning artwork that are ruined by the bisection of the spine. I don’t know why they did this. I wider format would have better lent itself to those.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-21 00:00:00 +0000 UTC'>December 21, 2024</span>&nbsp;·&nbsp;<span>Studio Ghibli</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Studio Ghibli: Architecture in Animation" href="http://localhost:1313/books/studio-ghibli-architecture-in-animation---studio-ghibli/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-gardener-s-son.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Gardener&#39;s Son
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I don’t have many thoughts on this. Engaging screenplay for a 1970’s PBS movie. The language is very Cormac, and I appreciated the story. Relatively unremarkable as far as a Cormac goes.
+Author: Cormac McCarthy
+Last read: 2024-12-06
+Rating: 3
+Form: Drama
+Genre: Screenplay
+Times read: 1
+Copies owned: 0
+Fun score: 1.33
+
+    
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-06 00:00:00 +0000 UTC'>December 6, 2024</span>&nbsp;·&nbsp;<span>Cormac McCarthy</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Gardener&#39;s Son" href="http://localhost:1313/books/the-gardeners-son---cormac-mccarthy/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-apple-in-the-dark.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Apple in the Dark
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    DNF. Giving myself credit anyway because I got halfway through and 200 pages felt like 400.
+Author: Clarice Lispector
+Last read: 2024-11-19
+Rating: 0
+Form: Fiction
+Genre: Literary Fiction
+Times read: 1
+Copies owned: 0
+Fun score: 0.00
+
+    
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-19 00:00:00 +0000 UTC'>November 19, 2024</span>&nbsp;·&nbsp;<span>Clarice Lispector</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Apple in the Dark" href="http://localhost:1313/books/the-apple-in-the-dark---clarice-lispector/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/wizard-and-glass.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Wizard and Glass
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    One of my favorite of the Dark Tower series. I love that this is basically an Arthurian Western, what a rare (to my eye) genre. There is the romance, the suspense, even horror, that make it so enjoyable to re-read. I don’t have any long or complex thoughts. I am just so pleased to be revisiting the Tower quest again. That I can come back after years and be reading it and hoping things change and knowing that ka’s like a wind — it heightens these.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-14 00:00:00 +0000 UTC'>November 14, 2024</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Wizard and Glass" href="http://localhost:1313/books/wizard-and-glass---stephen-king/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-dispossessed.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Dispossessed
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    The first hundred and some pages resisted all effort at interest. UKLG is a dry writer. I know she is beloved by many, but this is my second fiction from her (first was Left Hand of Darkness), and I’m left with the same feeling that I am interested in the story in spite of the pacing, structure, and characters.
+It is bizarre to say, but Dispossessed has a little kinship with Atlas Shrugged. Rand’s tome is also a thin-to-barely veiled excuse to talk about philosophy and economics. Dispossessed is certainly better than that in most measurable ways. It’s shorter, much better written, and has a lot more interest in interrogating ideas and stressing them.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-21 00:00:00 +0000 UTC'>October 21, 2024</span>&nbsp;·&nbsp;<span>Ursula K. Le Guin</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Dispossessed" href="http://localhost:1313/books/the-dispossessed---ursula-k.-le-guin/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="num-pagination">
+    <ul>
+      
+        
+          <li class="active">1</li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/2/">2</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/3/">3</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/4/">4</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/5/">5</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/6/">6</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/7/">7</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/8/">8</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/9/">9</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/10/">10</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/11/">11</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/12/">12</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/13/">13</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/14/">14</a></li>
+        
+      
+        
+          <li><a href="/tags/grimport/page/15/">15</a></li>
+        
+      
+    </ul>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>

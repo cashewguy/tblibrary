@@ -10,7 +10,7 @@
 <meta name="description" content="Reviews - TB Library">
 <meta name="author" content="">
 <link rel="canonical" href="https://tblibrary.com/books/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.1791afa40f3ee176f866911699d9cac9fb6d7452541f834cd1f53e676fff5325.css" integrity="sha256-F5GvpA8&#43;4Xb4ZpEWmdnKyfttdFJUH4NM0fU&#43;Z2//UyU=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tblibrary.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
@@ -97,6 +97,84 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
 </script>
 
 
@@ -227,6 +305,116 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
 
   
   
+    <img class="tb-list-cover" src="/covers/the-words-that-remain.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Words That Remain
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This book was mentioned last week in our book club’s discussion of We All Loved Cowboys. Hearing the plot, I made sure to buy a copy before I left the store. It is a short little book, and it can barely contain the emotion within it.
+Letters are prized and terrible things. I cannot imagine carrying a letter for decades, knowing it contains the words of the person that I love and adore, and not having means to hear those words in my heart. I can imagine knowing that a letter like that exists, and not receiving that, because that has happened to me. But this is something different and something more.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-03 00:00:00 +0000 UTC'>June 3, 2025</span>&nbsp;·&nbsp;<span>Stênio Gardel</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Words That Remain" href="https://tblibrary.com/books/the-words-that-remain---st%C3%AAnio-gardel/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/we-all-loved-cowboys.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">We All Loved Cowboys
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I read this for my Small Press Book Club. In a recent view, I proclaimed, “three stars is good,” and in general this is true. However, this is not a “three stars is good” three stars. This is a, “I have no idea what to rate this book as” three stars. I found it mostly inoffensive, but also not compelling or engaging at all. There are some passages that read to me like white noise, words on a page without meaning, meandering. Occasionally, there is an interesting line. But overall, I leave the book not knowing what to do about it.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-25 00:00:00 +0000 UTC'>May 25, 2025</span>&nbsp;·&nbsp;<span>Carol Bensimon</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to We All Loved Cowboys" href="https://tblibrary.com/books/we-all-loved-cowboys---carol-bensimon/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/house-of-x-powers-of-x.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">House Of X/Powers Of X
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I probably read one comic book omnibus or graphic novel a year. Last weekend in Philly a very chatty bartender told me that I simply had to read HoX/PoX. He was very friendly and poured heavy drinks and so while I was busy giving googlyeyes to the other bartender I promised I’d read it.
+For whatever reason I take my word seriously and so ordered this and read it this week. It’s pretty good! I probably haven’t read an X-Men comic in 20 years, I don’t even know what the last one was that I’d have read. The X-Men have a special place in my heart as the 2000s era films were some of the first I recall seeing in the theater, and naturally the gay/queer-analogy of it all speaks to me. The analogy is sort of present here, although it is of course all very fantastic. Who wouldn’t want a land of their own to be who they are?
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-24 00:00:00 +0000 UTC'>May 24, 2025</span>&nbsp;·&nbsp;<span>Jonathan Hickman</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to House Of X/Powers Of X" href="https://tblibrary.com/books/house-of-xpowers-of-x---jonathan-hickman/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/less.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Less
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I purchased this at Giovanni’s Room in Philly, a nice little shop, on the recommendation of a friend from a book club. It was good, though perhaps the wrong book for me right now. Still, 3 stars is good and this is worth a read if you are interested in something light, slightly romantic, and a little yearning.
+(slight spoilers follow…)
+It is safe to see I could see the ending coming for miles and miles, and I didn’t exactly appreciate that. I wonder why people read these books of romance where all of the heartbreak and the struggle boils off into reunion and tenderness. Particularly folks who are alone – doesn’t it make one feel worse?
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-23 00:00:00 +0000 UTC'>May 23, 2025</span>&nbsp;·&nbsp;<span>Andrew Sean Greer</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Less" href="https://tblibrary.com/books/less/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/as-i-lay-dying.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">As I Lay Dying
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I’ve put off reading this for months. Cormac McCarthy is probably my favorite writer, and I’ve read him described as “Faulkner’s heir” without having a context for what that means. Sparse language? Esoteric vocabulary? A distaste for little punctuals, smudging up the page?
+I hope it goes further than having hick characters talk like hicks. I say that as someone who grew up in rural Illinois and spoke plenty of hick then and sometimes now.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-18 00:00:00 +0000 UTC'>May 18, 2025</span>&nbsp;·&nbsp;<span>William Faulkner</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to As I Lay Dying" href="https://tblibrary.com/books/as-i-lay-dying---william-faulkner/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
     <img class="tb-list-cover" src="/covers/a-hitch-in-time.jpg" alt="">
   
 
@@ -329,119 +517,6 @@ The way in which you quit it rewrote the story of your life in a negative form. 
 
   <a class="entry-link" aria-label="post link to Suicide" href="https://tblibrary.com/books/suicide---edouard-lev%C3%A9/"></a>
 </article>
-
-<article class="post-entry">
-
-  
-  
-    <img class="tb-list-cover" src="/covers/the-children-of-the-ghetto-my-name-is-adam.jpg" alt="">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Children of the Ghetto - My Name is Adam
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>    I have had this book on my living room table for months. Originally, it was to by my book club’s January read, but scheduling and then supply issues pushed it out months and months. The whole time I eyed it warily for its weight and size. I’ve been in a mood of 200-300 page books, and I had no concept of what this would be about, only that it was surprisingly dense to lift. The last book I read from Archipelago Press was Sara Gallardo’s January which is a tiny thing.
-
-    ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-20 00:00:00 +0000 UTC'>April 20, 2025</span>&nbsp;·&nbsp;<span>Elias Khoury</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
-
-  <a class="entry-link" aria-label="post link to The Children of the Ghetto - My Name is Adam" href="https://tblibrary.com/books/the-children-of-the-ghetto-i---elias-khoury/"></a>
-</article>
-
-<article class="post-entry">
-
-  
-  
-    <img class="tb-list-cover" src="/covers/the-great-gatsby.jpg" alt="">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Great Gatsby
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>    Notes Author: F. Scott Fitzgerald
-Last read: 2025-04-20
-Rating: 5
-Form: Fiction
-Genre: Literary Fiction
-Times read: 2
-Copies owned: 0
-Fun score: 1.66
-
-    </p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-20 00:00:00 +0000 UTC'>April 20, 2025</span>&nbsp;·&nbsp;<span>F. Scott Fitzgerald</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
-
-  <a class="entry-link" aria-label="post link to The Great Gatsby" href="https://tblibrary.com/books/the-great-gatsby---f-scott-fitzgerald/"></a>
-</article>
-
-<article class="post-entry">
-
-  
-  
-    <img class="tb-list-cover" src="/covers/swimming-in-the-dark.jpg" alt="">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Swimming in the Dark
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>    Notes p31 - My greatest terror was ending up alone. p35 - I avoided you, so that you couldn’t avoid me. p47 - …I decided never to be that vulnerable again, never to feel that panic again, never to depend on anyone else. p68 “Are you doing something bad?” I asked, scared. “No, my darling.” Her voice mellowed. “But even when you don’t do bad things, bad things can happen to you.” “Why?” She tried to look soft, but the lines on her forehead didn’t disappear altogether. “This is how it is.” p77 - You listened, really listened, gentle eyes taking me in without judgement, making me feel more heard than I knew I could be. p113 - (Slightly, but not really, a story spoiler) “Your mother died out of loneliness,” Granny would always repeat, claiming it was because she had never remarried after my father. But I think it was despair that killed her. Having done only things she didn’t believe in, she must have been dead inside for years before her body finally gave up too. p168 - “We’re just queuing for a possibility, queuing for something, maybe queuing for nothing.” p174 - It hurt to see you like that, to have nothing pass between us. — # Review
-
-    ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-11 00:00:00 +0000 UTC'>April 11, 2025</span>&nbsp;·&nbsp;<span>Tomasz Jedrowski</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
-
-  <a class="entry-link" aria-label="post link to Swimming in the Dark" href="https://tblibrary.com/books/swimming-in-the-dark---tomasz-jedrowski/"></a>
-</article>
-
-<article class="post-entry">
-
-  
-  
-    <img class="tb-list-cover" src="/covers/the-myth-of-closure.jpg" alt="">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">The Myth of Closure
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>    I read this book in graduate school in a course on Clinical Practice with Survivors of Political Trauma and Torture. It was probably the most interesting course I took, and if there were an alternate world where I practiced clinical social work, I’d love to work with this population.
-A few months ago a friend and I were talking about loss and I recommended Boss’s research. I re-read several of Boss’s papers around that time and ordered a physical copy of the book on Thriftbooks. It’s been sitting on my living room table since then, and I picked it up this morning to skim through.
-
-    ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-05 00:00:00 +0000 UTC'>April 5, 2025</span>&nbsp;·&nbsp;<span>Pauline Boss</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
-
-  <a class="entry-link" aria-label="post link to The Myth of Closure" href="https://tblibrary.com/books/the-myth-of-closure/"></a>
-</article>
-
-<article class="post-entry">
-
-  
-  
-    <img class="tb-list-cover" src="/covers/exteriors.jpg" alt="">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Exteriors
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>    Another short Ernaux text from Fitzcarlando (forever grateful to have been introduced to this press, these books are beautiful). This book is longer than I Will Write, but is in a way shallower. It is a collection of entries into a diary observing behavior of other people in public, writing down little episodes and encounters, sometimes reflecting on them. I love this. Some of them are funny, sad, moving. Most of them are mundane, and yet not boring or in need of editing out. They’re mundane because life is often mundane.
-
-    ...</p>
-  </div>
-  <footer class="entry-footer"><span title='2025-04-04 00:00:00 +0000 UTC'>April 4, 2025</span>&nbsp;·&nbsp;<span>Annie Ernaux</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
-
-  <a class="entry-link" aria-label="post link to Exteriors" href="https://tblibrary.com/books/exteriors/"></a>
-</article>
 <footer class="page-footer">
   <nav class="num-pagination">
     <ul>
@@ -504,6 +579,66 @@ A few months ago a friend and I were talking about loss and I recommended Boss�
       
         
           <li><a href="/books/page/15/">15</a></li>
+        
+      
+        
+          <li><a href="/books/page/16/">16</a></li>
+        
+      
+        
+          <li><a href="/books/page/17/">17</a></li>
+        
+      
+        
+          <li><a href="/books/page/18/">18</a></li>
+        
+      
+        
+          <li><a href="/books/page/19/">19</a></li>
+        
+      
+        
+          <li><a href="/books/page/20/">20</a></li>
+        
+      
+        
+          <li><a href="/books/page/21/">21</a></li>
+        
+      
+        
+          <li><a href="/books/page/22/">22</a></li>
+        
+      
+        
+          <li><a href="/books/page/23/">23</a></li>
+        
+      
+        
+          <li><a href="/books/page/24/">24</a></li>
+        
+      
+        
+          <li><a href="/books/page/25/">25</a></li>
+        
+      
+        
+          <li><a href="/books/page/26/">26</a></li>
+        
+      
+        
+          <li><a href="/books/page/27/">27</a></li>
+        
+      
+        
+          <li><a href="/books/page/28/">28</a></li>
+        
+      
+        
+          <li><a href="/books/page/29/">29</a></li>
+        
+      
+        
+          <li><a href="/books/page/30/">30</a></li>
         
       
     </ul>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Reviews | TB Library</title>
+<meta name="keywords" content="">
+<meta name="description" content="Reviews - TB Library">
+<meta name="author" content="">
+<link rel="canonical" href="https://tblibrary.com/books/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tblibrary.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://tblibrary.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://tblibrary.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/json" href="https://tblibrary.com/books/index.json" title="json">
+<link rel="alternate" hreflang="en" href="https://tblibrary.com/books/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://tblibrary.com/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:url" content="https://tblibrary.com/books/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content=" Review: Reviews">
+
+<meta property="og:description"
+      content="My book library">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reviews">
+  <meta name="twitter:description" content="My book library">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Reviews",
+      "item": "https://tblibrary.com/books/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://tblibrary.com/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://tblibrary.com/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/books/" title="Reviews">
+                    <span class="active">Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main"> 
+<header class="page-header">
+  <h1>
+    Reviews
+  </h1>
+</header>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-five-dysfunctions-of-a-team.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Five Dysfunctions of a Team
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I picked this up from a Little Library this morning, recognizing it from when I read excerpts of it in a Clinical Supervision class in grad school. I read several of Lencioni’s articles in the Harvard Business Review, as that class was married to the publication as The One True Source of Knowledge. Lencioni is thus partially to blame for my near-lethally allergic reaction to that magazine. Now, when I see an article come through my work e-mail with an HBR link, I have to launch myself from my desk in search of an Epi pen.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-31 00:00:00 +0000 UTC'>August 31, 2023</span>&nbsp;·&nbsp;<span>Patrick Lencioni</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Five Dysfunctions of a Team" href="https://tblibrary.com/books/the-five-dysfunctions-of-a-team---patrick-lencioni/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/annihilation.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Annihilation
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Somehow I’ve avoided knowing anything about this book throughout its popularity and adaptation into a movie (I also haven’t seen this). Still, the book subverted my expectations as I had no idea it was a work of weird fiction. I enjoyed Van der Meer’s writing style - there’s an element of Cormac McCarthy in there, somewhere.
+Excited to read the next one, eventually.
+Author: Jeff VanderMeer
+Last read: 2023-08-29
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-29 00:00:00 +0000 UTC'>August 29, 2023</span>&nbsp;·&nbsp;<span>Jeff VanderMeer</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Annihilation" href="https://tblibrary.com/books/annihilation---jeff-vandermeer/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/counterweight.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Counterweight
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Surprised I didn’t like this more. Neo-noir with corporate espionage and sci-fi elements. It ended up feeling like a shallow collection of all these elements, without a lot of depth. Apparently, it was conceived as a low-budget sci-fi film, so I guess that makes sense. Ultimately, I barely followed the plot. I suppose you could call it a vibes book since it’s about 150 pages.
+Author: Djuna
+Last read: 2023-08-27
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-27 00:00:00 +0000 UTC'>August 27, 2023</span>&nbsp;·&nbsp;<span>Djuna</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Counterweight" href="https://tblibrary.com/books/counterweight---djuna/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/to-be-taught-if-fortunate.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">To Be Taught, If Fortunate
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This didn’t really grab me in the way I thought it would. The first third is quite slow, though it picks up a lot on the second and third planets explored. I love stories about space travel and found the time dilation interesting, though executed in a way I didn’t expect.
+Chambers explores the ethics of space travel, particularly a sort of reverse-Alien consideration - what do we bring to planets, and how may that impact them? (Of course, thinking about the examples throughout our history of colonization and infectious disease…) I liked that. I have some qualms with the closing pages that I’m going to write out in the following spoilered section…
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-25 00:00:00 +0000 UTC'>August 25, 2023</span>&nbsp;·&nbsp;<span>Becky Chambers</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to To Be Taught, If Fortunate" href="https://tblibrary.com/books/to-be-taught-if-fortunate---becky-chambers/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/things-fall-apart.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Things Fall Apart
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I found this fascinating to read. I have read very little African fiction, most of that being Afro-Futurism. Most recently on that list is Binti: The Complete Trilogy, which (perhaps strangely) I found helpful as a sort of primer.
+It’s not a happy book, but the story is interesting as many “slice-of-life” tales interwoven as Okonkwo experiences his life over a generation with his people. I found a lot to relate to in his overwhelming drive not to be like his father - perhaps this story is the other side of that knife. One wonders what Unoka’s father was like, and what Nwoye’s life continued to be. It’s a compelling look at how the motivation of “I will not be like my father” can be shared by a father, son, and grandson, and all have different causes and manifestations.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-17 00:00:00 +0000 UTC'>August 17, 2023</span>&nbsp;·&nbsp;<span>Chinua Achebe</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Things Fall Apart" href="https://tblibrary.com/books/things-fall-apart---chinua-achebe/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-heaven-earth-grocery-store.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Heaven &amp; Earth Grocery Store
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I finished this today and have been sitting on it for a bit. It’s certainly good, though I prefer Deacon King Kong to this. McBride is excellent at weaving together many characters and many plots into one cohesive picture, and I enjoyed reading this. I particularly enjoyed hearing Mr. McBride talk about the story and his experiences when he came to Sixth &amp; I to talk about it.
+That said, there were a few parts of the story where the pacing felt just a little off for me. This is a 3 instead of a 4 because I kept butting my head against the way McBridge describes female characters. Many female characters are described by their breasts or rears (“perky” was the word that threw up a red light for me). At one point, I started to go back and re-reading, wondering if this was a trait of a particular character so that it could be interpreted as that character’s thoughts and views. I don’t think that’s the case, though. I didn’t notice this so much in Deacon King Kong, and I wonder if it just flew past me because I found that story so engaging.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-15 00:00:00 +0000 UTC'>August 15, 2023</span>&nbsp;·&nbsp;<span>James McBride</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Heaven & Earth Grocery Store" href="https://tblibrary.com/books/the-heaven--earth-grocery-store---james-mcbride/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-making-of-the-atomic-bomb.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Making of the Atomic Bomb
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    When I finished reading through the final chapter’s last pages, I wondered: what’s the most important book ever written? I did a quick Google and found that all the suggested lists used the word “influential” instead, not what I wanted. I put quotes around the query and was not too pleased to find a bunch of christian websites using SEO to convince Google to serve an answer: the Bible.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-10 00:00:00 +0000 UTC'>August 10, 2023</span>&nbsp;·&nbsp;<span>Richard Rhodes</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Making of the Atomic Bomb" href="https://tblibrary.com/books/the-making-of-the-atomic-bomb---richard-rhodes/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/adkar.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">ADKAR
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I hesitate to log this as it is certainly more of a reference book. I took a 3-day training for change management certification and received this book as part of that. I found the training really great - so much so that it overshadows the book significantly. The training covered everything in the book and more usefully, I think. The book feels a bit dated at times, though I admit I mainly skimmed it.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-03 00:00:00 +0000 UTC'>August 3, 2023</span>&nbsp;·&nbsp;<span>Jeffrey M. Hiatt</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to ADKAR" href="https://tblibrary.com/books/adkar---jeffrey-m.-hiatt/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/on-writing-well.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">On Writing Well
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This is good - but at times repetitive. I recommend treating this like a reference text. Parts 1 and 2 (Principles and Methods) are required reading for the mechanics. You’ll have fun reading them, too. Part 3 the reader can pick and choose from. I’d suggest Chapter 11 as a starter (Nonfiction as Literature), and then reading the section relevant to your project. Skim the rest, except Chapter 19 (Humor), which you should read.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-08-02 00:00:00 +0000 UTC'>August 2, 2023</span>&nbsp;·&nbsp;<span>William Zinsser</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to On Writing Well" href="https://tblibrary.com/books/on-writing-well---william-zinsser/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/tao-te-ching.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Tao Te Ching
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This isn’t a book I can leave much review for. It isn’t a book that is read once and then put to the side. For one, I’m not competent to review a book of poetry. And, these are thoughts on morals and power. Much of the translation appears simple, but sometimes the metaphors are hard for me to understand, but sometimes they are so simple that it gives me pause.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-07-31 00:00:00 +0000 UTC'>July 31, 2023</span>&nbsp;·&nbsp;<span>Lao Tzu</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Tao Te Ching" href="https://tblibrary.com/books/tao-te-ching---lao-tzu/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="num-pagination">
+    <ul>
+      
+        
+          <li><a href="/books/">1</a></li>
+        
+      
+        
+          <li><a href="/books/page/2/">2</a></li>
+        
+      
+        
+          <li><a href="/books/page/3/">3</a></li>
+        
+      
+        
+          <li><a href="/books/page/4/">4</a></li>
+        
+      
+        
+          <li><a href="/books/page/5/">5</a></li>
+        
+      
+        
+          <li><a href="/books/page/6/">6</a></li>
+        
+      
+        
+          <li><a href="/books/page/7/">7</a></li>
+        
+      
+        
+          <li><a href="/books/page/8/">8</a></li>
+        
+      
+        
+          <li><a href="/books/page/9/">9</a></li>
+        
+      
+        
+          <li><a href="/books/page/10/">10</a></li>
+        
+      
+        
+          <li><a href="/books/page/11/">11</a></li>
+        
+      
+        
+          <li><a href="/books/page/12/">12</a></li>
+        
+      
+        
+          <li><a href="/books/page/13/">13</a></li>
+        
+      
+        
+          <li><a href="/books/page/14/">14</a></li>
+        
+      
+        
+          <li><a href="/books/page/15/">15</a></li>
+        
+      
+        
+          <li><a href="/books/page/16/">16</a></li>
+        
+      
+        
+          <li><a href="/books/page/17/">17</a></li>
+        
+      
+        
+          <li><a href="/books/page/18/">18</a></li>
+        
+      
+        
+          <li><a href="/books/page/19/">19</a></li>
+        
+      
+        
+          <li><a href="/books/page/20/">20</a></li>
+        
+      
+        
+          <li><a href="/books/page/21/">21</a></li>
+        
+      
+        
+          <li><a href="/books/page/22/">22</a></li>
+        
+      
+        
+          <li><a href="/books/page/23/">23</a></li>
+        
+      
+        
+          <li><a href="/books/page/24/">24</a></li>
+        
+      
+        
+          <li><a href="/books/page/25/">25</a></li>
+        
+      
+        
+          <li class="active">26</li>
+        
+      
+        
+          <li><a href="/books/page/27/">27</a></li>
+        
+      
+        
+          <li><a href="/books/page/28/">28</a></li>
+        
+      
+        
+          <li><a href="/books/page/29/">29</a></li>
+        
+      
+        
+          <li><a href="/books/page/30/">30</a></li>
+        
+      
+    </ul>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://tblibrary.com/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>

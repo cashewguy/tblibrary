@@ -10,9 +10,9 @@
 <meta name="description" content="Review
 I became aware of Guibert via Philippe Besson’s Lie With Me, and so picked up Written in Invisible Ink, a collection of short stories which I had mixed feelings about but generally liked. Crazy for Vincent has been on my saved titles list on ThriftBooks for quite a while and I finally found a copy.
 It’s a short little diary, told reverse-chronologically, of  Hervé’s love for Vincent. It begins in 1989 at the end of November, with Vincent’s death. I often forgot that we are moving back through time, through the period of Hervé’s knowing of and love for (obsession with?) Vincent. In a way it is fitting that we start with Vincent’s death, because we have no sense of the book-Hervé’s continued life afterwards, it is as if he, too, died.">
-<meta name="author" content="Herve Guibert">
+<meta name="author" content="Hervé Guibert">
 <link rel="canonical" href="https://tblibrary.com/books/crazy-for-vincent---herve-guibert/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.1791afa40f3ee176f866911699d9cac9fb6d7452541f834cd1f53e676fff5325.css" integrity="sha256-F5GvpA8&#43;4Xb4ZpEWmdnKyfttdFJUH4NM0fU&#43;Z2//UyU=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tblibrary.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
@@ -99,6 +99,84 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
 </script>
 
 
@@ -199,14 +277,14 @@ It’s a short little diary, told reverse-chronologically, of Hervé’s love fo
   "keywords": [
     "bookreview", "queer", "HerveGuibert", "suicide"
   ],
-  "articleBody": "Review I became aware of Guibert via Philippe Besson’s Lie With Me, and so picked up Written in Invisible Ink, a collection of short stories which I had mixed feelings about but generally liked. Crazy for Vincent has been on my saved titles list on ThriftBooks for quite a while and I finally found a copy.\nIt’s a short little diary, told reverse-chronologically, of Hervé’s love for Vincent. It begins in 1989 at the end of November, with Vincent’s death. I often forgot that we are moving back through time, through the period of Hervé’s knowing of and love for (obsession with?) Vincent. In a way it is fitting that we start with Vincent’s death, because we have no sense of the book-Hervé’s continued life afterwards, it is as if he, too, died.\nThe form and emotion throughout reminded me distinct of Annie Ernaux, particular her writing in Exteriors (in which she collects many little scraps from a diary observing life around her) and Simple Passion (in which she writes about love’s intense hold on one’s throat). Like Ernaux, Guibert writes a form of autofiction which I take to mean the broad strokes are realistic with some changes, though I am not educated on this and that might not be so. It doesn’t matter. In both Guibert’s and Ernaux’s case, the writing is so true that whether it is real does not matter.\nI read this little text in one sitting in the middle of the night on a Friday. Bowled me over. Guibert perfectly captures how even the smallest interactions can elevate the lover into the stratosphere and just as easily make them feel as though they are a walking gash upon the earth. In one part, he even hints at jealousy of the street itself: “He kissed me a second time, his mouth was dry, he drenched me with saliva, his precious commodity, what he spits on the street” (page 28).\nThere is also some interesting vocabulary, such that (like with Ernaux) I would love to read these in French and think about it: “Writing about him is an appeasement” (page 53). Appeasement is such an interesting word, I almost only hear it in the primary usage, so I went looking at Merriam-Webster. It is one of those annoying words that has a bit of a circular definition (such that I browsed around in other dictionaries, but they all have this issue):\nappeasement—\n1: The act or action of appeasing someone or something\nespecially: a policy of appeasing an enemy or potential aggressor by making concessions\n2: the state of being satisfied\nappease—\n1: the act or action of appeasing someone or something\nespecially: a policy of appeasing an enemy or potential aggressor by making concessions\n2: the state of being satisfied\nIt all comes down to, being satisfied. But who is satisfied by Guibert writing about Vincent? Vincent? Guibert? It feels like Guibert, especially given Vincent’s few reactions to Guibert’s other writing in which he is featured. I kind of like that, the idea that writing about Vincent is something Guibert finds appeasing, such a strange word. The translator is Christine Pichini, and unfortunately there’s no translator’s note.\nThe first entry is Vincent’s death. The final entry is, I understand anyway, to be a sort of death for Guibert, “He said, I had decided not to love men any more, but you I really liked.”\nCrushing.\nNotes Essentially all of the “he” pronouns in the notes refer to Vincent.\np18 (Introduction) - From The Mausoleum of Lovers (written long after Fou de Vincent appeared): Vincent has just called, the happiness I felt at hearing him was almost unbearable. Restored my confidence in both life and death, when just now both life and death seemed impossible for me. Then I told myself that the force of my love for Vincent had less force than the force of my illness. When he arrived, he got out a flick-knife to cut one by one the pages of my book. p28 - He kissed me a second time, his mouth was dry, he drenched me with saliva, his precious commodity, what he spits on the street. p29 - He explained that he hadn’t come with us because he found a job . . . he talked to me for a long time, I went back to bed feeling happy, preferring to know that he was thriving rather than uncomfortable with me. p30 - Vincent didn’t show up: it’s not just being deprived of his body, but the collapse of expectations, that dream of travel, the primary perspective atrociously butchered, all at once. This morning, I’m like a casualty. p31 - I think that he said to me last time, “I would never be able to hurt you.” p32 - The others are sweet with me, but I’m not really there, I’m with the other who isn’t there, I absent myself to find the absent one again. If he were there, I would undoubtedly be nowhere. p48 - (How I love Vincent: ready to open up my chest to lay my heart at his feet.) TB: parenthesis in original. p48 - I love Vincent, that’s the problem, and my actual solitude? Bernard says that it’s impossible to share having a mad crush on someone. p53 - Writing about him is an appeasement. p58 - Fell asleep easily by his side, dropping off against him while he was watching television; the small, ordinary joy of others becomes my great, exceptional joy. p59 - I turn on all the lights, I wait for Vincent, I think again of suicide. p62 - Reread with emotion, while waiting for Vincent last night, Fragments of a Lover’s Discourse: feeling that I often pursue the things that Barthes indicates. p65 - Not such a great evening with Vincent. I should have respected the cadence that he indicates, casually, for our relationship: “from time to time” (I complain that I can’t ever call him, and that he never calls me: “I do,” he replies, “but only from time to time.”) p73 - Atrociously in love? Is love not a pretext for despair? p78 - Vincent refuses my help . . . I love most the one who humiliates me the most. To reach a very real masochism—is it more bearable than masochism in the abstract? p89 - His voice remains such a comfort. p93 - 1982 He said, I had decided not to love men any more, but you I really liked. Author: Herve Guibert\nLast read: 2026-06-05\nRating: 5\nForm: Fiction\nGenre: Memoir\nTimes read: 1\nCopies owned: 1\nFun score: 3.66\n",
+  "articleBody": "Review I became aware of Guibert via Philippe Besson’s Lie With Me, and so picked up Written in Invisible Ink, a collection of short stories which I had mixed feelings about but generally liked. Crazy for Vincent has been on my saved titles list on ThriftBooks for quite a while and I finally found a copy.\nIt’s a short little diary, told reverse-chronologically, of Hervé’s love for Vincent. It begins in 1989 at the end of November, with Vincent’s death. I often forgot that we are moving back through time, through the period of Hervé’s knowing of and love for (obsession with?) Vincent. In a way it is fitting that we start with Vincent’s death, because we have no sense of the book-Hervé’s continued life afterwards, it is as if he, too, died.\nThe form and emotion throughout reminded me distinct of Annie Ernaux, particular her writing in Exteriors (in which she collects many little scraps from a diary observing life around her) and Simple Passion (in which she writes about love’s intense hold on one’s throat). Like Ernaux, Guibert writes a form of autofiction which I take to mean the broad strokes are realistic with some changes, though I am not educated on this and that might not be so. It doesn’t matter. In both Guibert’s and Ernaux’s case, the writing is so true that whether it is real does not matter.\nI read this little text in one sitting in the middle of the night on a Friday. Bowled me over. Guibert perfectly captures how even the smallest interactions can elevate the lover into the stratosphere and just as easily make them feel as though they are a walking gash upon the earth. In one part, he even hints at jealousy of the street itself: “He kissed me a second time, his mouth was dry, he drenched me with saliva, his precious commodity, what he spits on the street” (page 28).\nThere is also some interesting vocabulary, such that (like with Ernaux) I would love to read these in French and think about it: “Writing about him is an appeasement” (page 53). Appeasement is such an interesting word, I almost only hear it in the primary usage, so I went looking at Merriam-Webster. It is one of those annoying words that has a bit of a circular definition (such that I browsed around in other dictionaries, but they all have this issue):\nappeasement—\n1: The act or action of appeasing someone or something\nespecially: a policy of appeasing an enemy or potential aggressor by making concessions\n2: the state of being satisfied\nappease—\n1: the act or action of appeasing someone or something\nespecially: a policy of appeasing an enemy or potential aggressor by making concessions\n2: the state of being satisfied\nIt all comes down to, being satisfied. But who is satisfied by Guibert writing about Vincent? Vincent? Guibert? It feels like Guibert, especially given Vincent’s few reactions to Guibert’s other writing in which he is featured. I kind of like that, the idea that writing about Vincent is something Guibert finds appeasing, such a strange word. The translator is Christine Pichini, and unfortunately there’s no translator’s note.\nThe first entry is Vincent’s death. The final entry is, I understand anyway, to be a sort of death for Guibert, “He said, I had decided not to love men any more, but you I really liked.”\nCrushing.\nNotes Essentially all of the “he” pronouns in the notes refer to Vincent.\np18 (Introduction) - From The Mausoleum of Lovers (written long after Fou de Vincent appeared): Vincent has just called, the happiness I felt at hearing him was almost unbearable. Restored my confidence in both life and death, when just now both life and death seemed impossible for me. Then I told myself that the force of my love for Vincent had less force than the force of my illness. When he arrived, he got out a flick-knife to cut one by one the pages of my book. p28 - He kissed me a second time, his mouth was dry, he drenched me with saliva, his precious commodity, what he spits on the street. p29 - He explained that he hadn’t come with us because he found a job . . . he talked to me for a long time, I went back to bed feeling happy, preferring to know that he was thriving rather than uncomfortable with me. p30 - Vincent didn’t show up: it’s not just being deprived of his body, but the collapse of expectations, that dream of travel, the primary perspective atrociously butchered, all at once. This morning, I’m like a casualty. p31 - I think that he said to me last time, “I would never be able to hurt you.” p32 - The others are sweet with me, but I’m not really there, I’m with the other who isn’t there, I absent myself to find the absent one again. If he were there, I would undoubtedly be nowhere. p48 - (How I love Vincent: ready to open up my chest to lay my heart at his feet.) TB: parenthesis in original. p48 - I love Vincent, that’s the problem, and my actual solitude? Bernard says that it’s impossible to share having a mad crush on someone. p53 - Writing about him is an appeasement. p58 - Fell asleep easily by his side, dropping off against him while he was watching television; the small, ordinary joy of others becomes my great, exceptional joy. p59 - I turn on all the lights, I wait for Vincent, I think again of suicide. p62 - Reread with emotion, while waiting for Vincent last night, Fragments of a Lover’s Discourse: feeling that I often pursue the things that Barthes indicates. p65 - Not such a great evening with Vincent. I should have respected the cadence that he indicates, casually, for our relationship: “from time to time” (I complain that I can’t ever call him, and that he never calls me: “I do,” he replies, “but only from time to time.”) p73 - Atrociously in love? Is love not a pretext for despair? p78 - Vincent refuses my help . . . I love most the one who humiliates me the most. To reach a very real masochism—is it more bearable than masochism in the abstract? p89 - His voice remains such a comfort. p93 - 1982 He said, I had decided not to love men any more, but you I really liked. Author: Hervé Guibert\nLast read: 2026-06-05\nRating: 5\nForm: Fiction\nGenre: Memoir\nTimes read: 1\nCopies owned: 1\nFun score: 3.66\n",
   "wordCount" : "1104",
   "inLanguage": "en",
   "image":"https://tblibrary.com/covers/crazy-for-vincent.jpg","datePublished": "2026-06-05T00:00:00Z",
   "dateModified": "2026-06-05T00:00:00Z",
   "author":{
     "@type": "Person",
-    "name": "Herve Guibert"
+    "name": "Hervé Guibert"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
@@ -296,7 +374,7 @@ It’s a short little diary, told reverse-chronologically, of Hervé’s love fo
 
 
   <h1>Crazy for Vincent</h1>
-  <p>June 5, 2026 — Herve Guibert</p>
+  <p>June 5, 2026 — Hervé Guibert</p>
   
     <details class="toc" >
     <summary accesskey="c" title="(Alt + C)">
@@ -421,7 +499,7 @@ It’s a short little diary, told reverse-chronologically, of Hervé’s love fo
 <li>p93 - 1982      He said, I had decided not to love men any more, but you I really liked.</li>
 </ul>
 <div class="book-meta">
-  <p><strong>Author:</strong> Herve Guibert</p>
+  <p><strong>Author:</strong> Hervé Guibert</p>
   <p><strong>Last read:</strong> 2026-06-05</p>
   <p><strong>Rating:</strong> 5</p>
   <p><strong>Form:</strong> Fiction</p>

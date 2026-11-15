@@ -10,7 +10,7 @@
 <meta name="description" content="My book library">
 <meta name="author" content="">
 <link rel="canonical" href="https://tblibrary.com/tags/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.1791afa40f3ee176f866911699d9cac9fb6d7452541f834cd1f53e676fff5325.css" integrity="sha256-F5GvpA8&#43;4Xb4ZpEWmdnKyfttdFJUH4NM0fU&#43;Z2//UyU=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tblibrary.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
@@ -97,6 +97,84 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
 </script>
 
 
@@ -214,10 +292,10 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
                 <a href="https://tblibrary.com/tags/alvagotby/">AlvaGotby <sup><strong><sup>1</sup></strong></sup> </a>
             </li>
             <li>
-                <a href="https://tblibrary.com/tags/annieernaux/">AnnieErnaux <sup><strong><sup>7</sup></strong></sup> </a>
+                <a href="https://tblibrary.com/tags/annieernaux/">AnnieErnaux <sup><strong><sup>8</sup></strong></sup> </a>
             </li>
             <li>
-                <a href="https://tblibrary.com/tags/audiobook/">Audiobook <sup><strong><sup>4</sup></strong></sup> </a>
+                <a href="https://tblibrary.com/tags/audiobook/">Audiobook <sup><strong><sup>15</sup></strong></sup> </a>
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/autographed/">Autographed <sup><strong><sup>1</sup></strong></sup> </a>
@@ -229,7 +307,10 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
                 <a href="https://tblibrary.com/tags/bldus/">Bldus <sup><strong><sup>1</sup></strong></sup> </a>
             </li>
             <li>
-                <a href="https://tblibrary.com/tags/bookreview/">Bookreview <sup><strong><sup>144</sup></strong></sup> </a>
+                <a href="https://tblibrary.com/tags/bookreview/">Bookreview <sup><strong><sup>291</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/tags/border-trilogy/">Border-Trilogy <sup><strong><sup>2</sup></strong></sup> </a>
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/chapbook/">Chapbook <sup><strong><sup>1</sup></strong></sup> </a>
@@ -247,7 +328,7 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
                 <a href="https://tblibrary.com/tags/comics/">Comics <sup><strong><sup>2</sup></strong></sup> </a>
             </li>
             <li>
-                <a href="https://tblibrary.com/tags/cormacmccarthy/">CormacMcCarthy <sup><strong><sup>5</sup></strong></sup> </a>
+                <a href="https://tblibrary.com/tags/cormacmccarthy/">CormacMcCarthy <sup><strong><sup>16</sup></strong></sup> </a>
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/culture/">Culture <sup><strong><sup>1</sup></strong></sup> </a>
@@ -262,6 +343,9 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
                 <a href="https://tblibrary.com/tags/doubt/">Doubt <sup><strong><sup>1</sup></strong></sup> </a>
             </li>
             <li>
+                <a href="https://tblibrary.com/tags/dune/">Dune <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
                 <a href="https://tblibrary.com/tags/emilystjohnmandel/">Emilystjohnmandel <sup><strong><sup>1</sup></strong></sup> </a>
             </li>
             <li>
@@ -274,7 +358,7 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
                 <a href="https://tblibrary.com/tags/fantasy/">Fantasy <sup><strong><sup>1</sup></strong></sup> </a>
             </li>
             <li>
-                <a href="https://tblibrary.com/tags/favorites/">Favorites <sup><strong><sup>7</sup></strong></sup> </a>
+                <a href="https://tblibrary.com/tags/favorites/">Favorites <sup><strong><sup>11</sup></strong></sup> </a>
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/fear/">Fear <sup><strong><sup>2</sup></strong></sup> </a>
@@ -340,7 +424,7 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
                 <a href="https://tblibrary.com/tags/known-author/">Known-Author <sup><strong><sup>1</sup></strong></sup> </a>
             </li>
             <li>
-                <a href="https://tblibrary.com/tags/kurtvonnegut/">Kurtvonnegut <sup><strong><sup>1</sup></strong></sup> </a>
+                <a href="https://tblibrary.com/tags/kurtvonnegut/">Kurtvonnegut <sup><strong><sup>4</sup></strong></sup> </a>
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/love/">Love <sup><strong><sup>1</sup></strong></sup> </a>
@@ -362,6 +446,9 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/mentalhealth/">Mentalhealth <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/tags/monk-and-robot/">Monk-and-Robot <sup><strong><sup>2</sup></strong></sup> </a>
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/noralange/">Noralange <sup><strong><sup>1</sup></strong></sup> </a>
@@ -421,10 +508,16 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
                 <a href="https://tblibrary.com/tags/simoncritchley/">SimonCritchley <sup><strong><sup>1</sup></strong></sup> </a>
             </li>
             <li>
-                <a href="https://tblibrary.com/tags/small-press-club/">Small-Press-Club <sup><strong><sup>20</sup></strong></sup> </a>
+                <a href="https://tblibrary.com/tags/small-press-club/">Small-Press-Club <sup><strong><sup>25</sup></strong></sup> </a>
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/sociology/">Sociology <sup><strong><sup>1</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/tags/southern-reach/">Southern-Reach <sup><strong><sup>2</sup></strong></sup> </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/tags/stephenking/">StephenKing <sup><strong><sup>12</sup></strong></sup> </a>
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/substack/">Substack <sup><strong><sup>1</sup></strong></sup> </a>
@@ -433,10 +526,13 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
                 <a href="https://tblibrary.com/tags/suicide/">Suicide <sup><strong><sup>8</sup></strong></sup> </a>
             </li>
             <li>
+                <a href="https://tblibrary.com/tags/the-dark-tower/">The-Dark-Tower <sup><strong><sup>3</sup></strong></sup> </a>
+            </li>
+            <li>
                 <a href="https://tblibrary.com/tags/the-passenger/">The-Passenger <sup><strong><sup>2</sup></strong></sup> </a>
             </li>
             <li>
-                <a href="https://tblibrary.com/tags/the-shining/">The-Shining <sup><strong><sup>1</sup></strong></sup> </a>
+                <a href="https://tblibrary.com/tags/the-shining/">The-Shining <sup><strong><sup>2</sup></strong></sup> </a>
             </li>
             <li>
                 <a href="https://tblibrary.com/tags/timothysnyder/">TimothySnyder <sup><strong><sup>1</sup></strong></sup> </a>

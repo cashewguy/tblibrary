@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Reviews | TB Library</title>
+<meta name="keywords" content="">
+<meta name="description" content="Reviews - TB Library">
+<meta name="author" content="">
+<link rel="canonical" href="https://tblibrary.com/books/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tblibrary.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://tblibrary.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://tblibrary.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/json" href="https://tblibrary.com/books/index.json" title="json">
+<link rel="alternate" hreflang="en" href="https://tblibrary.com/books/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://tblibrary.com/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:url" content="https://tblibrary.com/books/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content=" Review: Reviews">
+
+<meta property="og:description"
+      content="My book library">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Reviews">
+  <meta name="twitter:description" content="My book library">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Reviews",
+      "item": "https://tblibrary.com/books/"
+    }
+  ]
+}
+</script>
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://tblibrary.com/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://tblibrary.com/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/books/" title="Reviews">
+                    <span class="active">Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main"> 
+<header class="page-header">
+  <h1>
+    Reviews
+  </h1>
+</header>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/a-drowning-incident.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A Drowning Incident
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Another early McCarthy demonstrating everything for which his form would become beloved. Haunting. It reminded me of things I haven’t thought about in years, from growing up more or less on a non-farm farm.
+Author: Cormac McCarthy
+Last read: 2024-03-08
+Rating: 4
+Form: Fiction
+Genre: Short Stories
+Times read: 1
+Copies owned: 0
+Fun score: 0.67
+
+    </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-08 00:00:00 +0000 UTC'>March 8, 2024</span>&nbsp;·&nbsp;<span>Cormac McCarthy</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to A Drowning Incident" href="https://tblibrary.com/books/a-drowning-incident---cormac-mccarthy/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-dark-waters.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Dark Waters
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    An early short story from Cormac. The bones and features are there, but we’re still a ways off from his best work.
+Author: Cormac McCarthy
+Last read: 2024-03-08
+Rating: 4
+Form: Fiction
+Genre: Short Stories
+Times read: 1
+Copies owned: 0
+Fun score: 1.33
+
+    </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-08 00:00:00 +0000 UTC'>March 8, 2024</span>&nbsp;·&nbsp;<span>Cormac McCarthy</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Dark Waters" href="https://tblibrary.com/books/the-dark-waters---cormac-mccarthy/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/wake-for-susan.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Wake for Susan
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Another of his short stories - it’s good. I prefer his longer work.
+Author: Cormac McCarthy
+Last read: 2024-03-08
+Rating: 4
+Form: Fiction
+Genre: Short Stories
+Times read: 1
+Copies owned: 0
+Fun score: 2.33
+
+    </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-08 00:00:00 +0000 UTC'>March 8, 2024</span>&nbsp;·&nbsp;<span>Cormac McCarthy</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Wake for Susan" href="https://tblibrary.com/books/wake-for-susan---cormac-mccarthy/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/cities-of-the-plain.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cities of the Plain
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    An interesting conclusion to the Border Trilogy, with all the elements a reader would expect from Cormac. The laconic writing, the dialogue written with such care and truth, and the exquisite pain that underlies all of life.
+What I like about Cormac’s writing is that it understands that life’s joys and pleasures are only found in adjacency to life’s sorrow and pain.
+Author: Cormac McCarthy
+Last read: 2024-03-07
+Rating: 4
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-03-07 00:00:00 +0000 UTC'>March 7, 2024</span>&nbsp;·&nbsp;<span>Cormac McCarthy</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Cities of the Plain" href="https://tblibrary.com/books/cities-of-the-plain---cormac-mccarthy/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/collision-course.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Collision Course
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Reading sci-fi from the 1960s can be strange. On the one hand, so many ideas of exploration, social commentary, and discovery are there and fun to see. It’s interesting to see how ideas have passed through books, TV, movies, and culture broadly in the intervening 60 years. However, the ultimate cultural lens of the 60’s remains, and so you have odd juxtapositions of exploration and discovery with rather unimaginative ideas of race/color, manifest destiny, etc.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-27 00:00:00 +0000 UTC'>February 27, 2024</span>&nbsp;·&nbsp;<span>Robert Silverberg</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Collision Course" href="https://tblibrary.com/books/collision-course---robert-silverberg/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/hangsaman.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Hangsaman
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Natalie lives in an ordinary world, but as it passes through the filter of her eyes and is processed by her brain, she interprets the world as either painfully banal or frighteningly strange. The ramblings of her imagination sputter along throughout the book, interrupting moments and pulling the reader along by a rough hand on digressions of fancy. What’s the point? Who knows, certainly not Natalie.
+The plot is more or less three loosely connected events or transitions, having little to do with one another but at times passingly referenced. Natalie is so internal and her thoughts so tangential that at times it isn’t clear what is reality and what is not — but never so opaque that you lose a thread completely. Jackson is not writing Natalie as a narrator, rather a narrator observes Natalie and that at least keeps some ground under our feet.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-24 00:00:00 +0000 UTC'>February 24, 2024</span>&nbsp;·&nbsp;<span>Shirley Jackson</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to Hangsaman" href="https://tblibrary.com/books/hangsaman---shirley-jackson/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/we-have-always-lived-in-the-castle.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">We Have Always Lived in the Castle
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Wow! I picked this up from my local library following a Small Press book club discussion of “At the Edge of the Woods” by Kathryn Bromwich. That book features blurbs comparing it to Shirley Jackson, an author I’ve never read. Members of the book club who had were nonplussed with the comparison and spoke highly of this and another book, Hangsaman also by Jackson.
+I checked both out from the library and read this first as it was shorter and I’d heard about this one before. I am surprised at how gripping it was! I was frequently questioning what was going on, what had happened, trying to figure out the backstory. It was enjoyable when I did find out. The back third of the story is pretty different and I feel like I will need to sit with it for a while before coming to a full conclusion. I finished the book about 5 minutes ago and thus have not had time to cook on it. I had fun reading this!
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-19 00:00:00 +0000 UTC'>February 19, 2024</span>&nbsp;·&nbsp;<span>Shirley Jackson</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to We Have Always Lived in the Castle" href="https://tblibrary.com/books/we-have-always-lived-in-the-castle---shirley-jackson/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-color-of-water.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Color of Water
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This is probably closer to a 3.5 for me. James writes lovingly about his mother, and the stories he shares about their youths and upbringings are interesting and endearing.
+I had a hard time getting past James’s consistent use of “Mommy” in referring to his mom. Adults referring to their parents as mommy or daddy always makes me cringe a little. I understand that to a point this is a regional/cultural/generational thing, but for me it’s too much. It doesn’t come across as warm for me. I call my mom “Mom” and she’s in my phone by her first and last name, not “mom” so… It felt weird every time I saw it, which of course was every page.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-17 00:00:00 +0000 UTC'>February 17, 2024</span>&nbsp;·&nbsp;<span>James McBride</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Color of Water" href="https://tblibrary.com/books/the-color-of-water---james-mcbride/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/the-adventures-of-amina-al-sirafi.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Adventures of Amina al-Sirafi
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This is one of the best books that I’ve ever bought on an impulse based on cover art. I had heard nothing about the book before picking it up and wow! What a treat. I love all the characters that we see, the locations are amazing, and the whole pirate thing is so different from what I usually read that it was a ton of fun.
+I would say the last third of the book as we got into some slightly more magical stuff was not perfect for me, but it also never verged into annoying or too crazy.
+
+    ...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-15 00:00:00 +0000 UTC'>February 15, 2024</span>&nbsp;·&nbsp;<span>Shannon Chakraborty</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to The Adventures of Amina al-Sirafi" href="https://tblibrary.com/books/the-adventures-of-amina-al-sirafi---shannon-chakraborty/"></a>
+</article>
+
+<article class="post-entry">
+
+  
+  
+    <img class="tb-list-cover" src="/covers/american-photographs.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">American Photographs
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Another library photograph book. Some favorites include:
+Parked Car, 1932 New York State Farm Int. ‘31 Sidewalk in Vicksburg, MS ‘36 New Orleans boarding house, ‘35 South St. NY ‘32 Hotel Porch, Saratoga Springs, ‘30 Author: Walker Evans
+Last read: 2024-02-13
+Rating: 5
+Form: Nonfiction
+Genre: Photography
+Times read: 1
+Copies owned: 0
+Fun score: 0.00
+
+    </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-13 00:00:00 +0000 UTC'>February 13, 2024</span>&nbsp;·&nbsp;<span>Walker Evans</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i></span></footer>
+
+  <a class="entry-link" aria-label="post link to American Photographs" href="https://tblibrary.com/books/american-photographs---walker-evans/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="num-pagination">
+    <ul>
+      
+        
+          <li><a href="/books/">1</a></li>
+        
+      
+        
+          <li><a href="/books/page/2/">2</a></li>
+        
+      
+        
+          <li><a href="/books/page/3/">3</a></li>
+        
+      
+        
+          <li><a href="/books/page/4/">4</a></li>
+        
+      
+        
+          <li><a href="/books/page/5/">5</a></li>
+        
+      
+        
+          <li><a href="/books/page/6/">6</a></li>
+        
+      
+        
+          <li><a href="/books/page/7/">7</a></li>
+        
+      
+        
+          <li><a href="/books/page/8/">8</a></li>
+        
+      
+        
+          <li><a href="/books/page/9/">9</a></li>
+        
+      
+        
+          <li><a href="/books/page/10/">10</a></li>
+        
+      
+        
+          <li><a href="/books/page/11/">11</a></li>
+        
+      
+        
+          <li><a href="/books/page/12/">12</a></li>
+        
+      
+        
+          <li><a href="/books/page/13/">13</a></li>
+        
+      
+        
+          <li><a href="/books/page/14/">14</a></li>
+        
+      
+        
+          <li><a href="/books/page/15/">15</a></li>
+        
+      
+        
+          <li><a href="/books/page/16/">16</a></li>
+        
+      
+        
+          <li><a href="/books/page/17/">17</a></li>
+        
+      
+        
+          <li><a href="/books/page/18/">18</a></li>
+        
+      
+        
+          <li><a href="/books/page/19/">19</a></li>
+        
+      
+        
+          <li class="active">20</li>
+        
+      
+        
+          <li><a href="/books/page/21/">21</a></li>
+        
+      
+        
+          <li><a href="/books/page/22/">22</a></li>
+        
+      
+        
+          <li><a href="/books/page/23/">23</a></li>
+        
+      
+        
+          <li><a href="/books/page/24/">24</a></li>
+        
+      
+        
+          <li><a href="/books/page/25/">25</a></li>
+        
+      
+        
+          <li><a href="/books/page/26/">26</a></li>
+        
+      
+        
+          <li><a href="/books/page/27/">27</a></li>
+        
+      
+        
+          <li><a href="/books/page/28/">28</a></li>
+        
+      
+        
+          <li><a href="/books/page/29/">29</a></li>
+        
+      
+        
+          <li><a href="/books/page/30/">30</a></li>
+        
+      
+    </ul>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://tblibrary.com/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>

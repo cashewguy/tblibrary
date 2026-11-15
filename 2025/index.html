@@ -9,7 +9,7 @@
 <meta name="keywords" content="">
 <meta name="description" content="
 
-  89
+  92
 Books	in 2025
 
 
@@ -20,7 +20,7 @@ Bizarrely, I began 2025 intending to write an essay titled &ldquo;A Year with Co
 ">
 <meta name="author" content="">
 <link rel="canonical" href="https://tblibrary.com/2025/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.1791afa40f3ee176f866911699d9cac9fb6d7452541f834cd1f53e676fff5325.css" integrity="sha256-F5GvpA8&#43;4Xb4ZpEWmdnKyfttdFJUH4NM0fU&#43;Z2//UyU=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.0850de55e21958cf165ee69b35fbfff6fc8c26ab750f93e77e219fa733d20e6f.css" integrity="sha256-CFDeVeIZWM8WXuabNfv/9vyMJqt1D5PnfiGfpzPSDm8=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://tblibrary.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
@@ -109,6 +109,84 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
   mermaid.initialize({ startOnLoad: true });
 </script>
 
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
 
   
   
@@ -146,13 +224,13 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
   <meta property="og:title" content=" Review: Books Reviewed in 2025">
 
 <meta property="og:description"
-      content=" 89 Books	in 2025 I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. That&#39;s okay! I read some great books this year, exploring new authors, new presses, and finishing up big projects. For example, I realized late in the year that Garth Greenwell may be my favorite contemporary author. I also delved into Annie Ernaux&#39;s body of work, finding perhaps my most loved writer in the process. And I made a point to read more specifically queer and gay books, which I&#39;ve found really rewarding. Bizarrely, I began 2025 intending to write an essay titled “A Year with Cormac” having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year without Cormac; I didn’t read a single title from McCarthy this year, and skipped my annual reread of The Road. ">
+      content=" 92 Books	in 2025 I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. That&#39;s okay! I read some great books this year, exploring new authors, new presses, and finishing up big projects. For example, I realized late in the year that Garth Greenwell may be my favorite contemporary author. I also delved into Annie Ernaux&#39;s body of work, finding perhaps my most loved writer in the process. And I made a point to read more specifically queer and gay books, which I&#39;ve found really rewarding. Bizarrely, I began 2025 intending to write an essay titled “A Year with Cormac” having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year without Cormac; I didn’t read a single title from McCarthy this year, and skipped my annual reread of The Road. ">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Books Reviewed in 2025">
-  <meta name="twitter:description" content="89 Books	in 2025 I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. That&#39;s okay! I read some great books this year, exploring new authors, new presses, and finishing up big projects. For example, I realized late in the year that Garth Greenwell may be my favorite contemporary author. I also delved into Annie Ernaux&#39;s body of work, finding perhaps my most loved writer in the process. And I made a point to read more specifically queer and gay books, which I&#39;ve found really rewarding. Bizarrely, I began 2025 intending to write an essay titled “A Year with Cormac” having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year without Cormac; I didn’t read a single title from McCarthy this year, and skipped my annual reread of The Road.">
+  <meta name="twitter:description" content="92 Books	in 2025 I&#39;d hoped that 2025 would be the year I broke 100, but it was not to be. That&#39;s okay! I read some great books this year, exploring new authors, new presses, and finishing up big projects. For example, I realized late in the year that Garth Greenwell may be my favorite contemporary author. I also delved into Annie Ernaux&#39;s body of work, finding perhaps my most loved writer in the process. And I made a point to read more specifically queer and gay books, which I&#39;ve found really rewarding. Bizarrely, I began 2025 intending to write an essay titled “A Year with Cormac” having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year without Cormac; I didn’t read a single title from McCarthy this year, and skipped my annual reread of The Road.">
 
 
 <script type="application/ld+json">
@@ -175,12 +253,12 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
   "@type": "BlogPosting",
   "headline": "Books Reviewed in 2025",
   "name": "Books Reviewed in 2025",
-  "description": " 89 Books\tin 2025 I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's okay! I read some great books this year, exploring new authors, new presses, and finishing up big projects. For example, I realized late in the year that Garth Greenwell may be my favorite contemporary author. I also delved into Annie Ernaux's body of work, finding perhaps my most loved writer in the process. And I made a point to read more specifically queer and gay books, which I've found really rewarding. Bizarrely, I began 2025 intending to write an essay titled \u0026ldquo;A Year with Cormac\u0026rdquo; having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year without Cormac; I didn\u0026rsquo;t read a single title from McCarthy this year, and skipped my annual reread of The Road. ",
+  "description": " 92 Books\tin 2025 I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's okay! I read some great books this year, exploring new authors, new presses, and finishing up big projects. For example, I realized late in the year that Garth Greenwell may be my favorite contemporary author. I also delved into Annie Ernaux's body of work, finding perhaps my most loved writer in the process. And I made a point to read more specifically queer and gay books, which I've found really rewarding. Bizarrely, I began 2025 intending to write an essay titled \u0026ldquo;A Year with Cormac\u0026rdquo; having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year without Cormac; I didn\u0026rsquo;t read a single title from McCarthy this year, and skipped my annual reread of The Road. ",
   "keywords": [
     
   ],
-  "articleBody": " 89 Books\tin 2025 I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's okay! I read some great books this year, exploring new authors, new presses, and finishing up big projects. For example, I realized late in the year that Garth Greenwell may be my favorite contemporary author. I also delved into Annie Ernaux's body of work, finding perhaps my most loved writer in the process. And I made a point to read more specifically queer and gay books, which I've found really rewarding. Bizarrely, I began 2025 intending to write an essay titled “A Year with Cormac” having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year without Cormac; I didn’t read a single title from McCarthy this year, and skipped my annual reread of The Road. A few of my favorites— Small Rain The Bright Sword Authority The Love That Dares Suicide Lie With Me Love, Leda The Sun Also Rises My top-three most-read authors Annie Ernaux (9) Ernest Hemingway (5) Stephen King (3) Ratings I tended to be positive for most books I read (3 stars is good!), and maybe I rate some books a little too highly:\nBut did I have fun? I started this little library site because I was accused of never reading “fun” books. But I like the books I read! Here are some of the ‘funnest’ books I read this year according to my devised scoring system…\nRead more: What constitutes a fun book?\nThe Bright Sword fun score — 5.00 A Prayer for the Crown-Shy fun score — 4 Authority fun score — 3.67 A Psalm for the Wild-Built fun score — 3.67 Doctor Sleep fun score — 3.33 Showing top 5.\nThe Books Norwegian Wood Jack the Modernist The Other Girl A Woman's Story What Belongs to You On Being Blue Hello Stranger When the Body Says No How Not to Kill Yourself Small Rain Mrs Dalloway Salems Lot Doctor Sleep The Café with No Name The Shining Martyr! Hamnet Temporary Why Cats Do that No Names On Liberalism Rent Boy A Supposedly Fun Thing I'll Never Do Again A Prayer for the Crown-Shy Catch-22 Kingdom Come Your Love Is Not Good In the Absence of Men Justice by Means of Democracy All-star Superman The Bright Sword The Understory Happening I Remain in Darkness The Possession Authority The Young Man Brokeback Mountain Porn An Oral History The Words That Remain We All Loved Cowboys House Of X/Powers Of X Less As I Lay Dying A Hitch in Time The Handmaid's Tale Slow Down The Love That Dares Suicide The Children of the Ghetto - My Name is Adam The Great Gatsby Swimming in the Dark The Myth of Closure Exteriors Notes on Suicide I Will Write to Avenge My People Written in Invisible Ink The Sovereignty of Good Us Fools Collaborative Cities Home on Earth - Recipes for Healthy Houses The Human Condition 15 Myths on Homelessness A Psalm for the Wild-Built Shame Lie With Me Silver Nitrate Love, Leda The Long Form At 30 I Realized I Had No Gender On Tyranny Feeling at Home Catching the Big Fish To Have and Have Not Queer The Book of Nightmares The Sun Also Rises Sea of Tranquility Home Body So Much for Life Mother Night South and West Rejection The Old Man \u0026 The Sea In Our Time The Sun \u0026 Her Flowers Star Wars Visions Ronin Ernest Hemingway On Writing Fear and Trembling 2026 For 2026, I want to read fewer titles, but ultimately more pages. I’d like to finish up Caro’s Master of the Senate and maybe The Passage of Power. I’ll also need to re-read The Illiad and The Odyssey (the Wildon translations) in preparation for Nolan’s The Odyssey.\nI plan to finish reading everything that Annie Ernaux has published to this point, as well as to start on some Russian literature, particularly Dostoyevsky’s Notes from the Underground and The Brothers Karamazov. Two other long titles I hope to read next year? Richard Rhodes follow up to The Making of the Atomic Bomb, Dark Sun: The Making of the Hydrogen Bomb, and one of my last remaining Stephen King mountain climbs: The Stand.\n",
-  "wordCount" : "717",
+  "articleBody": " 92 Books\tin 2025 I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's okay! I read some great books this year, exploring new authors, new presses, and finishing up big projects. For example, I realized late in the year that Garth Greenwell may be my favorite contemporary author. I also delved into Annie Ernaux's body of work, finding perhaps my most loved writer in the process. And I made a point to read more specifically queer and gay books, which I've found really rewarding. Bizarrely, I began 2025 intending to write an essay titled “A Year with Cormac” having finished my 2024 reading project, which was to read everything Cormac McCarthy ever published. Yet, 2025 proved to be the year without Cormac; I didn’t read a single title from McCarthy this year, and skipped my annual reread of The Road. A few of my favorites— Small Rain The Bright Sword Authority The Love That Dares Suicide Lie With Me Love, Leda The Sun Also Rises My top-three most-read authors Annie Ernaux (9) Ernest Hemingway (5) Stephen King (4) Ratings I tended to be positive for most books I read (3 stars is good!), and maybe I rate some books a little too highly:\nBut did I have fun? I started this little library site because I was accused of never reading “fun” books. But I like the books I read! Here are some of the ‘funnest’ books I read this year according to my devised scoring system…\nRead more: What constitutes a fun book?\nThe Bright Sword fun score — 5.00 The Hitchhiker's Guide to the Galaxy fun score — 4.33 The Drawing of the Three fun score — 4.33 A Connecticut Yankee in King Arthur's Court fun score — 4.00 A Prayer for the Crown-Shy fun score — 4 Showing top 5.\nThe Books Norwegian Wood Jack the Modernist The Other Girl A Woman's Story What Belongs to You On Being Blue Hello Stranger When the Body Says No How Not to Kill Yourself Small Rain A Connecticut Yankee in King Arthur's Court The Hitchhiker's Guide to the Galaxy Mrs Dalloway Salems Lot Doctor Sleep The Café with No Name The Shining Martyr! Hamnet Temporary Why Cats Do that No Names On Liberalism Rent Boy A Supposedly Fun Thing I'll Never Do Again The Drawing of the Three A Prayer for the Crown-Shy Catch-22 Kingdom Come Your Love Is Not Good In the Absence of Men Justice by Means of Democracy All-star Superman The Bright Sword The Understory Happening I Remain in Darkness The Possession Authority The Young Man Brokeback Mountain Porn An Oral History The Words That Remain We All Loved Cowboys House Of X/Powers Of X Less As I Lay Dying A Hitch in Time The Handmaid's Tale Slow Down The Love That Dares Suicide The Children of the Ghetto - My Name is Adam The Great Gatsby Swimming in the Dark The Myth of Closure Exteriors Notes on Suicide I Will Write to Avenge My People Written in Invisible Ink The Sovereignty of Good Us Fools Collaborative Cities Home on Earth - Recipes for Healthy Houses The Human Condition 15 Myths on Homelessness A Psalm for the Wild-Built Shame Lie With Me Silver Nitrate Love, Leda The Long Form At 30 I Realized I Had No Gender On Tyranny Feeling at Home Catching the Big Fish To Have and Have Not Queer The Book of Nightmares The Sun Also Rises Sea of Tranquility Home Body So Much for Life Mother Night South and West Rejection The Old Man \u0026 The Sea In Our Time The Sun \u0026 Her Flowers Star Wars Visions Ronin Ernest Hemingway On Writing Fear and Trembling 2026 For 2026, I want to read fewer titles, but ultimately more pages. I’d like to finish up Caro’s Master of the Senate and maybe The Passage of Power. I’ll also need to re-read The Illiad and The Odyssey (the Wildon translations) in preparation for Nolan’s The Odyssey.\nI plan to finish reading everything that Annie Ernaux has published to this point, as well as to start on some Russian literature, particularly Dostoyevsky’s Notes from the Underground and The Brothers Karamazov. Two other long titles I hope to read next year? Richard Rhodes follow up to The Making of the Atomic Bomb, Dark Sun: The Making of the Hydrogen Bomb, and one of my last remaining Stephen King mountain climbs: The Stand.\n",
+  "wordCount" : "745",
   "inLanguage": "en",
   "datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -271,7 +349,7 @@ Chart.defaults.scale.grid.color = "#2b2b2b";
 <div class="tb-review-content">
   <center>
 <div class="giant-text">
-  89
+  92
 Books	in 2025
 </div>
 </center>
@@ -1395,8 +1473,42 @@ I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's 
 
   
 
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+  
+
+  
+    
+    
+  
+
+  
 
 
+
+
+  
+
+  
 
   
 
@@ -1550,7 +1662,7 @@ I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's 
     
       <li>Ernest Hemingway <span class="muted">(5)</span></li>
     
-      <li>Stephen King <span class="muted">(3)</span></li>
+      <li>Stephen King <span class="muted">(4)</span></li>
     
   </ol>
 </section>
@@ -1874,6 +1986,48 @@ I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's 
   
   
 
+  
+    
+    
+
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+
+    
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+
+    
+    
   
 
   
@@ -2946,7 +3100,7 @@ I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's 
       }
 
       const rawLabels = "[\"0.0\",\"1.0\",\"2.0\",\"2.5\",\"3.0\",\"3.5\",\"4.0\",\"4.5\",\"5.0\"]";
-      const rawData   = "[3,2,3,4,24,3,24,3,23]";
+      const rawData   = "[3,2,3,4,24,3,24,3,26]";
 
       const labels = normalizeToArray(rawLabels).map(v => String(v));
       const data   = normalizeToArray(rawData).map(v => Number(v));
@@ -3078,6 +3232,22 @@ I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's 
 
   
   
+    
+    
+      
+    
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+  
+  
 
   
   
@@ -3152,6 +3322,14 @@ I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's 
   
   
     
+    
+  
+
+  
+  
+    
+    
+      
     
   
 
@@ -3575,23 +3753,23 @@ I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's 
         </li>
       
         <li>
+          <a href="/books/the-hitchhikers-guide-to-the-galaxy---douglas-adams/">The Hitchhiker&#39;s Guide to the Galaxy</a>
+          <span class="muted">fun score —  4.33</span>
+        </li>
+      
+        <li>
+          <a href="/books/the-drawing-of-the-three---stephen-king/">The Drawing of the Three</a>
+          <span class="muted">fun score —  4.33</span>
+        </li>
+      
+        <li>
+          <a href="/books/a-connecticut-yankee-in-king-arthurs-court---mark-twain/">A Connecticut Yankee in King Arthur&#39;s Court</a>
+          <span class="muted">fun score —  4.00</span>
+        </li>
+      
+        <li>
           <a href="/books/a-prayer-for-the-crown-shy---becky-chambers/">A Prayer for the Crown-Shy</a>
           <span class="muted">fun score —  4</span>
-        </li>
-      
-        <li>
-          <a href="/books/authority---andrea-long-chu/">Authority</a>
-          <span class="muted">fun score —  3.67</span>
-        </li>
-      
-        <li>
-          <a href="/books/a-psalm-for-the-wild-built/">A Psalm for the Wild-Built</a>
-          <span class="muted">fun score —  3.67</span>
-        </li>
-      
-        <li>
-          <a href="/books/doctor-sleep---stephen-king/">Doctor Sleep</a>
-          <span class="muted">fun score —  3.33</span>
         </li>
       
     </ul>
@@ -3851,6 +4029,52 @@ I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's 
           <div class="cover-title">Small Rain</div>
           <div class="cover-stars">
             <i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i>
+          </div>
+        </div>
+      </a>
+    
+      
+
+      <a
+        class="cover-tile"
+        href="/books/a-connecticut-yankee-in-king-arthurs-court---mark-twain/"
+        title="A Connecticut Yankee in King Arthur&#39;s Court"
+        aria-label="Open review: A Connecticut Yankee in King Arthur&#39;s Court"
+      >
+        <img
+          src="/covers/a-connecticut-yankee-in-king-arthur-s-court.jpg"
+          alt="Cover of A Connecticut Yankee in King Arthur&#39;s Court"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <div class="cover-overlay">
+          <div class="cover-title">A Connecticut Yankee in King Arthur&#39;s Court</div>
+          <div class="cover-stars">
+            <i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i>
+          </div>
+        </div>
+      </a>
+    
+      
+
+      <a
+        class="cover-tile"
+        href="/books/the-hitchhikers-guide-to-the-galaxy---douglas-adams/"
+        title="The Hitchhiker&#39;s Guide to the Galaxy"
+        aria-label="Open review: The Hitchhiker&#39;s Guide to the Galaxy"
+      >
+        <img
+          src="/covers/the-hitchhiker-s-guide-to-the-galaxy.jpg"
+          alt="Cover of The Hitchhiker&#39;s Guide to the Galaxy"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <div class="cover-overlay">
+          <div class="cover-title">The Hitchhiker&#39;s Guide to the Galaxy</div>
+          <div class="cover-stars">
+            <i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-headphones tb-flag-icon" title="Audiobook"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i>
           </div>
         </div>
       </a>
@@ -4150,6 +4374,29 @@ I'd hoped that 2025 would be the year I broke 100, but it was not to be. That's 
           <div class="cover-title">A Supposedly Fun Thing I&#39;ll Never Do Again</div>
           <div class="cover-stars">
             <i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star-half-stroke tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i>
+          </div>
+        </div>
+      </a>
+    
+      
+
+      <a
+        class="cover-tile"
+        href="/books/the-drawing-of-the-three---stephen-king/"
+        title="The Drawing of the Three"
+        aria-label="Open review: The Drawing of the Three"
+      >
+        <img
+          src="/covers/the-drawing-of-the-three.jpg"
+          alt="Cover of The Drawing of the Three"
+          loading="lazy"
+          decoding="async"
+        >
+
+        <div class="cover-overlay">
+          <div class="cover-title">The Drawing of the Three</div>
+          <div class="cover-stars">
+            <i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i>
           </div>
         </div>
       </a>
