@@ -614,7 +614,7 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 
   const labels = [&#34;Fiction&#34;,&#34;Nonfiction&#34;,&#34;Memoir&#34;,&#34;Theory&#34;,&#34;Reference&#34;,&#34;Poetry&#34;,&#34;Drama&#34;,&#34;Essays&#34;,&#34;Audiobook&#34;,];
 
-  const dataValues = [ 172 , 55 , 28 , 11 , 8 , 7 , 5 , 4 , 1 ,];
+  const dataValues = [ 173 , 55 , 28 , 11 , 8 , 7 , 5 , 4 , 1 ,];
 
   new Chart(ctx, {
     type: &#39;pie&#39;,
@@ -644,9 +644,9 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
 document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
   const ctx = document.getElementById(&#39;reviewGenreChart&#39;).getContext(&#39;2d&#39;);
 
-  const labels = [&#34;Literary Fiction&#34;,&#34;Science Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Social Science \/ Policy&#34;,&#34;Fantasy&#34;,&#34;History&#34;,&#34;Horror&#34;,&#34;Science&#34;,&#34;Suspense \/ Thriller \/ Mystery&#34;,&#34;Essay \/ Criticism&#34;,&#34;Comic Book&#34;,&#34;Arts \/ Photography&#34;,&#34;History \/ Biography&#34;,&#34;Short Stories&#34;,&#34;Poetry&#34;,&#34;Pop Self-Help&#34;,&#34;Satire&#34;,&#34;Screenplay&#34;,&#34;TV \u0026 Film&#34;,&#34;Technology&#34;,];
+  const labels = [&#34;Literary Fiction&#34;,&#34;Science Fiction&#34;,&#34;Other&#34;,&#34;Memoir&#34;,&#34;Fantasy&#34;,&#34;Social Science \/ Policy&#34;,&#34;History&#34;,&#34;Horror&#34;,&#34;Science&#34;,&#34;Suspense \/ Thriller \/ Mystery&#34;,&#34;Essay \/ Criticism&#34;,&#34;Comic Book&#34;,&#34;Arts \/ Photography&#34;,&#34;History \/ Biography&#34;,&#34;Short Stories&#34;,&#34;Poetry&#34;,&#34;Pop Self-Help&#34;,&#34;Satire&#34;,&#34;Screenplay&#34;,&#34;TV \u0026 Film&#34;,&#34;Technology&#34;,];
 
-  const dataValues = [ 81 , 38 , 23 , 22 , 17 , 16 , 11 , 11 , 9 , 9 , 8 , 7 , 5 , 5 , 5 , 4 , 4 , 4 , 4 , 4 , 4 ,];
+  const dataValues = [ 81 , 38 , 23 , 22 , 17 , 17 , 11 , 11 , 9 , 9 , 8 , 7 , 5 , 5 , 5 , 4 , 4 , 4 , 4 , 4 , 4 ,];
 
   const backgroundColors = labels.map(() =&gt;
     `hsla(${Math.floor(Math.random()*360)}, 65%, 60%, 0.65)`
@@ -1190,6 +1190,18 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, function () {
         &lt;td&gt;2024-06-15&lt;/td&gt;
         &lt;td&gt;4&lt;/td&gt;
         &lt;td&gt;1.67&lt;/td&gt;
+      &lt;/tr&gt;&lt;tr
+        data-owned=&#34;false&#34;
+        data-read=&#34;true&#34;
+        data-tags=&#34;bookreview,audiobook&#34;
+      &gt;
+        &lt;td&gt;C.S. Lewis&lt;/td&gt;
+        &lt;td&gt;&lt;a href=&#34;https://tblibrary.com/books/the-magicians-nephew---c.s.-lewis/&#34;&gt;The Magician&amp;#39;s Nephew&lt;/a&gt;&lt;/td&gt;
+        &lt;td&gt;Fiction&lt;/td&gt;
+        &lt;td&gt;Fantasy&lt;/td&gt;
+        &lt;td&gt;2025-03-06&lt;/td&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;3.67&lt;/td&gt;
       &lt;/tr&gt;&lt;tr
         data-owned=&#34;true&#34;
         data-read=&#34;true&#34;
@@ -4879,6 +4891,11 @@ const funrev_points = [
       fun: &#34;2.00&#34;,
     },
     {
+      title: &#34;\&#34;The Magician&#39;s Nephew\&#34;&#34;,
+      rating:  4 ,
+      fun: &#34;3.67&#34;,
+    },
+    {
       title: &#34;\&#34;Silver Nitrate\&#34;&#34;,
       rating: &#34;0&#34;,
       fun: &#34;0.00&#34;,
@@ -6274,6 +6291,10 @@ const formrev_raw = [
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
       fun:  &#34;2.00&#34;,
+    },
+    {
+      form: &#34;\&#34;Fiction\&#34;&#34;,
+      fun:  &#34;3.67&#34;,
     },
     {
       form: &#34;\&#34;Fiction\&#34;&#34;,
@@ -37681,6 +37702,15 @@ document.addEventListener(&#34;DOMContentLoaded&#34;, () =&gt; lib_apply());
 &lt;p&gt;A heartbreaking book. A line comes for us in the final 20 pages that made me stop and put the book to my face and take deep breaths. Then we are taken through it for the remainder, and at the end I cried. I cried.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>The Magician&#39;s Nephew</title>
+      <link>https://tblibrary.com/books/the-magicians-nephew---c.s.-lewis/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://tblibrary.com/books/the-magicians-nephew---c.s.-lewis/</guid>
+      <description>&lt;h2 id=&#34;review&#34;&gt;Review&lt;/h2&gt;
+&lt;p&gt;Audiobook narrated by Kenneth Branagh.&lt;/p&gt;
+&lt;p&gt;This put me to sleep the last few nights, and back to sleep when I woke up which was several times each night. This is a good thing for a children’s book to manage. I think you could take issue with Lewis’ barely-veiled theology and the simplistic good-and-evil of it all. But, sometimes, it is nice to have a simple and kind story to fall asleep to.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Silver Nitrate</title>
       <link>https://tblibrary.com/books/silver-nitrate---silvia-moreno-garcia/</link>
       <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
@@ -40063,7 +40093,7 @@ Y.C.: Almost never. I start to make it up and have happen what would happen as i
       <guid>https://tblibrary.com/2025/</guid>
       <description>&lt;center&gt;
 &lt;div class=&#34;giant-text&#34;&gt;
-  92
+  93
 Books	in 2025
 &lt;/div&gt;
 &lt;/center&gt;
