@@ -3,6 +3,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tblibrary.com/fun/fun-reviews/</loc>
+    <lastmod>2026-11-15T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tblibrary.com/tags/gamereview/</loc>
     <lastmod>2026-11-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -228,6 +231,9 @@
     <loc>https://tblibrary.com/books/in-the-garden-of-beasts---erik-larson/</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://tblibrary.com/tags/dnf/</loc>
+    <lastmod>2026-03-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://tblibrary.com/books/heartland---ana-simo/</loc>
     <lastmod>2026-03-26T00:00:00+00:00</lastmod>
   </url><url>
@@ -306,9 +312,6 @@
     <loc>https://tblibrary.com/fun/fun-questionnaire/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://tblibrary.com/fun/fun-reviews/</loc>
-    <lastmod>2025-11-24T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://tblibrary.com/about/</loc>
     <lastmod>2025-11-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -319,6 +322,9 @@
     <lastmod>2025-11-22T16:14:12-04:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/a-connecticut-yankee-in-king-arthurs-court---mark-twain/</loc>
+    <lastmod>2025-11-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/tb-recommends/</loc>
     <lastmod>2025-11-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/the-hitchhikers-guide-to-the-galaxy---douglas-adams/</loc>
@@ -751,6 +757,9 @@
     <lastmod>2024-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/everything-for-everyone---m.e.-obrien/</loc>
+    <lastmod>2024-09-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://tblibrary.com/tags/tb-shames/</loc>
     <lastmod>2024-09-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://tblibrary.com/books/the-orchard-keeper---cormac-mccarthy/</loc>
@@ -1192,7 +1201,11 @@
   </url><url>
     <loc>https://tblibrary.com/categories/</loc>
   </url><url>
+    <loc>https://tblibrary.com/disparages/</loc>
+  </url><url>
     <loc>https://tblibrary.com/graph/</loc>
+  </url><url>
+    <loc>https://tblibrary.com/recommends/</loc>
   </url><url>
     <loc>https://tblibrary.com/ripreads/</loc>
   </url><url>

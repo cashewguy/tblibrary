@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Tb-Recommends | TB Library</title>
+<meta name="keywords" content="">
+<meta name="description" content="My book library">
+<meta name="author" content="">
+<link rel="canonical" href="https://tblibrary.com/tags/tb-recommends/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.779799d49da1c3d099787912f21929c11d1f374deab0d4e88393359d20853035.css" integrity="sha256-d5eZ1J2hw9CZeHkS8hkpwR0fN03qsNTog5M1nSCFMDU=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://tblibrary.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://tblibrary.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://tblibrary.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://tblibrary.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://tblibrary.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://tblibrary.com/tags/tb-recommends/index.xml" title="rss">
+<link rel="alternate" hreflang="en" href="https://tblibrary.com/tags/tb-recommends/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<link rel="stylesheet" href="https://tblibrary.com/css/default.min.c491e0b2f441d997912f74af95cff5380e93230bbf846c7436f975370ca14cf0.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+ 
+Chart.defaults.plugins.legend.labels.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "bold"
+};
+Chart.defaults.plugins.legend.labels.color = "#ccc";
+Chart.defaults.plugins.legend.position = "right";
+
+ 
+Chart.defaults.scale.ticks.font = {
+  size: 20,
+  family: "Garamond",
+  weight: "normal"
+};
+Chart.defaults.scale.ticks.color = "#999";
+
+Chart.defaults.scale.grid.color = "#2b2b2b";
+</script>
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>
+
+<script>
+ 
+document.documentElement.classList.add('tb-spoilers');
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('spoiler').forEach(function (s) {
+    s.tabIndex = 0;
+    s.setAttribute('role', 'button');
+    s.setAttribute('aria-expanded', 'false');
+    s.title = 'Spoiler — click to reveal';
+    function reveal(e) {
+      if (s.classList.contains('revealed')) return;
+      e.preventDefault();
+      s.classList.add('revealed');
+      s.setAttribute('aria-expanded', 'true');
+      s.removeAttribute('role'); s.removeAttribute('title'); s.removeAttribute('tabindex');
+    }
+    s.addEventListener('click', reveal);
+    s.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') reveal(e); });
+  });
+});
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function () {
+  var PER_WINDOW = 10;
+  document.querySelectorAll('nav.num-pagination').forEach(function (nav) {
+    var ul = nav.querySelector('ul');
+    if (!ul || ul.children.length <= PER_WINDOW) return;   
+
+    var win = document.createElement('div');
+    win.className = 'np-window';
+    ul.parentNode.insertBefore(win, ul);
+    win.appendChild(ul);
+    function arrow(cls, label, text) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'np-arrow ' + cls;
+      b.setAttribute('aria-label', label); b.textContent = text;
+      return b;
+    }
+    var prev = arrow('np-prev', 'Show earlier pages', '«');
+    var next = arrow('np-next', 'Show later pages', '»');
+    nav.insertBefore(prev, win);
+    nav.appendChild(next);
+    nav.classList.add('np-scroll');
+
+    var items = Array.prototype.slice.call(ul.children);
+    var step = 0;
+    function layout() {
+      items.forEach(function (li) { li.style.width = ''; });
+      var w = Math.ceil(Math.max.apply(null, items.map(function (li) { return li.getBoundingClientRect().width; })));
+      items.forEach(function (li) { li.style.width = w + 'px'; });            
+      var gap = parseFloat(getComputedStyle(ul).columnGap) || 0;
+      var room = nav.clientWidth - prev.offsetWidth - next.offsetWidth - 2 * gap - 4;
+      var visible = Math.max(1, Math.min(PER_WINDOW, Math.floor((room + gap) / (w + gap))));
+      win.style.width = (visible * w + (visible - 1) * gap) + 'px';
+      step = visible * (w + gap);
+      var active = ul.querySelector('li.active');
+      var idx = active ? items.indexOf(active) : 0;
+      var old = win.style.scrollBehavior;
+      win.style.scrollBehavior = 'auto';                                      
+      win.scrollLeft = Math.floor(idx / visible) * step;                      
+      win.style.scrollBehavior = old;
+      update();
+    }
+    function update() {
+      prev.disabled = win.scrollLeft <= 1;
+      next.disabled = win.scrollLeft + win.clientWidth >= win.scrollWidth - 1;
+    }
+    prev.addEventListener('click', function () { win.scrollBy({ left: -step }); });
+    next.addEventListener('click', function () { win.scrollBy({ left: step }); });
+    win.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', layout);
+    layout();
+  });
+});
+</script>
+
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-KH72J4SGJ8"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-KH72J4SGJ8');
+        }
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:url" content="https://tblibrary.com/tags/tb-recommends/">
+  <meta property="og:site_name" content="TB Library">
+  <meta property="og:title" content=" Review: Tb-Recommends">
+
+<meta property="og:description"
+      content="My book library">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tb-Recommends">
+  <meta name="twitter:description" content="My book library">
+
+</head>
+<body class="list" id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="https://tblibrary.com/" accesskey="h" title="TB Library (Alt + H)">TB Library</a>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="https://tblibrary.com/about" title="About">
+                    <span>About
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/books/" title="Reviews">
+                    <span>Reviews
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/fun/" title="Fun?">
+                    <span>Fun?
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/reviewstats" title="Stats">
+                    <span>Stats
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/graph" title="Graph">
+                    <span>Graph
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/ripreads" title="Rip Reads">
+                    <span>
+                          <i class="fa-solid fa-cat" aria-label="Ripreads"></i>
+
+                        </span>
+                </a>
+            </li>
+            <li>
+                <a href="https://tblibrary.com/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>
+                          <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
+
+                        </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header><main class="main"> 
+<header class="page-header">
+  <h1>
+    Tb-Recommends
+  </h1>
+</header>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/a-connecticut-yankee-in-king-arthur-s-court.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A Connecticut Yankee in King Arthur&#39;s Court
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    4/14/23 - This is one of my all-time favorite books, and I picked up my paperback copy and started reading then re-reading chapters I particularly enjoy earlier this year. Then a few weeks ago I resumed a previous re-read on the audiobook version. Early this morning while walking I finished up the last third or so of it, so I’m calling this as a 2023 book for me. I love this book!
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-11-22 00:00:00 +0000 UTC'>November 22, 2025</span>&nbsp;·&nbsp;<span>Mark Twain</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-ribbon tb-flag-icon" title="Recommended"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to A Connecticut Yankee in King Arthur&#39;s Court" href="https://tblibrary.com/books/a-connecticut-yankee-in-king-arthurs-court---mark-twain/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/authority.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Authority
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I picked this up solely based on the title/cover and the want to read essays, having no familiarity with Chu or her writing. I liked it a lot! I may come back and update this review with additional thoughts, but in general I had a good time. Few writers have me cackling on the metro quite like Chu did in her takedown of Bret Easton Ellis or her piece on Hanya Yanagihara. Some of my favorites:
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-06-09 00:00:00 +0000 UTC'>June 9, 2025</span>&nbsp;·&nbsp;<span>Andrea Long Chu</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star-half-stroke tb-star"></i><i class="fa-solid fa-ribbon tb-flag-icon" title="Recommended"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Authority" href="https://tblibrary.com/books/authority---andrea-long-chu/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/a-single-man.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">A Single Man
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    I bought the Picador Modern Classics hardcover of this a week or two ago on a whim. I was trying to find gifts for family and ended up buying this for myself instead. I think this is my third read of the book? I read a lot of Isherwood aroundabouts 2013 when I was fresh out of high school and struggling with being gay. It didn’t really matter that the time period was all wrong, or that things were so different. A lot of things weren’t different, and it was more or less about reading books that showed relationships and love in a non-heterosexual way.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-21 00:00:00 +0000 UTC'>December 21, 2024</span>&nbsp;·&nbsp;<span>Christopher Isherwood</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-ribbon tb-flag-icon" title="Recommended"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to A Single Man" href="https://tblibrary.com/books/a-single-man/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/the-adventures-of-amina-al-sirafi.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Adventures of Amina al-Sirafi
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    This is one of the best books that I’ve ever bought on an impulse based on cover art. I had heard nothing about the book before picking it up and wow! What a treat. I love all the characters that we see, the locations are amazing, and the whole pirate thing is so different from what I usually read that it was a ton of fun.
+I would say the last third of the book as we got into some slightly more magical stuff was not perfect for me, but it also never verged into annoying or too crazy.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-15 00:00:00 +0000 UTC'>February 15, 2024</span>&nbsp;·&nbsp;<span>Shannon Chakraborty</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-ribbon tb-flag-icon" title="Recommended"></i></span></footer>
+  <a class="entry-link" aria-label="post link to The Adventures of Amina al-Sirafi" href="https://tblibrary.com/books/the-adventures-of-amina-al-sirafi---shannon-chakraborty/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/11-22-63.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">11/22/63
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    My second time reading this, about 10 years later. When an author as works like The Stand, and The Shining (not to mention huge worlds and explorations of them, like The Dark Tower series), it’s hard to point to a magnum opus. Still, I wonder if this is it.
+11/22/63 isn’t a horror like many of King’s works, not really. Yet, it features some horrific events, with the same can’t-put-the-book-down grip. It may well be his most romantic book - and is there any kind of story that carries romance like time travel?
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-11-28 00:00:00 +0000 UTC'>November 28, 2023</span>&nbsp;·&nbsp;<span>Stephen King</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-ribbon tb-flag-icon" title="Recommended"></i><i class="fa-solid fa-repeat tb-flag-icon" title="Reread"></i></span></footer>
+  <a class="entry-link" aria-label="post link to 11/22/63" href="https://tblibrary.com/books/11-22-63---stephen-king/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/perdido-street-station.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Perdido Street Station
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Going to cook on this a little before I write a review. It might end up getting up to 5 stars. I’ll update when a review is ready!
+Author: China Miéville
+Last read: 2023-06-21
+Rating: 4
+Form: Fiction
+Genre: Fantasy
+Times read: 1
+Copies owned: 1
+Fun score: 3.67
+
+    
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-06-21 00:00:00 +0000 UTC'>June 21, 2023</span>&nbsp;·&nbsp;<span>China Miéville</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-solid fa-ribbon tb-flag-icon" title="Recommended"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Perdido Street Station" href="https://tblibrary.com/books/perdido-street-station---china-mi%C3%A9ville/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/his-name-was-death.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">His Name Was Death
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    For such a short book, I have a lot of thoughts! I really enjoyed this. There are definitely some parts that show the time in which it was written, but putting those aside, I thought the play with god concepts really fun.
+I’m not sure what my favorite line of the book is, but at first glance, it might be: “I know the gods love blood, and that is why I have offered it to you…”
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-04-15 00:00:00 +0000 UTC'>April 15, 2023</span>&nbsp;·&nbsp;<span>Rafael Bernal</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-regular fa-star tb-star tb-star-empty"></i><i class="fa-solid fa-ribbon tb-flag-icon" title="Recommended"></i></span></footer>
+  <a class="entry-link" aria-label="post link to His Name Was Death" href="https://tblibrary.com/books/his-name-was-death---rafael-bernal/"></a>
+</article>
+
+
+
+<article class="post-entry">
+  
+  
+    <img class="tb-list-cover" src="/covers/rough-sleepers.jpg" alt="">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Rough Sleepers
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>    Reposted from elsewhere. I wrote this quickly and may eventually come back and do a full review; I’ve had a lot churning in my head around this work for the past few weeks and need to let that settle before I attempt a full review.
+Started and finished this book this week. I read it basically in two sits. As someone who works on homelessness policy, and used to work in direct service, I just couldn’t put it down. So much of what Dr. O’Connell says I could hear coming out of my mouth, and out of the mouths of folks I’ve worked with over the years.
+
+    ...
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2023-02-26 00:00:00 +0000 UTC'>February 26, 2023</span>&nbsp;·&nbsp;<span>Tracy Kidder</span>&nbsp;·&nbsp;<span class='tb-rating-inline'><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-star tb-star"></i><i class="fa-solid fa-ribbon tb-flag-icon" title="Recommended"></i></span></footer>
+  <a class="entry-link" aria-label="post link to Rough Sleepers" href="https://tblibrary.com/books/rough-sleepers---tracy-kidder/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="https://tblibrary.com/">TB Library</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+</body>
+
+</html>
